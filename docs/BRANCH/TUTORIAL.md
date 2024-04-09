@@ -142,3 +142,152 @@ Checkout: Cambia o Crea Branch
 Compruebe el historial de cambios del repositorio usando la comando `git log`.<br>
 Se ha añadido commit de "Se ha añadido la descripción de la Checkout".
 
+## Eliminar branch: branch -d
+
+El contenido de `issue1` se ha fusionado con éxito en `master` y debería eliminarse.
+
+Para eliminar un branch, ejecute el comando `branch` con la opción `-d`.
+```
+$ git branch -d <branchname>
+```
+
+Para eliminar `issue1`, emita el siguiente comando.
+
+```
+$ git branch -d issue1
+Deleted branch issue1 (was b2b23c4).
+```
+
+Ahora `issue1` ha sido eliminado. Utilice el comando `branch` para ver si el branch ha sido eliminada.
+```
+$ git branch
+* master
+```
+
+La historia en este punto se parece a esto.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/c5b6fc59-ba23-4ee7-9bdb-a9128661706e)
+
+## Trabajar en paralelo usando branches
+
+A continuación, cree dos branches y trabaje en paralelo.
+
+まずは、`issue2`と`issue3`を作成し、`issue2`に移動します。
+
+```
+$ git branch issue2
+$ git branch issue3
+$ git checkout issue2
+Switched to branch 'issue2'
+$ git branch
+* issue2
+  issue3
+  master
+```
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/9bc95e2c-359e-4833-a747-944fe55b7d4d)
+
+Añade una descripción del comando `branch` a `myfile.txt` en `issue2` y ejecuta commit.
+
+```
+Comandos Git para manejar branch
+Checkout: Cambia o Crea Branch
+Branch: Crear, eliminar branch o ver una lista de branch
+```
+```
+$ git add myfile.txt
+$ git commit -m "Se ha añadido la descripción de Branch"
+[issue2 8f7aa27] Se ha añadido la descripción de Branch
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+```
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/55b30951-61be-4df9-9d1d-4191e4b45d7f)
+
+Luego pasa al `issue3`.
+
+```
+$ git checkout issue3
+Switched to branch 'issue3'
+```
+
+Abra `myfile.txt`. La adición de la descripción del comando `branch` se hizo en `issue2`, por lo que el `myfile.txt` en `issue3` sólo tiene la descripción del comando `checkout`.
+
+Ahora vamos a añadir una descripción del comando `merge` y ejecutar commit.
+
+```
+Comandos Git para manejar branch
+Checkout: Cambia o Crea Branch
+Merge: Integrar branch
+```
+```
+$ git add myfile.txt
+$ git commit -m "Se ha añadido la descripción de Merge"
+[issue3 e5f91ac] Se ha añadido la descripción de Merge
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+```
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/794fee99-66d8-44ad-8075-9d476f6c8b5c)
+
+El trabajo para añadir la descripción de `branch` y la descripción de `merge` podría realizarse por separado.
+
+## Resolución de conflictos en el merge
+
+Fusiona los cambios realizados en `issue2` y los cambios realizados en `issue3` en el `master`.
+
+Primero, ve a `master` y luego importa `issue2`.
+```
+$ git checkout master
+Switched to branch 'master'
+$ git merge issue2
+Updating b2b23c4..8f7aa27
+Fast-forward
+ myfile.txt |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+```
+
+Esta `merge` es un `fast-forward (avance rápido) merge`.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/c8c04bc3-16de-4214-8141-3aa910b76580)
+
+A continuación, importa la `edición3`.
+
+```
+$ git merge issue3
+Auto-merging myfile.txt
+CONFLICT (content): Merge conflict in myfile.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+El `merge` automática ha fallado. Parece que se ha producido un conflicto porque se ha cambiado el contenido de la misma línea. El contenido de `myfile.txt` en este momento tendría este aspecto.
+
+```
+Comandos Git para manejar branch
+Checkout: Cambia o Crea Branch
+<<<<<<< HEAD
+Branch: Crear, eliminar branch o ver una lista de branch
+=======
+Merge: Integrar branch
+>>>>>>> issue3
+```
+
+En caso de conflicto, Git inserta un diff.
+Se modifica como sigue.
+
+```
+Comandos Git para manejar branch
+Checkout: Cambia o Crea Branch
+Branch: Crear, eliminar branch o ver una lista de branch
+Merge: Integrar branch
+```
+
+Ahora que el conflicto se ha corregido, ejecute `commit` de nuevo.
+
+```
+$ git add myfile.txt
+$ git commit -m "Fusionar branch issue3"
+# On branch master
+nothing to commit (working directory clean)
+```
+
+La historia es la siguiente.<br>
+Esta _merge_ soluciona un conflicto, por lo que se ha creado un nuevo _merge commit_ para registrar el cambio. La cabecera de `master` se ha movido allí.<br>
+Un _merge_ de este tipo se denomina _non fast-forward merge_.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e1e25920-bd2b-4929-a6cc-c16bde0570d1)
