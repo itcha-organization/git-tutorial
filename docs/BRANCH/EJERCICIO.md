@@ -1,5 +1,10 @@
 # EJERCICIO
 
+Resuelva las preguntas 1-9 utilizando los comandos en GitBash.<br>
+Para las preguntas 5~8, por favor ilustre el historial de commit en el siguiente archivo.
+
+[BRANCH_EJERCICIO_ilustración_de_commit.xlsx](https://github.com/itcha-organization/git-tutorial/files/14935519/BRANCH_EJERCICIO_ilustracion_de_commit.xlsx)
+
 ## Pregunta 1
 
 Cree una carpeta `~/ejercicio2` y colócala bajo control Git.
