@@ -12,7 +12,7 @@ Initialized empty Git repository
 in /Users/yourname/Desktop/tutorial/.git/
 ```
 
-Cree un achivo de texto llamado myfile.txt en el directorio tutorial_branch.
+Cree un achivo de texto llamado `myfile.txt` en el directorio tutorial_branch.
 En el contenido del archivo, introduzca el siguiente texto.
 ```
 Comandos Git para manejar branch
@@ -32,7 +32,7 @@ La historia en este punto se parece a esto.
 
 ## Crear un branch: branch
 
-Aquí, creamos una rama llamada `issue1`.
+Aquí, creamos un branch llamada `issue1`.
 
 Los branches pueden crearse con el comando `branch`.
 ```
@@ -100,7 +100,7 @@ La historia en este punto se parece a esto.
 
 ## Integrar Branches y Funcionalidades: merge
 
-Fusiona los cambios realizados en la rama `issue1` con la rama `master`. Las ramas se fusionan utilizando el comando `merge`.
+Fusiona los cambios realizados en el branch `issue1` con el branch `master`. Los branches se fusionan utilizando el comando `merge`.
 ```
 $ git merge <branch>
 ```
@@ -172,7 +172,7 @@ La historia en este punto se parece a esto.
 
 A continuación, cree dos branches y trabaje en paralelo.
 
-まずは、`issue2`と`issue3`を作成し、`issue2`に移動します。
+Primero, crea `issue2` y `issue3` y muévele a `issue2`.
 
 ```
 $ git branch issue2
