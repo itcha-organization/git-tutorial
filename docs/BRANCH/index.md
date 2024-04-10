@@ -3,23 +3,23 @@
 ## ¿Qué es Branch?
 
 En el desarrollo de software, varios miembros de un equipo pueden estar añadiendo características o corrigiendo errores en una misma pieza de software al mismo tiempo.<br>
-Para ayudar con estos cambios de código paralelos, Git tiene una función llamada ramificación.
+Para ayudar con estos cambios de código paralelos, Git tiene una función llamada branch (rama).
 
-Las ramas se utilizan para bifurcar y registrar el flujo de la historia.<br>
-Las ramas no se ven afectadas por otras ramas, por lo que se pueden realizar múltiples cambios al mismo tiempo en el mismo repositorio.
+Los branches se utilizan para bifurcar y registrar el flujo de la historia.<br>
+Los branches no se ven afectadas por otros branches, por lo que se pueden realizar múltiples cambios al mismo tiempo en el mismo repositorio.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/92c0e870-645b-45fd-8e23-a72aaa5aa3b5)
 
-Imagine las siguientes situaciones. ¿Sería útil una rama que permitiera trabajar en paralelo?
+Imagine las siguientes situaciones. ¿Sería útil un branch que permitiera trabajar en paralelo?
 
 * Al dividir el trabajo entre los miembros del equipo
 * Al solucionar un error urgente intrusivamente
 * Cuando quiera experimentar con un cambio temporal en un fragmento de código
 
-El diagrama siguiente ilustra el trabajo paralelo mediante ramas.
+El diagrama siguiente ilustra el trabajo paralelo mediante branch.
 
-Los miembros del equipo crean una rama dedicada a su propio trabajo a partir de la rama principal, de modo que su trabajo no se vea afectado por el de otros miembros del equipo.<br>
-A continuación, el miembro del equipo que ha terminado su trabajo incorpora los cambios de su propia rama a la rama principal.<br>
+Los miembros del equipo crean un branch dedicado a su propio trabajo a partir de el branch principal, de modo que su trabajo no se vea afectado por el de otros miembros del equipo.<br>
+A continuación, el miembro del equipo que ha terminado su trabajo incorpora los cambios de su propio branch al branch principal.<br>
 De este modo, el trabajo del miembro del equipo no se ve afectado por el trabajo de otros miembros del equipo y puede incorporarse a su propio trabajo.<br>
 Esto también facilita la investigación y resolución de cualquier problema que pueda haber surgido.
 
@@ -29,9 +29,9 @@ Las dos formas principales de operar con branch son la `Bese Branch` (Rama Base)
 
 * `Base Branch` (Rama Base)
 
-Esta rama se utiliza para mantener un estado estable que no contenga errores. Cuando se realiza algún cambio, se crea un topic branch, se trabaja en ella y se integra en el base branch.
+Este branch se utiliza para mantener un estado estable que no contenga errores. Cuando se realiza algún cambio, se crea un topic branch, se trabaja en el y se integra en el base branch.
 
-Normalmente, master branch o main branch se utiliza como base branch.
+Normalmente, `master` branch o `main` branch se utiliza como base branch.
 
 * `Topic Branch` (Rama de Tema)
 
@@ -41,7 +41,7 @@ Un topic branch es un branch que se crea para trabajar en un tema, como añadir 
 
 ## Integrar branch（merge, rebase）
 
-Los branches de tema en los que se ha trabajado acaban fusionándose en un branch base. Hay dos formas de fusionar ramas: utilizando `merge` o utilizando `rebase`. La historia de la rama fusionada difiere mucho según el método que se utilice.
+Los branches de tema en los que se ha trabajado acaban fusionándose en un branch base. Hay dos formas de fusionar branches: utilizando `merge` o utilizando `rebase`. La historia de el branch fusionado difiere mucho según el método que se utilice.
 
 ### merge
 
@@ -69,7 +69,7 @@ Como en el ejemplo `merge`, supongamos que hay una rama llamada `bugfix` que par
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/45b061d2-2b94-43c8-9f45-30aad225dace)
 
-Si fusionas las ramas usando `rebase`, la historia se parecerá al diagrama de abajo.
+Si fusionas los branches usando `rebase`, la historia se parecerá al diagrama de abajo.
 
 Cunado usione `bugfixes` en `master` usando `rebase`, la historia de `bugfix` se sustituye después de `master`.
 
@@ -81,10 +81,10 @@ Se recomienda utilizar el comando `merge` si no está familiarizado con Git.
 
 El funcionamiento con `Topic Branch` y `Base Branch` se ilustra con un sencillo ejemplo.
 
-Por ejemplo, supongamos que está trabajando en la rama temática añadiendo una función y tiene que corregir un error.
+Por ejemplo, supongamos que está trabajando en el topic branch añadiendo una función y tiene que corregir un error.
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/8924bf8c-2f0a-4eb3-9e22-89097b01d0e5)
 
-En estos casos, la `Base Branch` está todavía antes del desarrollo de la característica, por lo que se puede empezar a trabajar independientemente del desarrollo de la característica creando una nueva `Topic Branch` para la corrección de errores desde aquí.
+En estos casos, la `Base Branch` está todavía antes del desarrollo de la característica, por lo que se puede empezar a trabajar independientemente del desarrollo de la característica creando un nuevo `Topic Branch` para la corrección de errores desde aquí.
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/8c2c38e8-2a2d-4b7b-9d8c-d5b86704e48b)
 
 Las correcciones de errores completadas pueden publicarse incorporándolas a la `Base Branch` original.
