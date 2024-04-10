@@ -15,7 +15,7 @@ Resumen de branch
 
 ## Pregunta 3
 
-Cree un branch llamado `add_description_of_type_of_branch` y ve a el.<br>
+Crea un branch `add_description_of_type_of_branch` y un branch `add_description_of_command` y muévale a el branch `add_description_of_type_of_branch`.<br>
 Luego muestre la lista de branches.
 
 ## Pregunta 4
@@ -31,7 +31,7 @@ Topic Branch (Rama de Tema):
 
 ## Pregunta 5
 
-Cree un branch llamado `add_description_of_command` y ve a el.<br>
+Ve a el branch llamado `add_description_of_command`.<br>
 Luego muestre la lista de branches.
 
 ## Pregunta 6
@@ -47,18 +47,17 @@ Merge: Integrar branch
 
 ## Pregunta 7
 
-Fusiona los cambios realizados en `add_description_of_type_of_branch` y los cambios realizados en `add_description_of_command` en el `master`.
-
-___
-#### Consejos de Pregunta 7
-Primero, ve a `master` y luego importa `add_description_of_type_of_branch` usando comando `merge`.
-
-A continuación, importa la `add_description_of_command` usando comando `merge` también.
-
-En caso de conflicto, modifique el contenido del archivo para que los cambios realizados en ambas branches permanezcan.
-___
+Fusiona los cambios realizados en `add_description_of_type_of_branch` en el `master`.<br>
+Ve a `master` y luego importa `add_description_of_type_of_branch` usando comando `merge`.
 
 ## Pregunta 8
+
+Fusiona los cambios realizados en `add_description_of_command` en el `master`.
+
+Importa la `add_description_of_command` usando comando `merge` también.<br>
+En caso de conflicto, modifique el contenido del archivo para que los cambios realizados en ambas branches permanezcan.
+
+## Pregunta 9
 
 Elimine `add_description_of_type_of_branch` y `add_description_of_command`.<br>
 Luego muestre la lista de branches.
