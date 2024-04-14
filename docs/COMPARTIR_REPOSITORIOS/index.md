@@ -44,3 +44,6 @@ Para actualizar el repositorio local desde un repositorio remoto, utilice la ope
 
 Ejecutando `Pull` descargará el último historial de cambios del repositorio remoto e incorporará su contenido a su repositorio local. 
 
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/ef14dfa3-6d79-40fd-b0e8-aec3add6eada)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/fa274df1-fec6-4445-aadb-d6ba2d965933)
