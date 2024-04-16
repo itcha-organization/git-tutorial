@@ -99,6 +99,17 @@ To github.com:kkk-commit/tutorial-repo.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
 
+Abra la página de Github.<br>
+Compruebe que el repositorio se ha actualizado y que se ha añadido archivo.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/9fd6ec3a-3ebd-4aae-a77b-b7a0477f2f63)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/0b5a1b6a-816d-4009-b7c1-d2e0dea1e566)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/df7e7c02-a9a6-46be-ae55-98755e2b984c)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/9d945b0b-3f4e-41f1-9b88-8b1b4a235543)
+
 ## Clonar repositorios remotos.
 
 A continuación, clonee el repositorio remoto como si fueras otro usuario y crea un repositorio local `tutorial-repo-clone`.
@@ -112,17 +123,127 @@ $ git clone <repositorio> <directorio>
 El siguiente comando replice el repositorio remoto en el directorio actual con el nombre de directorio `tutorial-repo-clone`.
 
 ```
-$ git clone ★¡Pegue su propia url!★ tutorial-repo-clone
-Cloning into 'tutorial2'...
-Username: <メールアドレス>
-Password: <パスワード>
-remote: Counting objects: 3, done.
-remote: Total 3 (delta 0), reused 0 (delta 0)
-Unpacking objects: 100% (3/3), done.
+$ git clone ★¡Pegue su propia url!★ ~/tutorial-repo-clone
 ```
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/c19dc47e-8cd7-488f-9eb0-bb6f3414f040)
 
 Compruebe que `sample.txt` con el siguiente contenido existe en el repositorio duplicado `tutorial-repo-clone`.
 
 ```
+$ cat  ~/tutorial-repo-clone/sample.txt
 Tutorial de compartir repositorios
+```
+
+## Realice un push desde el repositorio clonado.
+
+También puede realizar un push desde el repositorio local que ha clonado y creado.
+
+Primero, añade el contenido al archivo `sample.txt` en el directorio del repositorio `tutorial-repo-clone` que has duplicado, y luego haga un commit.
+
+```
+Tutorial de compartir repositorios
+Push: sube su historial de cambios al repositorio remoto
+Clone: puede descargar todo el contenido del repositorio remoto y crearlo como repositorio local
+Pull: descarga el último historial de cambios del repositorio remoto e incorporará su contenido a su repositorio local
+```
+```
+$ cd ~/tutorial-repo-clone/
+$ nano sample.txt
+$ git add sample.txt
+$ git commit -m "Añadida descripción de push, clone y pull"
+[master 06da7ca] Añadida descripción de push, clone y pull
+ 1 file changed, 3 insertions(+)
+```
+
+A continuación, realice un push para reflejar estos cambios en el repositorio remoto.
+
+En el repositorio clonado, se puede omitir el parámetro `origin master` de `push`.
+
+```
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 428 bytes | 142.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:kkk-commit/tutorial-repo.git
+   bf8d348..06da7ca  master -> master
+```
+
+Abre la página del repositorio `tutorial-repo` en Github.<br>
+Asegúrese de que el commit se añade al historial.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/2b7499ff-d6fe-46ba-80cf-964ff9ad57e3)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/1f903017-3244-475f-8234-020b81b380fd)
+
+## Ejecute un pull para recuperar los cambios en el repositorio remoto.
+
+Obtener los últimos cambios del repositorio remoto en el repositorio local `tutorial-repo`.
+
+Tomemos el contenido empujado desde `tutorial-repo-clone` al repositorio remoto e importémoslo a `tutorial-repo`.
+
+Utilice el comando `pull` para realizar un pull. Si omite el nombre del repositorio, el pull se realiza contra el repositorio registrado con el nombre origen.
+
+```
+$ git pull <repositorio> <refspec>...
+```
+
+En primer lugar, ejecute el siguiente comando para ir al repositorio `tutorial-repo`.<br>
+Compruebe el historial de commits y el contenido de los archivos en `tutorial-repo`.
+
+```
+$ cd ~/tutorial-repo
+$ git log
+commit bf8d3486e91e4dbc0bae0619fbef92de47e2ec21 (HEAD -> master, origin/master)
+Author: Kyo Onuma <kyo.onuma@itcha.edu.sv>
+Date:   Mon Apr 15 11:29:51 2024 -0600
+
+    first commit
+$ cat sample.txt
+Tutorial de compartir repositorios
+```
+
+次に、pullを実行します。
+
+```
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 408 bytes | 17.00 KiB/s, done.
+From github.com:kkk-commit/tutorial-repo
+ * branch            master     -> FETCH_HEAD
+   bf8d348..06da7ca  master     -> origin/master
+Updating bf8d348..06da7ca
+Fast-forward
+ sample.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+```
+
+Compruebe el historial de commits y el contenido de los archivos otra vez.<br>
+Se ha añadido el commit en el historial. Además, se ha añadido el contenido del archivo.
+
+```
+$ git log
+commit 06da7ca7a974dc991b87cd3db1108ebf7b1cfb2f (HEAD -> master, origin/master)
+Author: Kyo Onuma <kyo.onuma@itcha.edu.sv>
+Date:   Tue Apr 16 08:55:45 2024 -0600
+
+    Añadida descripción de push, clone y pull
+
+commit bf8d3486e91e4dbc0bae0619fbef92de47e2ec21
+Author: Kyo Onuma <kyo.onuma@itcha.edu.sv>
+Date:   Mon Apr 15 11:29:51 2024 -0600
+
+    first commit
+
+$ cat sample.txt
+Tutorial de compartir repositorios
+Push: sube su historial de cambios al repositorio remoto
+Clone: puede descargar todo el contenido del repositorio remoto y crearlo como repositorio local
+Pull: descarga el último historial de cambios del repositorio remoto e incorporará su contenido a su repositorio local
 ```
