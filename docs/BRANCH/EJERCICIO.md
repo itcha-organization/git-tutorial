@@ -3,7 +3,7 @@
 Resuelva las preguntas 1-9 utilizando los comandos en GitBash.<br>
 Para las preguntas 5~8, por favor ilustre el historial de commit en el siguiente archivo.
 
-[BRANCH_EJERCICIO_ilustración_de_commit.xlsx](https://github.com/itcha-organization/git-tutorial/files/14935519/BRANCH_EJERCICIO_ilustracion_de_commit.xlsx)
+[BRANCH_EJERCICIO_ilustración_de_commit](https://docs.google.com/spreadsheets/d/1763DsBZPt-7kl0fg1HtroLk920xyLFV6MMoJdqzck2k/edit?usp=sharing)
 
 ## Pregunta 1
 
