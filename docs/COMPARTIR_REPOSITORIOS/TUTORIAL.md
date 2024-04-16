@@ -19,6 +19,10 @@ Se añade un nuevo repositorio, como se muestra en el siguiente diagrama.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/667d04d7-7d00-444d-8dad-7396f8637abe)
 
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/afc592c6-b1c0-4bf0-87c4-9c530ca8e884)
+
 ## Realiza un push contra el repositorio remoto.
 
 ### Repaso: Cree un repositorio local y realize el primer commit.
@@ -45,6 +49,10 @@ $ git log
 ```
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/bf0fb11c-a9db-439e-be40-76f98d5e6a96)
+
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/4a96aec4-24e1-4976-a0bd-48e2914250a3)
 
 ### Registrar un repositorio remoto y realizar un push.
 
@@ -110,6 +118,10 @@ Compruebe que el repositorio se ha actualizado y que se ha añadido archivo.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/9d945b0b-3f4e-41f1-9b88-8b1b4a235543)
 
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/de8ddabe-1b00-4f72-bf9a-0b3fd522d28a)
+
 ## Clonar repositorios remotos.
 
 A continuación, clonee el repositorio remoto como si fueras otro usuario y crea un repositorio local `tutorial-repo-clone`.
@@ -134,6 +146,10 @@ Compruebe que `sample.txt` con el siguiente contenido existe en el repositorio d
 $ cat  ~/tutorial-repo-clone/sample.txt
 Tutorial de compartir repositorios
 ```
+
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/32e7fea6-75dc-4b9a-9f29-a9c63b2645ff)
 
 ## Realice un push desde el repositorio clonado.
 
@@ -179,6 +195,10 @@ Asegúrese de que el commit se añade al historial.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/1f903017-3244-475f-8234-020b81b380fd)
 
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/ae189935-073c-4138-be95-c291e3bf07b5)
+
 ## Ejecute un pull para recuperar los cambios en el repositorio remoto.
 
 Obtener los últimos cambios del repositorio remoto en el repositorio local `tutorial-repo`.
@@ -206,7 +226,7 @@ $ cat sample.txt
 Tutorial de compartir repositorios
 ```
 
-次に、pullを実行します。
+A continuación, realice un pull.
 
 ```
 $ git pull origin master
@@ -247,3 +267,7 @@ Push: sube su historial de cambios al repositorio remoto
 Clone: puede descargar todo el contenido del repositorio remoto y crearlo como repositorio local
 Pull: descarga el último historial de cambios del repositorio remoto e incorporará su contenido a su repositorio local
 ```
+
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/33733745-7be0-4b6b-8dc9-396c2c33ec0d)
