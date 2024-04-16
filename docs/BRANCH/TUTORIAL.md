@@ -267,8 +267,9 @@ Merge: Integrar branch
 >>>>>>> issue3
 ```
 
-En caso de conflicto, Git inserta un diff.
-Se modifica como sigue.
+En caso de conflicto, debe corregirse manualmente al código correcto.<br>
+Esta vez, tanto la descripción de Branch como la de Merge deben mantenerse, así que modifíquelas como sigue.<br>
+Para el desarrollo real, es mejor consultar con el equipo cómo corregir el problema correctamente.
 
 ```
 Comandos Git para manejar branch
