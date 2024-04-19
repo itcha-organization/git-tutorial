@@ -130,7 +130,7 @@ Fast-forward
 La confirmación apuntada por `master` se ha movido a la misma posición que `issue1`.
 Esta `merge` es un `fast-forward (avance rápido) merge`.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/5b0349aa-a39f-489d-b601-b5a1708cfeab)
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/f262c0c9-089c-4dcd-9f98-a47fa7f472ff)
 
 Abra `myfile.txt` para ver el contenido.<br>
 Los cambios se reflejan en el archivo.
