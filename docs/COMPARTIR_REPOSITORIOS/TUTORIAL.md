@@ -3,7 +3,7 @@
 ## Cree un repositorio remoto en GitHub
 
 Primero, acceda a github e inicie sesión.
-https://github.com/
+![https://github.com/](https://github.com/)
 
 Haga clic en `el icono +` > `New repository`.
 
