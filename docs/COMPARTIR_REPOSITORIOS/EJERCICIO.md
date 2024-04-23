@@ -1,9 +1,9 @@
 # Ejercicios de compartir repositorios
 
 Resuelva las preguntas 1-9 utilizando GitHub y los comandos en GitBash.<br>
-Para las preguntas 5~9, por favor ilustre el historial de commit y estado de repositorio en el siguiente archivo.
+**Para las preguntas 5~9, por favor ilustre el historial de commit y estado de repositorio en el siguiente archivo.**
 
-[COMPARTIR_REPOSITORIOS_EJERCICIO_ilustración_de_commit.xlsx](https://github.com/itcha-organization/git-tutorial/files/15001849/COMPARTIR_REPOSITORIOS_EJERCICIO_ilustracion_de_commit.xlsx)
+[COMPARTIR_REPOSITORIOS_EJERCICIO_ilustración_de_commit](https://docs.google.com/spreadsheets/d/17ZizmqThkzv2ltMsF9tek2KEg70L7MoMWexVv4-gEzY/edit?usp=sharing)
 
 ## Pregunta 1
 
@@ -24,7 +24,7 @@ Luego, compruebe que el historial de commits y el archivo se han añadido en Git
 ## Pregunta 4
 
 Clonee el repositorio remoto `ejercicio3` y cree un repositorio local `ejercicio3-clone`.<br>
-Luego compruebe el historia de commit y el archivo en el repositorio local `ejercicio3-clone`.
+Luego vaya al directorio `ejercicio3-clone` y compruebe el historia de commit y el archivo en el repositorio local `ejercicio3-clone`.
 
 ## Pregunta 5
 
@@ -45,12 +45,13 @@ Luego, compruebe que el historial de commits y el archivo en GitHub.
 
 ## Pregunta 7
 
-Obtenga los últimos cambios del repositorio remoto en el repositorio local `ejercicio3` usando pull.
+Primero, vaya al directorio `~/ejercicio3` y compruebe el historial de commits y el contenido del archivo.<br>
+A continuación, obtenga los últimos cambios del repositorio remoto en el repositorio local `ejercicio3` usando pull.<br>
+Luego, compruebe el historial de commits y el contenido del archivo de nuevo.
 
 ## Pregunta 8
 
 En el repositorio local `ejercicio3`, cree un branch `añadir_descripción_de_origin` y ve a el branch.<br>
-A continuación, realice un push para reflejar los cambios en el repositorio remoto.<br>
 Añade el siguiente descripción de `origin` al final del `compartir_repositorios.txt` y ejecute commit.
 
 ```
@@ -59,5 +60,5 @@ origin: Si el nombre del repositorio remoto se omite en tiempo de ejecución, el
 
 ## Pregunta 9
 
-En `ejercicio3`, ejecute un push para reflejar el cambio en el repositorio remoto `ejercicio3`.<br>
+En el repositorio local `ejercicio3`, ejecute un push para reflejar el cambio en el repositorio remoto `ejercicio3`.<br>
 Luego, compruebe que el historial de commits y el archivo en GitHub.
