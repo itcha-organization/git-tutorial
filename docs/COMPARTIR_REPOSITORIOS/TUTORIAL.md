@@ -9,7 +9,6 @@ Haga clic en `el icono +` > `New repository`.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/ac3cd9c5-8fd9-4f6b-8732-e292b90aa612)
 
-「Repository」と「Description」
 Introduzca el "Repository" y la "Description", seleccione acceso `Private` y pulse el botón `Create repository`. <br>
 Aquí, introduje `tutorial-repo` en el nombre y `para tutorial de repositorio remoto` en la descripción.
 
@@ -199,13 +198,13 @@ La situación actual se ilustra en el siguiente diagrama.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/ae189935-073c-4138-be95-c291e3bf07b5)
 
-## Ejecute un pull para recuperar los cambios en el repositorio remoto.
+## Ejecute un pull para obtener los cambios en el repositorio remoto.
 
 Obtener los últimos cambios del repositorio remoto en el repositorio local `tutorial-repo`.
 
 Tomemos el contenido empujado desde `tutorial-repo-clone` al repositorio remoto e importémoslo a `tutorial-repo`.
 
-Utilice el comando `pull` para realizar un pull. Si omite el nombre del repositorio, el pull se realiza contra el repositorio registrado con el nombre origen.
+Utilice el comando `pull` para realizar un pull. Si omite el nombre del repositorio, el pull se realiza contra el repositorio registrado con el nombre `origen`.
 
 ```
 $ git pull <repositorio> <refspec>...
