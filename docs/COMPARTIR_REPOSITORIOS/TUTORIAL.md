@@ -91,7 +91,7 @@ Para realizar un push a un repositorio remoto, utilice el comando `push`.<br>
 $ git push <repositorio> <refspec>...
 ```
 
-Ejecute el siguiente comando para realizar un push contra el repositorio remoto `origen`.<br>
+Ejecute el siguiente comando para realizar un push contra el repositorio remoto `origin`.<br>
 Si especifica `-u` como opción, puede omitir especificar el nombre de la rama la próxima vez.<br>
 Sin embargo, al hacer push contra el primer repositorio remoto vacío, no puede omitir el nombre del repositorio remoto o el nombre del branch.
 
@@ -125,7 +125,7 @@ La situación actual se ilustra en el siguiente diagrama.
 
 A continuación, clonee el repositorio remoto como si fueras otro usuario y crea un repositorio local `tutorial-repo-clone`.
 
-Utilice el comando `clone` para clonar un repositorio. <repositorio> es la URL del repositorio remoto y <directorio> es el nombre del directorio a clonar.
+Utilice el comando `clone` para clonar un repositorio. "repositorio" es la URL del repositorio remoto y "directorio" es el nombre del directorio a clonar.
 
 ```
 $ git clone <repositorio> <directorio>
@@ -173,8 +173,6 @@ $ git commit -m "Añadida descripción de push, clone y pull"
 
 A continuación, realice un push para reflejar estos cambios en el repositorio remoto.
 
-En el repositorio clonado, se puede omitir el parámetro `origin master` de `push`.
-
 ```
 $ git push
 Enumerating objects: 5, done.
@@ -186,6 +184,25 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To github.com:kkk-commit/tutorial-repo.git
    bf8d348..06da7ca  master -> master
 ```
+
+
+___
+##### Consejo
+En el repositorio clonado, se puede omitir el parámetro `origin master` de `push`.<br>
+Porque cuando ejecutas el comando `clone`, establece valores predeterminados en el archivo de configuración `.git/config`.
+
+```
+$ cat .git/config
+ ～omisión ～
+[remote "origin"]
+        url = git@github.com:kkk-commit/tutorial-repo.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
+```
+___
+
 
 Abre la página del repositorio `tutorial-repo` en Github.<br>
 Asegúrese de que el commit se añade al historial.
