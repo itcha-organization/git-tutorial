@@ -47,3 +47,22 @@ Ejecutando `Pull` descargará el último historial de cambios del repositorio re
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/ef14dfa3-6d79-40fd-b0e8-aec3add6eada)
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/fa274df1-fec6-4445-aadb-d6ba2d965933)
+
+
+
+## Diferencias entre Pull y Fetch
+
+https://backlog.com/ja/git-tutorial/stepup/14/
+
+### Pull
+
+Puede ejecutar `pull` para obtener el historial del repositorio remoto. El siguiente diagrama ilustra lo que ocurre con las confirmaciones en el repositorio en este momento.
+
+まずは、更新されるローカルリポジトリのブランチに何の変更も行なっていなかった場合を見てみます。
+
+
+この場合は、単にfast-forwardマージが行われます。図中のmasterはローカルリポジトリのmasterブランチ、origin/masterはリモートリポジトリ origin のmasterブランチを表します。
+
+もし、ローカルリポジトリのmasterブランチでも履歴を進めていた場合は、両方の変更を統合する必要があります。
+
+そのため、pullを実行するとマージが行われます。この時、競合する変更がなければ自動的にマージコミットが作られます。しかし、競合があった場合は、それを解決してから自分でコミットする必要があります。
