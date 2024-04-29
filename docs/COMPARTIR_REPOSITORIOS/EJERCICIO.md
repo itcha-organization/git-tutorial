@@ -17,13 +17,13 @@ Ve a GitHub en su navegador y cree un repositorio privado, llamado `ejercicio3`.
 
 ## Pregunta 3
 
-Registre el repositorio remoto `ejercicio3` creado en la pregunta 3 como remoto del repositorio local `ejercicio3` usando comandos en GitBash.<br>
+Registre el repositorio remoto `ejercicio3` creado en la pregunta 2 como remoto del repositorio local `ejercicio3` usando comandos en GitBash.<br>
 A continuación, realice un push para reflejar los cambios en el repositorio remoto.<br>
 Luego, compruebe que el historial de commits y el archivo se han añadido en GitHub.
 
 ## Pregunta 4
 
-Clonee el repositorio remoto `ejercicio3` y cree un repositorio local `ejercicio3-clone`.<br>
+Clone el repositorio remoto `ejercicio3` y cree un repositorio local `ejercicio3-clone`.<br>
 Luego vaya al directorio `ejercicio3-clone` y compruebe el historia de commit y el archivo en el repositorio local `ejercicio3-clone`.
 
 ## Pregunta 5
