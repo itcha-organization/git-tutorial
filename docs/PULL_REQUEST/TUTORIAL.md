@@ -218,3 +218,21 @@ La pestaña `Files Changed` también muestra el diff con todos los commits inclu
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/c2706c85-6b81-4fea-acd8-139635fb481c)
 
+## Fusionar pull request en GitHub
+
+Si la revisión no muestra problemas, fusione. Haz clic en el botón `Merge pull request` de la pestaña `Conversation`.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/c50d6d24-ca42-4ba1-a946-622b10d4cce4)
+
+Aparecerán los siguientes botones. Haga los comentarios oportunos y pulse `Confirm merge` para proceder a la fusión.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/a15fc17b-0f48-4003-b556-7c7d433695f0)
+
+Una vez fusionadas, verá la siguiente pantalla.<br>
+Aparecerá el botón `Delete branch`. Desde aquí puede eliminar los branches de tena que ya no sean necesarias.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/260c7251-4d32-4e01-ac71-8eb74d96712d)
+
+La pestaña `Network` del menú `Insights` muestra que el `add-sort-func` se ha fusionado con el `master`.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/f01f54d1-0f25-416f-8bb0-cb25de4ab05d)
