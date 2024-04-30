@@ -31,3 +31,6 @@ Estos intercambios también se registran en el servidor, de modo que los interca
 
 ### Puede facilitar las revisiones.
 
+Un pull request puede mostrar claramente las partes modificadas del código.
+El autor del pull request también puede comunicar la intención del código y cualquier información adicional en forma de comentarios. Esto reduce la carga del revisor.
+
