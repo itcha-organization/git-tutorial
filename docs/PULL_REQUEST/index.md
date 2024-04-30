@@ -34,3 +34,22 @@ Estos intercambios también se registran en el servidor, de modo que los interca
 Un pull request puede mostrar claramente las partes modificadas del código.
 El autor del pull request también puede comunicar la intención del código y cualquier información adicional en forma de comentarios. Esto reduce la carga del revisor.
 
+
+## Proceso de desarrollo mediante pull requests.
+
+El proceso mediante pull requests es el siguiente.
+
+①[ desarrollador ] Realice un clone o pull para obtener el código en el repositorio remoto con el que está trabajando.<br> 
+②[ desarrollador ] Crear un branch de trabajo en el repositorio local.<br>
+③[ desarrollador ] Modificar el código.<br>
+④[ desarrollador ] Cuando el trabajo esté terminado, realice un push.<br>
+⑤[ desarrollador ] Crear un pull request.<br>
+⑥[ revisor ] Compruebe y revise los cambios de la pull request notificada.<br>
+⑦[ revisor ] Determine los resultados de la revisión y proporcione información al desarrollador si es necesario.<br>
+⑧[ revisor ] Si, tras la revisión, no hay problemas, fusiona.<br>
+⑨[ revisor ] Si, como resultado de la revisión, la pull request en sí ya no es necesaria, por ejemplo, la respuesta en sí ya no es necesaria, la pull request se cierra.
+
+Repita los pasos 3-7 anteriores tantas veces como sea necesario. Como resultado, se puede mejorar la calidad del código fusionado final.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e41d1cc1-44af-40e7-952d-b8dc543b6b87)
+
