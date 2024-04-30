@@ -42,13 +42,12 @@ $ git log
 ```
 
 Ejemplo:
+
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/4662d59c-da56-4542-9e96-0b26a9309c06)
 
 La situación actual se ilustra en el siguiente diagrama.
 
-★★
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/4a96aec4-24e1-4976-a0bd-48e2914250a3)
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/f4d2e7e5-a41d-41b2-a08c-1fa3837332c1)
 
 Ejecute el siguiente comando para registrar la URL del repositorio remoto creado en la página anterior con el nombre `origin`.<br>
 El segundo comando es para comprobar que se ha registrado.
@@ -61,6 +60,7 @@ $ git remote -v
 ```
 
 Ejemplo:
+
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/0e8d0c81-3d20-413f-851b-b8d70bd2b6d8)
 
 Ejecute el siguiente comando para realizar un push contra el repositorio remoto `origin`.<br>
@@ -87,7 +87,7 @@ Compruebe que el repositorio se ha actualizado y que se ha añadido archivo.
 
 La situación actual se ilustra en el siguiente diagrama.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/de8ddabe-1b00-4f72-bf9a-0b3fd522d28a)
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/481f5451-08f4-4924-8057-53e84ac85b86)
 
 ## Modificación del código en un branch de tema.
 
@@ -133,7 +133,12 @@ Una vez completada la confirmación, realice un push al repositorio remoto.
 $ git push -u origin add-sort-func
 ```
 
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/19eb2f1d-57a7-49c0-b381-94133435b6fa)
+
 Ejemplo:
+
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/d5bde122-15b6-462f-81d3-871bc97c5389)
 
 
@@ -204,7 +209,12 @@ $ git commit -m "Corregido el uso del operador de equivalencia estricta (===)"
 $ git push origin add-sort-func
 ```
 
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/5b7f5522-3146-4073-b77d-bfabe8d209cc)
+
 Ejemplo:
+
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/b3841c0d-0eb3-4e86-be52-b7b23c435867)
 
 Comente el pull request que acaba de crear para informarles de que ha realizado una modificación.
@@ -236,3 +246,7 @@ Aparecerá el botón `Delete branch`. Desde aquí puede eliminar los branches de
 La pestaña `Network` del menú `Insights` muestra que el `add-sort-func` se ha fusionado con el `master`.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/f01f54d1-0f25-416f-8bb0-cb25de4ab05d)
+
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e0a917fc-47ae-4776-92d2-e27d9f265652)
