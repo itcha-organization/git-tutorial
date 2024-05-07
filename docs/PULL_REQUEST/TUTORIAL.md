@@ -319,6 +319,11 @@ Ejemplo:
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/61e23a62-e5e7-4a7e-b8e8-b3c7931c0331)
 
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/76a3e25f-c63b-41d1-ba33-01c61cd6b6bb)
+
+
 ### 2. Crear branch de trabajo
 
 Crea dos branches de trabajo.<br>
@@ -359,6 +364,10 @@ $ git log
 $ git push origin add-sort-func1
 ```
 
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/80ae9ade-835b-48fa-9d18-b70078bc436f)
+
 ### 4. Crear y fusionar un pull request para el branch add-sort-func1
 
 En la pantalla de GitHub, crea una pull request y fusiónala.
@@ -371,6 +380,10 @@ En la pantalla de GitHub, crea una pull request y fusiónala.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/9d496f73-504e-49f1-a694-792a2633183b)
 
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/1ba48102-d9f7-47dd-8e3e-a28681e5c0a9)
+
 ### 5. Editar el código en el branch add-sort-func2 y ejecutar un push.
 
 Cambiar branch a `add-sort-func2`.
@@ -379,7 +392,7 @@ Cambiar branch a `add-sort-func2`.
 $ git checkout add-sort-func2
 ```
 
-En `add-sort-func1`, edita el código como sigue.
+En `add-sort-func2`, edita el código como sigue.
 
 ```
 var sortNumber = function (number) {
@@ -406,6 +419,10 @@ $ git commit -m "Añadido proceso para ordenar matrices"
 $ git log
 $ git push origin add-sort-func2
 ```
+
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/ac5c9c1b-de0a-4b17-8140-a1c833880b36)
 
 ### 6. Crear un pull request para el branch add-sort-func2
 
@@ -438,6 +455,10 @@ $ git pull origin master
 Ejemplo:
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/71a740f4-78e3-4fab-a33d-4f626713edab)
+
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e3195c4e-2b83-4851-98ce-94615e958a71)
 
 ### 2. Resolver los conflictos en el repositorio local.
 
@@ -487,6 +508,9 @@ Ejemplo:
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/2b4dff46-8eea-4188-9e59-36191fbf2cf4)
 
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/cc38fce1-59b4-46d8-8546-1cd63ef2269d)
 
 ### 4. Confirme que el conflicto se ha resuelto en GitHub.
 
@@ -497,4 +521,7 @@ Ya puede fusionar como en el caso sin conflicto.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/95d05d99-bd95-4c2c-9b0e-230f6e99477b)
 
+La situación actual se ilustra en el siguiente diagrama.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/cf9b0499-a21a-4066-a8d1-895aad9470bd)
 
