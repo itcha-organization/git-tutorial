@@ -58,3 +58,13 @@ En GitHub, crea un pull request para fusiona los cambios de Pregunta 7 en el bra
 
 Los pull requests creados en Pregunta 8 no pueden fusionarse debido a un conflicto.<br>
 Por favor, resuelva el conflicto y fusione el pull request.
+
+___
+### Consejos de pregunta 9
+En primer lugar, en el branch en el que está trabajando, ejecuta un pull hacia el branch destino de la pull request.<br>
+De este modo, los últimos cambios en el branch de destino de la pull request se incorporan a el branch de trabajo.
+
+En segundo lugar, modifique el contenido del archivo para que los cambios realizados en ambas branches permanezcan.
+
+En tercer lugar, ejecute commit y push cuando la modificación se haya completado.
+___
