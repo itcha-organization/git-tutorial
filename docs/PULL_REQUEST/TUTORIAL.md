@@ -474,7 +474,7 @@ Ejemplo:
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6e2f6f41-a782-4745-a822-7c7bd8ab3fd6)
 
 Arriba `=======` es el código del repositorio local y abajo el código del repositorio remoto.<br>
-En este caso, se elimina el código del repositorio remoto, quedando éste como está mejor en el repositorio local.<br>
+En este caso, se elimina el código del repositorio local, quedando éste como está mejor en el repositorio remoto.<br>
 El código editado es el siguiente.
 
 ```
