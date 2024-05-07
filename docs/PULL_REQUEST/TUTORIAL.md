@@ -250,3 +250,251 @@ La pestaña `Network` del menú `Insights` muestra que el `add-sort-func` se ha 
 La situación actual se ilustra en el siguiente diagrama.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e0a917fc-47ae-4776-92d2-e27d9f265652)
+
+## Qué hacer en caso de conflicto
+
+Hay casos en los que se producen conflictos de código y no pueden fusionarse automáticamente.<br>
+Por ejemplo, pueden producirse conflictos en casos como el que se ilustra a continuación.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/dff8cc57-d954-4079-afe8-7c7f7eb3508b)
+
+Cuando te enfrentas a una situación de conflicto por primera vez, puede ser difícil saber cómo responder.<br> 
+Se necesita un poco de preparación para crear una situación de conflicto, pero vamos a experimentarla aquí.
+
+### 1. Crea el primer commit y realiza un push al repositorio remoto
+
+Primero, acceda a github e inicie sesión.
+![https://github.com/](https://github.com/)
+
+Haga clic en `el icono +` > `New repository`.
+
+Introduzca el "Repository", seleccione acceso `Private` y pulse el botón `Create repository`. <br>
+Aquí, introduje `pull-request-conflicto` en el nombre.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/95501772-656e-49e4-8e44-407155bad696)
+
+Siga los siguientes comandos en Git Bash, cree un repositorio local llamado `pull-request-conflicto` y un archivo llamado `sort.js` y realize el primer commit. <br>
+Para el contenido de `sort.js`, introduzca lo siguiente.
+
+```
+var number = [19, 3, 81, 1, 24, 21];
+console.log(number);
+```
+
+〇Lista de comandos
+```
+$ mkdir ~/pull-request-conflicto
+$ cd ~/pull-request-conflicto
+$ git init
+$ nano sort.js
+$ cat sort.js
+$ git add sort.js
+$ git status
+$ git commit -m "first commit"
+$ git status
+$ git log
+```
+
+Ejemplo:
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/dd56b40e-823c-4e0f-ba02-905c20ca8862)
+
+
+Ejecute el siguiente comando para registrar la URL del repositorio remoto creado en la página anterior con el nombre origin.<br>
+El segundo comando es para comprobar que se ha registrado.<br>
+El tercer comando es para realizar un push contra el repositorio remoto origin.
+
+Si especifica -u como opción, puede omitir especificar el nombre de la rama la próxima vez.
+Sin embargo, al hacer push contra el primer repositorio remoto vacío, no puede omitir el nombre del repositorio remoto o el nombre del branch.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6b23803f-c0e5-4475-93e9-c70d2f523dba)
+
+```
+$ git remote add origin ★¡Pegue su propia url!★
+$ git remote -v
+$ git push -u origin master
+```
+
+Ejemplo:
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/61e23a62-e5e7-4a7e-b8e8-b3c7931c0331)
+
+### 2. Crear branch de trabajo
+
+Crea dos branches de trabajo.<br>
+Un branch utiliza el operador de equivalencia (==) y el otro el operador de equivalencia estricta (===), lo que provoca un conflicto.
+
+```
+$ git checkout -b add-sort-func2
+$ git checkout -b add-sort-func1
+```
+
+### 3. Editar el código en el branch add-sort-func1 y ejecutar un push.
+
+En `add-sort-func1`, edita el código como sigue.
+
+```
+var sortNumber = function (number) {
+   number.sort(function (a, b) {
+       if (a === b) {
+           return 0;
+       }
+       return a < b ? -1 : 1;
+   });
+};
+
+var number = [19, 3, 81, 1, 24, 21];
+sortNumber(number);
+console.log(number);
+```
+
+Ejecute commit y push cuando la modificación se haya completado.
+
+```
+$ git diff
+$ git add sort.js
+$ git status
+$ git commit -m "Añadido proceso para ordenar matrices"
+$ git log
+$ git push origin add-sort-func1
+```
+
+### 4. Crear y fusionar un pull request para el branch add-sort-func1
+
+En la pantalla de GitHub, crea una pull request y fusiónala.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/0c443cd2-a101-49a4-be80-fdde06f37b99)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/ca2b25ae-fdf8-4fc6-b6ad-996c6edeaf0e)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/57ed933b-5755-4b42-bdcd-9b4a97224d84)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/9d496f73-504e-49f1-a694-792a2633183b)
+
+### 5. Editar el código en el branch add-sort-func2 y ejecutar un push.
+
+Cambiar branch a `add-sort-func2`.
+
+```
+$ git checkout add-sort-func2
+```
+
+En `add-sort-func1`, edita el código como sigue.
+
+```
+var sortNumber = function (number) {
+   number.sort(function (a, b) {
+       if (a == b) {
+           return 0;
+       }
+       return a < b ? -1 : 1;
+   });
+};
+
+var number = [19, 3, 81, 1, 24, 21];
+sortNumber(number);
+console.log(number);
+```
+
+Ejecute commit y push cuando la modificación se haya completado.
+
+```
+$ git diff
+$ git add sort.js
+$ git status
+$ git commit -m "Añadido proceso para ordenar matrices"
+$ git log
+$ git push origin add-sort-func2
+```
+
+### 6. Crear un pull request para el branch add-sort-func2
+
+En la pantalla de GitHub, crea una pull request.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6b2ee939-7b73-4a2b-bf95-d67047a89c53)
+
+Se producen conflictos y no pueden fusionarse.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/86873e5a-325f-4156-a16c-b702f965379e)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/22abde12-a64c-48b0-b679-988d12fe6706)
+
+## Resolución de conflictos.
+
+Si surgen conflictos, edite y fusione el código manualmente.
+
+### 1. Ejecutar un pull hacia el branch master.
+
+En primer lugar, en el branch en el que está trabajando, ejecuta un pull hacia el branch destino de la `pull request`.<br>
+De este modo, los últimos cambios en el branch de destino de la `pull request` se incorporan a el branch de trabajo.
+
+En este caso, en `add-sort-func2` ejecutará un pull hacia `master`.
+
+```
+$ git branch
+$ git pull origin master
+```
+
+Ejemplo:
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/71a740f4-78e3-4fab-a33d-4f626713edab)
+
+### 2. Resolver los conflictos en el repositorio local.
+
+Tras ejecutar el comando pull, se produce un conflicto local. Compruébalo con los siguientes comandos.
+
+```
+$ git branch
+$ git pull origin master
+```
+
+Ejemplo:
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6e2f6f41-a782-4745-a822-7c7bd8ab3fd6)
+
+Arriba `=======` es el código del repositorio local y abajo el código del repositorio remoto.<br>
+En este caso, se elimina el código del repositorio remoto, quedando éste como está mejor en el repositorio local.<br>
+El código editado es el siguiente.
+
+```
+var sortNumber = function (number) {
+   number.sort(function (a, b) {
+       if (a === b) {
+           return 0;
+       }
+       return a < b ? -1 : 1;
+   });
+};
+
+var number = [19, 3, 81, 1, 24, 21];
+sortNumber(number);
+console.log(number);
+```
+
+### 3. Vuelva a ejecutar commit y push después de modificar el código.
+
+Ejecute los siguientes comandos para commit y push.
+
+```
+$ git add sort.js
+$ git status
+$ git commit -m "Resolución de conflictos."
+$ git log
+$ git push origin add-sort-func2
+```
+
+Ejemplo:
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/2b4dff46-8eea-4188-9e59-36191fbf2cf4)
+
+
+### 4. Confirme que el conflicto se ha resuelto en GitHub.
+
+Si miras en la pantalla del pull request, el conflicto ha desaparecido y puedes fusionar.<br>
+Ya puede fusionar como en el caso sin conflicto.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/99dd9388-45ed-4497-822f-5a96d9bddc2b)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/95d05d99-bd95-4c2c-9b0e-230f6e99477b)
+
+
