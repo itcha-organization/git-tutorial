@@ -448,8 +448,8 @@ De este modo, los últimos cambios en el branch de destino de la `pull request` 
 En este caso, en `add-sort-func2` ejecutará un pull hacia `master`.
 
 ```
-$ git branch
-$ git pull origin master
+$ git status
+$ cat sort.js
 ```
 
 Ejemplo:
