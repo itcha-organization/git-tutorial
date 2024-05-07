@@ -256,7 +256,7 @@ La situación actual se ilustra en el siguiente diagrama.
 Hay casos en los que se producen conflictos de código y no pueden fusionarse automáticamente.<br>
 Por ejemplo, pueden producirse conflictos en casos como el que se ilustra a continuación.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/dff8cc57-d954-4079-afe8-7c7f7eb3508b)
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/4e8292e9-0beb-4922-9725-bcf1811b2d3b)
 
 Cuando te enfrentas a una situación de conflicto por primera vez, puede ser difícil saber cómo responder.<br> 
 Se necesita un poco de preparación para crear una situación de conflicto, pero vamos a experimentarla aquí.
