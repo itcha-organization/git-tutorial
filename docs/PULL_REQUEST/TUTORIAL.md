@@ -448,8 +448,8 @@ De este modo, los últimos cambios en el branch de destino de la `pull request` 
 En este caso, en `add-sort-func2` ejecutará un pull hacia `master`.
 
 ```
-$ git status
-$ cat sort.js
+$ git branch
+$ git pull origin master
 ```
 
 Ejemplo:
@@ -465,8 +465,8 @@ La situación actual se ilustra en el siguiente diagrama.
 Tras ejecutar el comando pull, se produce un conflicto local. Compruébalo con los siguientes comandos.
 
 ```
-$ git branch
-$ git pull origin master
+$ git status
+$ cat sort.js
 ```
 
 Ejemplo:
