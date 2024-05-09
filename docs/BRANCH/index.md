@@ -90,7 +90,7 @@ En estos casos, la `Base Branch` está todavía antes del desarrollo de la carac
 Las correcciones de errores completadas pueden publicarse incorporándolas a la `Base Branch` original.
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/67f3d725-5486-42e8-835e-6472ef165b34)
 
-A continuación, puede volver a el _branch_ original para seguir desarrollando la función.
+A continuación, puede volver a el _branch_ original `azul` para seguir desarrollando la función.
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/46ad66ca-c4e7-4674-ad46-0827cfb9a3ca)
 
 Sin embargo, le dio cuenta de que necesitaba el contenido de la corrección de errores actual, `commit X`, para continuar el trabajo.<br>
