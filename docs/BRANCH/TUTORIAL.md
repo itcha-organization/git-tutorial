@@ -13,7 +13,13 @@ in /Users/yourname/Desktop/tutorial/.git/
 ```
 
 Cree un achivo de texto llamado `myfile.txt` en el directorio tutorial_branch.
+
+```
+$ nano myfile.txt
+```
+
 En el contenido del archivo, introduzca el siguiente texto.
+
 ```
 Comandos Git para manejar branch
 ```
@@ -21,9 +27,9 @@ Comandos Git para manejar branch
 Haga un commit initial.
 ```
 $ git add myfile.txt
+$ git status
 $ git commit -m "first commit"
-[master (root-commit) a73ae49] first commit 1 files changed, 1 insertions(+), 0 deletions(-)
- create mode 100644 myfile.txt
+$ git log
 ```
 
 La historia en este punto se parece a esto.
@@ -88,10 +94,11 @@ Comandos Git para manejar branch
 Checkout: Cambia o Crea Branch
 ```
 ```
+$ git diff
 $ git add myfile.txt
+$ git status
 $ git commit -m "Se ha añadido la descripción de la Checkout"
-[issue1 b2b23c4] Se ha añadido la descripción de la Checkout
- 1 files changed, 1 insertions(+), 0 deletions(-)
+$ git log
 ```
 
 La historia en este punto se parece a esto.
@@ -115,19 +122,16 @@ Switched to branch 'master'
 
 Antes de ejecutar `merge`, abra `myfile.txt` una vez para comprobar el contenido.
 ```
+$ cat myfile.txt
 Comandos Git para manejar branch
 ```
 
 El archivo se editó en `issue1`, por lo que el contenido de `myfile.txt` en `master` no se ha modificado.
 ```
 $ git merge issue1
-Updating 1257027..b2b23c4
-Fast-forward
- myfile.txt |    1 +
- 1 files changed, 1 insertions(+), 0 deletions(-)
 ```
 
-La confirmación apuntada por `master` se ha movido a la misma posición que `issue1`.
+El commit apuntado por `master` se ha movido a la misma posición que `issue1`.
 Esta `merge` es un `fast-forward (avance rápido) merge`.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/f262c0c9-089c-4dcd-9f98-a47fa7f472ff)
@@ -135,12 +139,16 @@ Esta `merge` es un `fast-forward (avance rápido) merge`.
 Abra `myfile.txt` para ver el contenido.<br>
 Los cambios se reflejan en el archivo.
 ```
+$ cat myfile.txt
 Comandos Git para manejar branch
 Checkout: Cambia o Crea Branch
 ```
 
 Compruebe el historial de cambios del repositorio usando la comando `git log`.<br>
 Se ha añadido commit de "Se ha añadido la descripción de la Checkout".
+```
+$ git log
+```
 
 ## Eliminar branch: branch -d
 
