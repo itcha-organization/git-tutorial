@@ -51,7 +51,12 @@ El siguiente texto es una plantilla de contenido. Cópielo, péguelo y utilícel
 ## Editar código en el repositorio local.
 
 Crea un nuevo branch de trabajo para el `issue` registrado y empieza a editar el código.<br>
-Los branches se nombran según el formato: `feature/issue-<Número de issue>-<Título abreviado de la issue>`<br>
+Los branches se nombran según el formato: 
+
+```
+feature/issue-<Número de issue>-<Título abreviado de la issue>
+```
+
 Tras crear una pull request, el flujo de trabajo se configura para detectar el nombre del branch y vincular automáticamente la incidencia numerada correspondiente.
 
 Ejemplo:
@@ -59,7 +64,12 @@ Ejemplo:
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/c3831cc1-48e5-4d34-add0-a6fd386cdb12)
 
 Cuando la modificación esté completa, crea un commit. Añade `#` y `Número de issue` antes del mensaje del commit.<br>
-El comando tiene la siguiente forma: `git commit -m "#<Número de issue> <Mensaje del commit>"`<br>
+El comando tiene la siguiente forma: 
+
+```
+git commit -m "#<Número de issue> <Mensaje del commit>"
+```
+
 De este modo, el issue puede asociarse al commit en GitHub.
 
 Una vez finalizado el trabajo, utilice el siguiente comando para realizar un push.
