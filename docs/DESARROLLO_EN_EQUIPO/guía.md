@@ -93,7 +93,7 @@ Utilice el siguiente comando para ir a `branch master` y actualizarlo con el rep
 Después de Actualizar `branch master` en el repositorio local, cree un branch de trabajo para las siguientes tareas.
 
 ```
-git checkout main
+git checkout master
 git pull origin master
 ```
 
