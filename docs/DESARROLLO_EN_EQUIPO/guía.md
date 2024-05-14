@@ -1,6 +1,6 @@
 # Guía de operaciones
 
-## リモートリポジトリをClone、初回のみの操作
+## Duplicar repositorios remotos.`Operación única por primera vez`
 
 Hay dos formas de crear un repositorio local en Git, una usando el comando `git init` y la otra usando este comando `git clone`.<br>
 Para el desarrollo en equipo, en la mayoría de los casos se utiliza `git clone` para clonar el repositorio remoto y crear un repositorio local.
@@ -51,29 +51,39 @@ El siguiente texto es una plantilla de contenido. Cópielo, péguelo y utilícel
 ## Editar código en el repositorio local.
 
 Crea un nuevo branch de trabajo para el `issue` registrado y empieza a editar el código.<br>
-Los branches se nombran según el formato.<br>
-`feature/issue-<Número de branch>-<Título abreviado de la issue>`
+Los branches se nombran según el formato: `feature/issue-<Número de issue>-<Título abreviado de la issue>`<br>
+Tras crear una pull request, el flujo de trabajo se configura para detectar el nombre del branch y vincular automáticamente la incidencia numerada correspondiente.
 
 Ejemplo:
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/c3831cc1-48e5-4d34-add0-a6fd386cdb12)
 
-git branch 新規ブランチ名_#issue番号としてissue番号を付けておくと今後見やすくて便利
-git checkout 新規ブランチ名で作業ブランチに移動することを忘れない
-ブランチの移動まで一括で行いたい場合は、git checkout -b 新規ブランチ名_#issue番号として実行する。-bオプションは「ブランチの作成（branchのb）」のこと。
+Cuando la modificación esté completa, crea un commit. Añade `#` y `Número de issue` antes del mensaje del commit.<br>
+El comando tiene la siguiente forma: `git commit -m "#<Número de issue> <Mensaje del commit>"`<br>
+De este modo, el issue puede asociarse al commit en GitHub.
 
-キリの良いところで適宜コミットする（git commit -m "コミットメッセージ #issue番号"）
+Una vez finalizado el trabajo, utilice el siguiente comando para realizar un push.
 
-コミットする時必ず対応するissue番号を半角スペースを空けて付け加えること！（こうすることで、そのIssueに関するコミットだということを紐付けることが出来る）
+```
+git push origin -u <el nombre del branch de trabajo>
+```
 
-作業が完了したら適宜git pushする（全て終わってからじゃなくてもOK）
+## Crear un pull request
 
-この時作業ブランチ宛にpushすることに注意！（git push origin 作業ブランチ名 または、 git push origin HEAD）
+Cree un pull request en GitHub.Si es necesaria una revisión, pida a un colega que la revise.<br>
+Si no hay problemas, fusione el pull request.
 
-## pull requestを作成する
+Cuando se fusiona el pull request, se cierra el `issue` asociado.
 
-## ローカルのmainブランチをリモートブランチと同じ状態にする（git pull origin main）
+## Actualice el branch master en el repositorio local.
 
-git checkout mainでmainブランチに移動する
-git pull（git pull origin main）する（チーム開発においては「git fetch + git merge」の方が無難かも）
-git pullしたあとはローカルでmerge commitが作成されるので、ここで一度git pushしてリモートのmainブランチを更新しておいたほうがいいかも。（因みに、このmerge commitの作成を回避するためには、git pull --rebaseコマンドを使うといいとかなんとか）
+El `branch master` debe estar siempre actualizada, ya que branches de trabajo se crean a partir del `branch master`.<br>
+Utilice el siguiente comando para ir a `branch master` y actualizarlo con el repositorio remoto.
+
+Después de Actualizar `branch master` en el repositorio local, cree un branch de trabajo para las siguientes tareas.
+
+```
+git checkout main
+git pull origin master
+```
+
