@@ -319,3 +319,17 @@ Esta _merge_ soluciona un conflicto, por lo que se ha creado un nuevo _merge com
 Un _merge_ de este tipo se denomina _non fast-forward merge_.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e1e25920-bd2b-4929-a6cc-c16bde0570d1)
+
+Ejemplo:
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/5564ac5f-18db-42b4-91a7-78bd108ae75a)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/2f4547f5-a5d4-4e4d-abad-0b42ef1475db)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/ac5f20a5-4132-4fe6-be7d-8f6618aa1753)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/2b638f26-24ec-49e2-bd7c-c55dec4d7bf5)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/894669d7-985b-42af-b979-5f9c268814d0)
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6db1b549-8f89-414e-937c-1e8d38af5035)
