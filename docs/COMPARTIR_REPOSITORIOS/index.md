@@ -35,7 +35,7 @@ ___
 
 ## Realice un pull contra el repositorio remoto.
 
-Cuando compartes un repositorio remoto y varias personas trabajan en él, todo el mundo empuja al repositorio remoto.
+Cuando compartes un repositorio remoto y varias personas trabajan en él, todo el mundo realica un push al repositorio remoto.
 A continuación, debe incorporar los cambios introducidos por los demás en su repositorio local.
 
 ### Pull
@@ -48,21 +48,49 @@ Ejecutando `Pull` descargará el último historial de cambios del repositorio re
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/fa274df1-fec6-4445-aadb-d6ba2d965933)
 
-
-
 ## Diferencias entre Pull y Fetch
 
-https://backlog.com/ja/git-tutorial/stepup/14/
+
+El comando `fetch` para reflejar la última información del repositorio remoto en el repositorio local.<br>
+Comprueba la diferencia entre el comando `pull` y el comando `fetch`.
 
 ### Pull
 
 Puede ejecutar `pull` para obtener el historial del repositorio remoto. El siguiente diagrama ilustra lo que ocurre con las confirmaciones en el repositorio en este momento.
 
-まずは、更新されるローカルリポジトリのブランチに何の変更も行なっていなかった場合を見てみます。
+En primer lugar, veamos el caso en el que no se han realizado cambios en el branch del repositorio local que se está actualizando.
 
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/733a8f5f-2030-4752-8894-6a6f2ebe5e43)
 
-この場合は、単にfast-forwardマージが行われます。図中のmasterはローカルリポジトリのmasterブランチ、origin/masterはリモートリポジトリ origin のmasterブランチを表します。
+En este caso, simplemente se realiza un `fast-forward merge`. En el diagrama, `master` representa `branch master` en el repositorio local y `origin/master` representa `branch master` en el repositorio remoto `origin`.
 
-もし、ローカルリポジトリのmasterブランチでも履歴を進めていた場合は、両方の変更を統合する必要があります。
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e27d5c77-3088-4cbe-804c-54adbc914af7)
 
-そのため、pullを実行するとマージが行われます。この時、競合する変更がなければ自動的にマージコミットが作られます。しかし、競合があった場合は、それを解決してから自分でコミットする必要があります。
+Si también ha avanzado la historia en el repositorio local `branch master`, necesita fusionar ambos cambios. 
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/67752b0a-3870-4d5d-8f5f-01b1677b8bd8)
+
+Por lo tanto, un `pull` resultará en un `merge`. En este momento, si no hay cambios conflictivos, se creará automáticamente un `merge commit`.<br> Sin embargo, si hay conflictos, debe resolverlos y luego crear el `commit` usted mismo.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/57c69dff-d64a-4f8d-bb7e-cdfdf2086d13)
+
+### Fetch
+
+Cuando se realiza `pull`, el contenido del repositorio remoto se fusiona automáticamente.<br>
+Sin embargo, hay ocasiones en las que simplemente quiere comprobar el contenido de un repositorio remoto y no quiere fusionar. En tales casos, utilice `fetch`.
+
+Ejecutar `fetch` sólo recuperará el último historial del repositorio remoto.<br>
+El `commit` recuperado se toma como un `branch` sin nombre. Puede cambiar a este `branch` especificando el nombre `FETCH_HEAD` en el comando `checkout`.
+
+Por ejemplo, si se realiza un `fetch` con un `commit` que ha progresado desde `commit B` en cada uno de los `origin` de los repositorios local y remoto, el historial tendrá el aspecto de la figura siguiente.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/61b598c3-ac3b-46d8-ae88-ee2ccbf00bcf)
+
+Desde este estado, si desea fusionar el contenido del repositorio remoto en el `master` del repositorio local, fusione `FETCH_HEAD` o ejecute `pull` de nuevo.
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/2d52a6b2-85a9-458b-ba81-f41d1c58fb35)
+
+___
+##### Consejo
+Cuando se realiza una fusión, el historial es el mismo que cuando se realiza un `pull`. En realidad, `pull` es porque está realizando `fetch` y `merge` internamente.
+___
