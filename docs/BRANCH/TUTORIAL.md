@@ -270,7 +270,7 @@ Esta `merge` es un `fast-forward (avance rápido) merge`.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/c8c04bc3-16de-4214-8141-3aa910b76580)
 
-A continuación, importa la `edición3`.
+A continuación, importa la `issue3`.
 
 ```
 $ git merge issue3
