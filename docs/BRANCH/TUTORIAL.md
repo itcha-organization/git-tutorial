@@ -45,9 +45,10 @@ Los branches pueden crearse con el comando `branch`.
 $ git branch <branchname>
 ```
 
-Vamos a crear un branch llamada `issue1`.
+Vamos a crear un branch llamada `issue1`. 
 ```
 $ git branch issue1
+
 ```
 
 Si ejecuta el comando `branch` sin ningún argumento, podrá ver una lista de branch. El branch con el prefijo * es el branch actual.
@@ -70,10 +71,14 @@ El cambio de branch se realiza con el comando `checkout`.
 $ git checkout <branch>
 ```
 
-Cambie a el branch `issue1`.
+Cambie a el branch `issue1`.<br>
+A continuación, utilice el comando `git branch` para confirmar que el branch actual ha pasado al `issue1`.
 ```
 $ git checkout issue1
 Switched to branch 'issue1'
+$ git branch
+* issue1
+  master
 ```
 
 La historia en este punto se parece a esto.
@@ -94,6 +99,7 @@ Comandos Git para manejar branch
 Checkout: Cambia o Crea Branch
 ```
 ```
+$ nano myfile.txt
 $ git diff
 $ git add myfile.txt
 $ git status
@@ -121,12 +127,18 @@ Switched to branch 'master'
 ```
 
 Antes de ejecutar `merge`, abra `myfile.txt` una vez para comprobar el contenido.
+El archivo se editó en `issue1`, por lo que el contenido de `myfile.txt` en `master` no se ha modificado.
 ```
 $ cat myfile.txt
 Comandos Git para manejar branch
 ```
 
-El archivo se editó en `issue1`, por lo que el contenido de `myfile.txt` en `master` no se ha modificado.
+Antes de ejecutar `merge`, compruebe el historial de cambios del repositorio usando la comando `git log`.El historial contiene solo initial commit.
+```
+$ git log
+```
+
+Ejecte `merge`.
 ```
 $ git merge issue1
 ```
@@ -202,10 +214,12 @@ Checkout: Cambia o Crea Branch
 Branch: Crear, eliminar branch o ver una lista de branch
 ```
 ```
+$ nano myfile.txt
+$ git diff
 $ git add myfile.txt
+$ git status
 $ git commit -m "Se ha añadido la descripción de Branch"
-[issue2 8f7aa27] Se ha añadido la descripción de Branch
- 1 files changed, 2 insertions(+), 0 deletions(-)
+$ git log
 ```
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/55b30951-61be-4df9-9d1d-4191e4b45d7f)
 
@@ -226,10 +240,12 @@ Checkout: Cambia o Crea Branch
 Merge: Integrar branch
 ```
 ```
+$ nano myfile.txt
+$ git diff
 $ git add myfile.txt
+$ git status
 $ git commit -m "Se ha añadido la descripción de Merge"
-[issue3 e5f91ac] Se ha añadido la descripción de Merge
- 1 files changed, 2 insertions(+), 0 deletions(-)
+$ git log
 ```
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/794fee99-66d8-44ad-8075-9d476f6c8b5c)
 
@@ -289,10 +305,13 @@ Merge: Integrar branch
 Ahora que el conflicto se ha corregido, ejecute `commit` de nuevo.
 
 ```
+$ nano myfile.txt
+$ git status
 $ git add myfile.txt
 $ git commit -m "Fusionar branch issue3"
 # On branch master
 nothing to commit (working directory clean)
+$ git log
 ```
 
 La historia es la siguiente.<br>
