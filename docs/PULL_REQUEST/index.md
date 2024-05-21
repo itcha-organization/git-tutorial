@@ -7,7 +7,7 @@ El pull request ofrece las siguientes funciones.
 
 - Notificar los cambios a los revisores y otras partes interesadas, como funciones adicionales o modificaciones.
 - Indicar claramente dónde se ha modificado el código.
-- Proporcionar un foro de comunicación sobre el Código.
+- Proporcionar un foro de comunicación sobre el código.
 
 El uso de pull requests puede ayudar a arraigar una cultura de revisión del código en la organización.<br>
 Las revisiones del código permiten reducir los errores.
@@ -17,7 +17,6 @@ Las revisiones del código permiten reducir los errores.
 ## Ventajas de los pull requests
 
 ### El trabajo de revisión puede asignarse, gestionarse y registrarse
-https://backlog.com/ja/git-tutorial/pull-request/02/
 
 Las pull requests que se han creado pueden verse en una lista, lo que facilita la comprobación de las pull requests no completadas.<br>
 Esto permite a los revisores procesar las pull requests creadas sin omisiones.
