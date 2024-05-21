@@ -101,7 +101,7 @@ $ git checkout -b add-sort-func
 
 ### 2.Modificar archivos y crear commits.
 
-Modifique el archivo `sort.js` de la siguiente manera.
+Modifique el archivo `sort.js` de la siguiente manera y luego ejecuta commit.
 
 ```
 var sortNumber = function (number) {
@@ -118,11 +118,14 @@ sortNumber(number);
 console.log(number);
 ```
 
-Se completa la modificación y se crea un commit.
-
+Commando:
 ```
+$ nano sort.js
+$ git diff
 $ git add sort.js
+$ git status
 $ git commit -m "Añadido proceso para ordenar matrices."
+$ git log
 ```
 
 ### 3.Realizar un push en branch de tema
@@ -139,8 +142,7 @@ La situación actual se ilustra en el siguiente diagrama.
 
 Ejemplo:
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/d5bde122-15b6-462f-81d3-871bc97c5389)
-
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/eb2da54f-8e00-443c-a73e-c5100006713e)
 
 ## Creación de pull requests
 
@@ -184,7 +186,7 @@ Los comentarios que introduzcas se incrustan en línea en el código fuente y ta
 ### Reflexión sobre el contenido de la revisión
 
 Modifica el código según la revisión. <br>
-Localmente, corrige la línea 3 en `sort.js`. El código modificado es el siguiente.
+Localmente, corrige la línea 3 en `sort.js`. El código modificado es el siguiente y luego ejecuta commit.
 
 ```
 var sortNumber = function (number) {
@@ -201,10 +203,12 @@ sortNumber(number);
 console.log(number);
 ```
 
-Una vez modificado, ejecute commit y push de nuevo.
-
+Commandos:
 ```
+$ nano sort.js
+$ git diff
 $ git add sort.js
+$ git status
 $ git commit -m "Corregido el uso del operador de equivalencia estricta (===)"
 $ git push origin add-sort-func
 ```
