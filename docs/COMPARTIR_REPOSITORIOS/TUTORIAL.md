@@ -131,7 +131,7 @@ La situación actual se ilustra en el siguiente diagrama.
 
 ## Clonar repositorios remotos.
 
-A continuación, clonee el repositorio remoto como si fueras otro usuario y crea un repositorio local `tutorial-repo-clone`.
+A continuación, clone el repositorio remoto como si fueras otro usuario y crea un repositorio local `tutorial-repo-clone`.
 
 Utilice el comando `clone` para clonar un repositorio. `<repositorio>` es la URL del repositorio remoto y `<directorio>` es el nombre del directorio a clonar.
 
