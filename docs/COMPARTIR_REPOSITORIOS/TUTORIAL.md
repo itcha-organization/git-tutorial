@@ -185,7 +185,7 @@ A continuación, realice un push para reflejar estos cambios en el repositorio r
 ```
 $ git push
 ```
-Ejemplo:
+Ejemplo:<br>
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/7ed5881c-ad0e-42bb-9e4e-d9889658a623)
 
 ___
