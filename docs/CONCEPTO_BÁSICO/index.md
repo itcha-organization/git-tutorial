@@ -89,35 +89,31 @@ https://docs.github.com/es/get-started/start-your-journey/creating-an-account-on
 ##### Cómo generar una nueva clave SSH
 
 Ejecute el siguiente comando, reemplazando el parámetro de segundo opcion por tu dirección de correo.<br>
+Tras ejecutar el comando, aparecen varias preguntas. No escriba nada y pulse Intro.
 ```
-$ ssh-keygen -t ed25519 -C "<Dirección de correo electrónico de ITCHA>"
+$ ssh-keygen -t ed25519 -C "Dirección de correo electrónico de ITCHA"
 ```
 
-Reaccione a la commit pulsando Intro.
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e343c7e6-1b6d-4410-b1f5-906d8617fb50)
 
-Si aparece la siguiente commit, seleccione `No` e inténtelo con una clave existente.
-```
-/c/Users/oonumakyou/.ssh/id_ed25519 already exists.
-Overwrite (y/n)?
-```
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/b908ac90-b0c3-44f9-9a9f-78350865f560)
 
 #### Cómo agregar una clave SSH a tu cuenta de GitHub
 
-Ejecute el siguiente comando para copiar la clave
+Primero, accede a tu cuenta de GitHub mediante tu navegador y accede a la configuración de tu cuenta haciendo clic en la foto de perfil de la parte superior derecha del menú y luego en Configuración (Settings).
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6c618047-5948-49c7-bfb2-482feba52c99)
+
+Haz clic en la opción `SSH and GPC keys` que verás en la sección `Access` del menú de la izquierda.<br>
+Haz clic en `New SSH Key`.
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/b381e960-bd38-4bbf-822c-4bb75093f2a1)
+
+Ahora vuelve a GitBash.Ejecute el siguiente comando para copiar la clave que es el contenido del achivo `id_ed25519.pub`.<br>
+Este comando copiará el contenido de `id_ed25519.pub`, que podrá pegarse con control + v.
 ```
 $ clip < ~/.ssh/id_ed25519.pub
 ```
 
-Seguidamente, accede a tu cuenta de GitHub mediante tu navegador y accede a la configuración de tu cuenta haciendo clic en la foto de perfil de la parte superior derecha del menú y luego en Configuración (Settings).
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6c618047-5948-49c7-bfb2-482feba52c99)
-
-Haz clic en la opción Claves SSH y GPC (SSH and GPC keys) que verás en la sección Acceso (Access) del menú de la izquierda.
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/b381e960-bd38-4bbf-822c-4bb75093f2a1)
-
-Haz clic en Nueva clave SSH (New SSH Key) e introduce un nombre para la clave en el campo Título (Title). Luego pega la clave SSH que has copiado anteriormente en el campo Key, dejando seleccionada la opción Key type.
-Finalmente haz clic en el botón Agregar clave SSH (Add SSH key). Si se te solicita la contraseña de tu cuenta, introdúcela.
+Introduce un nombre para la clave en el campo `Title`. Luego pega la clave SSH que has copiado anteriormente en el campo Key, dejando seleccionada la opción Key type.
+Finalmente haz clic en el botón `Add SSH key`. Si se te solicita la contraseña de tu cuenta, introdúcela.
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/499d1602-c212-4718-999d-a4a5da1bc521)
 
 Ejecute el siguiente comando para comprobar la conexión
