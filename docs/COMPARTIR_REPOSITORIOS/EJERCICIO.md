@@ -3,8 +3,11 @@
 ## Pregunta 1
 
 Cree una carpeta `~/ejercicio3` y colócala bajo control Git.<br>
-En el directorio `~/ejercicio3`, cree un archivo llamado `compartir_repositorios.txt` y haga commit.<br>
-Luego compruebe el historia de commit.
+En el directorio `~/ejercicio3`, cree un archivo llamado `compartir_repositorios.txt`, introduzca el siguiente texto y guárdelo. 
+```
+Resume de compartir repositorios
+```
+Luego ejecte un commit y compruebe el historia de commit.
 
 ## Pregunta 2
 
@@ -26,7 +29,6 @@ Luego vaya al directorio `ejercicio3-clone` y compruebe el historia de commit y 
 Añade el siguiente texto a `compartir_repositorios.txt` y ejecuta commit en `ejercicio3-clone`. Luego compruebe el historia de commit.
 
 ```
-Resume de compartir repositorios
 Push: sube su historial de cambios al repositorio remoto
 Clone: puede descargar todo el contenido del repositorio remoto y crearlo como repositorio local
 Pull: descarga el último historial de cambios del repositorio remoto e incorporará su contenido a su repositorio local
