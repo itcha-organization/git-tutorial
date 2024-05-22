@@ -340,7 +340,7 @@ $ git checkout -b add-sort-func1
 
 ### 3. Editar el código en el branch add-sort-func1 y ejecutar un push.
 
-En `add-sort-func1`, edita el código como sigue.
+En `add-sort-func1`, edita el código como sigue y luego ejecute commit y push.
 
 ```
 var sortNumber = function (number) {
@@ -357,9 +357,10 @@ sortNumber(number);
 console.log(number);
 ```
 
-Ejecute commit y push cuando la modificación se haya completado.
+Commando:
 
 ```
+$ nano sort.js
 $ git diff
 $ git add sort.js
 $ git status
@@ -371,6 +372,9 @@ $ git push origin add-sort-func1
 La situación actual se ilustra en el siguiente diagrama.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/80ae9ade-835b-48fa-9d18-b70078bc436f)
+
+Ejemplo:<br>
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/69c4aa69-8182-4def-9b22-35e36e8e1f60)
 
 ### 4. Crear y fusionar un pull request para el branch add-sort-func1
 
