@@ -400,7 +400,7 @@ Cambiar branch a `add-sort-func2`.
 $ git checkout add-sort-func2
 ```
 
-En `add-sort-func2`, edita el código como sigue.
+En `add-sort-func2`, edita el código como sigue y luego ejecute commit y push.
 
 ```
 var sortNumber = function (number) {
@@ -417,9 +417,10 @@ sortNumber(number);
 console.log(number);
 ```
 
-Ejecute commit y push cuando la modificación se haya completado.
+Comandos:
 
 ```
+$ nano sort.js
 $ git diff
 $ git add sort.js
 $ git status
@@ -431,6 +432,10 @@ $ git push origin add-sort-func2
 La situación actual se ilustra en el siguiente diagrama.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/ac5c9c1b-de0a-4b17-8140-a1c833880b36)
+
+Ejemplo:
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/009a0ece-6434-4d71-83d0-712642b324e1)
 
 ### 6. Crear un pull request para el branch add-sort-func2
 
@@ -451,7 +456,7 @@ Si surgen conflictos, edite y fusione el código manualmente.
 ### 1. Ejecutar un pull hacia el branch master.
 
 En primer lugar, en el branch en el que está trabajando, ejecuta un pull hacia el branch destino de la `pull request`.<br>
-De este modo, los últimos cambios en el branch de destino de la `pull request` se incorporan a el branch de trabajo.
+De este modo, los últimos cambios en el branch de destino de la `pull request` se incorporan al branch de trabajo.
 
 En este caso, en `add-sort-func2` ejecutará un pull hacia `master`.
 
@@ -481,9 +486,11 @@ Ejemplo:
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6e2f6f41-a782-4745-a822-7c7bd8ab3fd6)
 
-Arriba `=======` es el código del repositorio local y abajo el código del repositorio remoto.<br>
+Arriba de `=======` es el código del repositorio local y abajo el código del repositorio remoto.<br>
 En este caso, se elimina el código del repositorio local, quedando éste como está mejor en el repositorio remoto.<br>
-El código editado es el siguiente.
+Para el desarrollo real, es mejor consultar con el equipo cómo corregir el problema correctamente.
+
+Modifique el código de la siguiente manera.
 
 ```
 var sortNumber = function (number) {
@@ -499,6 +506,16 @@ var number = [19, 3, 81, 1, 24, 21];
 sortNumber(number);
 console.log(number);
 ```
+
+Comandos:
+```
+$ nano sort.js
+$ cat sort.js
+```
+
+Ejemplo:
+
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/7823b2cd-b583-446e-b0ca-b341303c73f9)
 
 ### 3. Vuelva a ejecutar commit y push después de modificar el código.
 
