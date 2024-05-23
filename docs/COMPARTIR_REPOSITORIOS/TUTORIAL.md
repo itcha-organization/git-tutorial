@@ -222,7 +222,7 @@ Obtener los últimos cambios del repositorio remoto en el repositorio local `tut
 
 Tomemos el contenido empujado desde `tutorial-repo-clone` al repositorio remoto e importémoslo a `tutorial-repo`.
 
-Utilice el comando `pull` para realizar un pull. Si omite el nombre del repositorio, el pull se realiza contra el repositorio registrado con el nombre `origen`.
+Utilice el comando `pull` para realizar un pull. Si omite el nombre del repositorio, el pull se realiza contra el repositorio registrado con el nombre `origin`.
 
 Como con `push`, `<repositorio>` especifica el repositorio remoto y `<refspec>` el branch.
 
