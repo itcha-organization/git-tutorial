@@ -154,7 +154,7 @@ Se ha subido un nuevo branch y aparece el botón "Compare & pull request".Haga c
 Aparece la siguiente pantalla.
 
 ①Branch de destino：El branch en la que se fusionará el pull request.<br>
-②Banch de destino：El branch que se fusionará.
+②Banch de tema：El branch que se fusionará.
 
 Una vez que haya introducido el contenido adecuado, haga clic en el botón `Create pull request` para crear la pull request.
 
@@ -175,7 +175,11 @@ Las revisiones pueden consultarse en la pestaña `Files changed` para ver los ca
 Puede comentar el código si hay áreas que le gustaría que se corrigieran.<br>
 Haga clic en el botón más que aparece en la fila de destino al pasar el ratón por encima.
 
-Introduzca los datos que desea corregir y pulse el botón "Add single comment".
+Introduzca los datos que desea corregir y pulse el botón "Add single comment".<br>
+Introduzca esta vez el siguiente comentario.
+
+`Utilice el operador de equivalencia estricta === en lugar del operador de equivalencia ==.
+`
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e59db32f-e876-44c2-9996-0cbfdcd5abd5)
 
