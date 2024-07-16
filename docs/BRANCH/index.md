@@ -16,26 +16,26 @@ Imagine las siguientes situaciones. ¿Sería útil un branch que permitiera trab
 * Al solucionar un error urgente intrusivamente
 * Cuando quiera experimentar con un cambio temporal en un fragmento de código
 
+En Git, puede crear branch a voluntad. Sin embargo, para utilizar branch de forma eficaz, es importante establecer de antemano reglas para su funcionamiento.
+
+Las dos formas principales de operar con branch son la `Bese Branch` (Rama Base) y la `Topic Branch` (Rama de Tema).
+
+* `Topic Branch` (Rama de Tema)
+
+Un topic branch es un branch que se crea para trabajar en un tema, como añadir una característica o corregir un error. Si está trabajando en varias temas al mismo tiempo, cree varias topic branches como necesite.
+
+* `Base Branch` (Rama Base)
+
+Este branch se utiliza para mantener un estado estable que no contenga errores. Cuando se realiza algún cambio, se crea un topic branch, se trabaja en el y se integra en el base branch.
+
+Normalmente, el base branch se denomina `master` o `main`.
+
 El diagrama siguiente ilustra el trabajo paralelo mediante branch.
 
 Los miembros del equipo crean un branch dedicado a su propio trabajo a partir de el branch principal, de modo que su trabajo no se vea afectado por el de otros miembros del equipo.<br>
 A continuación, el miembro del equipo que ha terminado su trabajo incorpora los cambios de su propio branch al branch principal.<br>
 De este modo, el trabajo del miembro del equipo no se ve afectado por el trabajo de otros miembros del equipo y puede incorporarse a su propio trabajo.<br>
 Esto también facilita la investigación y resolución de cualquier problema que pueda haber surgido.
-
-En Git, puedes crear branch a voluntad. Sin embargo, para utilizar branch de forma eficaz, es importante establecer de antemano reglas para su funcionamiento.
-
-Las dos formas principales de operar con branch son la `Bese Branch` (Rama Base) y la `Topic Branch` (Rama de Tema).
-
-* `Base Branch` (Rama Base)
-
-Este branch se utiliza para mantener un estado estable que no contenga errores. Cuando se realiza algún cambio, se crea un topic branch, se trabaja en el y se integra en el base branch.
-
-Normalmente, `master` branch o `main` branch se utiliza como base branch.
-
-* `Topic Branch` (Rama de Tema)
-
-Un topic branch es un branch que se crea para trabajar en un tema, como añadir una característica o corregir un error. Si está trabajando en varias temas al mismo tiempo, cree varias topic branches como necesite.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e9298201-eb67-474f-8916-b486b33fa5c1)
 
@@ -55,7 +55,7 @@ Fusionar este `bugfix` en `master` es muy fácil si el estado de `master` no ha 
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/855eba0c-f18c-49cb-ab5f-76c6929ece49)
 
-Sin embargo, hay casos en los que la historia del `master` ha avanzado más que cuando se bifurcó el `bugfix`. En este caso, los cambios en ambos `master`s y los cambios en el `bugfix` necesitan ser combinados en uno.
+Sin embargo, hay casos en los que la historia del `master` ha avanzado más que cuando se bifurcó el `bugfix`. En este caso, los cambios en ambos `master` y los cambios en el `bugfix` necesitan ser combinados en uno.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/8df4c7d8-656d-4b5a-a4d7-9fbec317e16d)
 
@@ -71,7 +71,7 @@ Como en el ejemplo `merge`, supongamos que hay una rama llamada `bugfix` que par
 
 Si fusionas los branches usando `rebase`, la historia se parecerá al diagrama de abajo.
 
-Cunado usione `bugfixes` en `master` usando `rebase`, la historia de `bugfix` se sustituye después de `master`.
+Cunado fusione `bugfix` en `master` usando `rebase`, la historia de `bugfix` se sustituye después de `master`.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/2a8d5574-b01c-40ef-a1b9-d70baf6f5a22)
 
@@ -84,7 +84,7 @@ El funcionamiento con `Topic Branch` y `Base Branch` se ilustra con un sencillo 
 Por ejemplo, supongamos que está trabajando en el topic branch añadiendo una función y tiene que corregir un error.
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/8924bf8c-2f0a-4eb3-9e22-89097b01d0e5)
 
-En estos casos, la `Base Branch` está todavía antes del desarrollo de la característica, por lo que se puede empezar a trabajar independientemente del desarrollo de la característica creando un nuevo `Topic Branch` para la corrección de errores desde aquí.
+En estos casos, la `Base Branch` está todavía antes del desarrollo de la característica, por lo que se puede empezar a trabajar independientemente del desarrollo de la función nueva creando un nuevo `Topic Branch` para la corrección de errores desde aquí.
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/8c2c38e8-2a2d-4b7b-9d8c-d5b86704e48b)
 
 Las correcciones de errores completadas pueden publicarse incorporándolas a la `Base Branch` original.
