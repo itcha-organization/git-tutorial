@@ -4,10 +4,10 @@
 
 ### Control de versiones mediante Git
 
-Git te permite guardar el estado de un archivo como un historial de actualizaciones siempre que quieras.<br>
-Esto te permite revertir un archivo una vez editado a un estado anterior y ver las diferencias en las partes editadas del archivo.
+Git le permite guardar el estado de un archivo como un historial de actualizaciones siempre que quiera.<br>
+Esto le permite revertir un archivo una vez editado a un estado anterior y ver las diferencias en las partes editadas del archivo.
 
-Además, si intentas sobrescribir el último archivo editado por otra persona con un archivo editado a partir de un archivo anterior, recibirás una advertencia cuando subas el archivo al servidor.<br>
+Además, si intenta sobrescribir el último archivo editado por otra persona con un archivo editado a partir de un archivo anterior, recibirá una advertencia cuando suba el archivo al servidor.<br>
 Por lo tanto, no se producirán errores como sobrescribir sin saberlo las ediciones de otra persona.
 
 * Muchos de nosotros hemos utilizado en algún momento de nuestras vidas la versión de control de versiones de añadir una fecha a un nombre de archivo.
@@ -24,9 +24,9 @@ Los repositorios Git pueden dividirse en dos tipos: repositorios remotos y repos
 * Repositorios remotos<br>
   Se trata de repositorios ubicados en un servidor dedicado y compartido por varios usuarios.
 * Repositorios locales<br>
-  Son repositorios que se colocan en tu propia máquina para el uso de usuarios individuales.
+  Son repositorios que se colocan en su propia máquina para el uso de usuarios individuales.
 
-Al dividir el repositorio en dos tipos, remoto y local, puedes utilizar el repositorio local para tus cambios del código en la máquina que tengas a mano.
+Al dividir el repositorio en dos tipos, remoto y local, puede utilizar el repositorio local para sus cambios del código en la máquina que tenga a mano.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/c4dce745-8dae-4450-97a1-08ff77d102f9)
 
@@ -37,7 +37,7 @@ Para registrar adiciones y cambios a ficheros y directorios en el repositorio, s
 Cuando realiza una commit, se crea una commit (o revisión) en el repositorio, que registra la diferencia entre la última commit y el estado actual.
 
 Estos commits se almacenan en el repositorio en orden cronológico, como se muestra en el siguiente diagrama.<br>
-Rastreando estos commits desde el último, puedes ver la historia de los cambios pasados y su contenido.
+Rastreando estos commits desde el último, puede ver la historia de los cambios pasados y su contenido.
 
 * HEAD<br>
   Puntero que indica dónde está trabajando actualmente, normalmente la commit más reciente en el extremo.
@@ -46,7 +46,7 @@ Rastreando estos commits desde el último, puedes ver la historia de los cambios
 
 ### Árbol de trabajo y staging (o índice)
 
-En Git, el directorio en el que estás trabajando, que está bajo el control de Git, se llama árbol de trabajo.
+En Git, el directorio en el que está trabajando, que está bajo el control de Git, se llama árbol de trabajo.
 
 Con el comando `git add` enviamos los cambios a staging (o índice), que es un estado intermedio en el que se van almacenando los archivos a enviar en el commit.<br>
 Finalmente con `git commit` lo enviamos al repositorio local.
@@ -70,7 +70,7 @@ https://www.neoguias.com/instalar-git-windows/
 
 Una vez instalado, inicia Menú Inicio > Todos los programas > Git > Git Bash.
 
-La configuración de git se registra en un archivo .gitconfig que se crea en el directorio home del usuario. Puedes editar el archivo directamente, pero aquí usaremos el comando config para configurar los ajustes. <br>
+La configuración de git se registra en un archivo .gitconfig que se crea en el directorio home del usuario. Puede editar el archivo directamente, pero aquí usaremos el comando config para configurar los ajustes. <br>
 Establecer el nombre de usuario y la dirección de correo electrónico, que se registran en commit.
 ```
 $ git config --global user.name "<Nombre de usuario>"
