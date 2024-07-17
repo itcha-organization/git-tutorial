@@ -1,5 +1,10 @@
 # Ejercicios de compartir repositorios
 
+Resuelva las preguntas 1-9 utilizando GitHub y los comandos en GitBash.<br>
+**Para las preguntas 5~9, por favor ilustre el historial de commit y estado de repositorio en el siguiente archivo.**
+
+[COMPARTIR_REPOSITORIOS_EJERCICIO_ilustración_de_commit](https://docs.google.com/spreadsheets/d/17ZizmqThkzv2ltMsF9tek2KEg70L7MoMWexVv4-gEzY/edit?usp=sharing)
+
 ## Pregunta 1
 
 Cree una carpeta `~/ejercicio3` y colócala bajo control Git.<br>
