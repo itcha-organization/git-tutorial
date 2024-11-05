@@ -20,26 +20,3 @@ Las cuentas de Google Workspace for Education incluyen un rol llamado "Administr
 1. Acceda a la consola de administración de Google Workspace.
 2. Desde "Aplicaciones" → "Google Workspace" → "Google Play Console", configure los permisos de acceso a la cuenta de Play Console.
 3. Si es necesario, agregue permisos de administrador a otros miembros de la institución para permitir el acceso a Play Console.
-
-### 4. Registro y configuración de la aplicación
-1. Seleccione "Crear aplicación" y registre el nombre de la aplicación, su categoría y su propósito de uso.
-2. Ingrese la política de privacidad de acuerdo con el contenido dirigido a la institución educativa y proporcione la URL de la página web configurada con la cuenta de Google Workspace.
-
-### 5. Ingreso de la información detallada de la aplicación y publicación
-Ingrese la información detallada de la aplicación (descripción general, capturas de pantalla, ícono de la aplicación, etc.) de la manera habitual. Al acceder con una cuenta de Workspace for Education, Google puede verificar fácilmente que se trata de una institución educativa, lo que puede facilitar el proceso de revisión.
-
-1. En "Gestión de lanzamientos", seleccione "Lanzamiento de producción" y cargue el archivo APK o AAB.
-2. Ingrese la información necesaria, verifique el lanzamiento y seleccione "Publicar".
-
-### 6. Adición de usuarios de prueba (si es necesario)
-Es posible realizar un "Lanzamiento de prueba" para que el personal y el grupo de prueba de la institución puedan verificar la aplicación con anticipación.
-
-1. Desde "Gestión de pruebas", puede agregar usuarios de prueba de la institución. Usar cuentas educativas de Google Workspace facilita la configuración de usuarios de prueba dentro del mismo dominio educativo.
-
-### 7. Revisión y publicación de la aplicación
-Después de publicar la aplicación desde Google Play Console, se realizará una revisión por parte de Google. Una vez aprobada, el personal de la institución podrá descargar la aplicación desde Google Play Store.
-
-### 8. Gestión de cuentas y asignación de permisos adicionales (si es necesario)
-Al utilizar una cuenta de Google Workspace for Education, el administrador puede asignar los permisos de acceso adecuados a otros miembros del personal, facilitando la gestión eficiente de Google Play Console.
-
-Este es el procedimiento para registrar y publicar una aplicación para el personal de la institución educativa en Google Play Console utilizando Google Workspace for Education.
