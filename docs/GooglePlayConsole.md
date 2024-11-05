@@ -1,4 +1,4 @@
-# Procedimientos para empezar con la `Google Play Console`.
+# Pasos para empezar con la `Google Play Console`.
 
 Si una institución educativa ya ha implementado Google Workspace for Education, la creación y gestión de una cuenta de Google Play Console puede realizarse de manera más fluida. A continuación, se explican los pasos especiales para utilizar Google Workspace for Education.
 
