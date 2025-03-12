@@ -12,30 +12,23 @@ Desplácese hacia abajo y haga clic en el botón `Enable two-factor authenticati
 > ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/0cfc15fd-6bb5-4425-91ef-944ab626bb42)
 
 Asegúrese de que aparece el código QR.
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/ba04b105-5cd8-4738-a779-9bdab795c01a)
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/ba04b105-5cd8-4738-a779-9bdab795c01a)
-
-Instale la aplicación `Google Authenticator` en su teléfono.
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/b6eed257-399e-4dda-b993-9b864a50b316)
+**En su teléfono**, instale la aplicación `Google Authenticator`.
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/b6eed257-399e-4dda-b993-9b864a50b316)
 
 Inicia la aplicación y pulsa `Empezar`.
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/a230145a-b81f-4d44-98c8-8a345cea5fab)
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/a230145a-b81f-4d44-98c8-8a345cea5fab)
 
 Pulse `Usa Authenticator sin una cuenta`.
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/59ec4a7a-6c27-4304-b8ed-6348b4eefcdc)
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/59ec4a7a-6c27-4304-b8ed-6348b4eefcdc)
 
 Pulsa `Añadir código` y escanea el código QR.
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/079d08a4-da13-472a-9032-7b950a4ce248)
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/079d08a4-da13-472a-9032-7b950a4ce248)
-
-Introduzca el número que aparece en la aplicación en la pantalla de Github para continuar.
-
+Introduzca el número que aparece en la aplicación en la pantalla de Github para continuar.<br>
 Descargue el código de recuperación y haga clic en el botón de abajo para continuar.
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/727bfd4f-9385-4db7-b250-c1c22135dd51)
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/727bfd4f-9385-4db7-b250-c1c22135dd51)
 
 > [!CAUTION]
 >  Conserve el código de recuperación para no perderlo, ya que es esencial para recuperar su cuenta.
@@ -53,6 +46,10 @@ TODO
 - Si es usted estudiante, presente su solicitud de acuerdo con [la documentación oficial: Envío de solicitud a GitHub Education como estudiante](https://docs.github.com/es/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students/apply-to-github-education-as-a-student#solicitar-acceso-al-github-education).
 
 - Si es usted profesor, presente su solicitud de acuerdo con [la documentación oficial: Envío de solicitud a GitHub Education como profesor](https://docs.github.com/es/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-teachers/apply-to-github-education-as-a-teacher#solicitar-una-plaza-para-el-github-education).
+
+<details>
+
+<summary>Ejemplo para los estudiante</summary>
 
 ### Elija correctamente su rol
 Seleccione la opción `Student` y continue deslizando hacia abajo.
@@ -107,6 +104,9 @@ Cuando tenga lista su foto, haga click en `upload a photo`.
 <br>Su plan actual debería ser `GitHub Pro`.
 
 <img width="380" alt="image" src="https://github.com/SPEKTOR-1/GitHubEducation/assets/144578498/38ebea66-40af-4292-824e-ab2988504e02">
+
+
+</details>
 
 ## Referencia
 
