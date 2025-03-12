@@ -1,16 +1,15 @@
 # Configuración inicial
 
 Si ya ha completado la configuración, puede practicar los comandos en siguiente pagina.<br>
-![https://learngitbranching.js.org/?locale=es_AR
-](https://learngitbranching.js.org/?locale=es_AR)
+![https://learngitbranching.js.org/?locale=es_AR](https://learngitbranching.js.org/?locale=es_AR){target="_blank"}
 
-<a href="https://learngitbranching.js.org/?locale=es_AR" target="_blank" rel="noopener noreferrer">リンクテキスト</a>
+<a href="https://learngitbranching.js.org/?locale=es_AR">リンクテキスト</a>
 ___
 
 ## Instalación y configuración inicial de Git en Windows
 
 Siga los pasos del siguiente artículo para instalarlo.<br>
-https://www.neoguias.com/instalar-git-windows/
+![https://www.neoguias.com/instalar-git-windows/](https://www.neoguias.com/instalar-git-windows/)
 
 Una vez instalado, inicia `Menú Inicio` > `Todos los programas` > `Git` > `Git Bash`.
 
@@ -30,7 +29,7 @@ git config --global user.email "<Dirección de correo electrónico de la escuela
 
 ## Creación de una cuenta en GitHub con la correo electrónico de la escuela
 
-Cree una cuenta GitHub con la correo electrónico de la escuela de acuerdo con [la documentación oficial: Creación de una cuenta en GitHub](https://docs.github.com/es/get-started/start-your-journey/creating-an-account-on-github#signing-up-for-a-new-personal-account).
+Cree una cuenta GitHub con la correo electrónico de la escuela de acuerdo con ![la documentación oficial: Creación de una cuenta en GitHub](https://docs.github.com/es/get-started/start-your-journey/creating-an-account-on-github#signing-up-for-a-new-personal-account).
 
 > [!CAUTION]
 >  Si ya tiene una cuenta personal, siga [la documentación oficial: Agregar una dirección de correo electrónico a tu cuenta de GitHub](https://docs.github.com/es/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account) para añadir el correo electrónico de la escuela a su cuenta.
