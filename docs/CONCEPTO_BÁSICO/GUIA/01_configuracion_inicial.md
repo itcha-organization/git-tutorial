@@ -19,8 +19,8 @@ git config --global user.name "<Nombre de usuario>"
 ```
 git config --global user.email "<Dirección de correo electrónico de la escuela>"
 ```
-Ejemplo:<br>
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/139957ee-cf22-44c2-885c-1cc08785f529)
+> Ejemplo:<br>
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/139957ee-cf22-44c2-885c-1cc08785f529)
 
 > [!NOTE]
 >  La configuración de git se registra en un archivo `.gitconfig` que se crea en el directorio home del usuario. Puede editar el archivo directamente.
@@ -44,8 +44,8 @@ Tras ejecutar el comando, aparecen varias preguntas. **No escriba nada y pulse I
 ```
 ssh-keygen -t ed25519 -C "Dirección de correo electrónico de la escuela"
 ```
-Ejemplo:<br>
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e343c7e6-1b6d-4410-b1f5-906d8617fb50)
+> Ejemplo:<br>
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e343c7e6-1b6d-4410-b1f5-906d8617fb50)
 
 > [!NOTE]
 >  Al ejecutar `ssh-keygen` se generará un archivo de clave pública `id_ed25519.pub` en la carpeta `~/.ssh/`.<br>
@@ -59,28 +59,28 @@ clip < ~/.ssh/id_ed25519.pub
 ```
 
 Siguiente, acceda a su cuenta de GitHub mediante su navegador y acceda a la configuración de su cuenta haciendo clic en la foto de perfil de la parte superior derecha del menú y luego en ⚙`Settings`.
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6c618047-5948-49c7-bfb2-482feba52c99)
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6c618047-5948-49c7-bfb2-482feba52c99)
 
 Haz clic en la opción 🔑`SSH and GPC keys` que verás en la sección `Access` del menú de la izquierda.<br>
 Haz clic en `New SSH Key`.
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/b381e960-bd38-4bbf-822c-4bb75093f2a1)
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/b381e960-bd38-4bbf-822c-4bb75093f2a1)
 
-En GitBash, ejecute el siguiente comando para copiar la clave que es el contenido del achivo `id_ed25519.pub`.<br>
-Este comando copiará el contenido de `id_ed25519.pub`, que podrá pegarse con control + v.
-```
-$ clip < ~/.ssh/id_ed25519.pub
-```
+Para identificar el dispositivo asociado a la clave, introduzca cualquier texto, como la marca del dispositivo, en el campo `Título`.
+Deje el campo `Key type` como está.
 
-Introduce un nombre para la clave en el campo `Title`. Luego pega la clave SSH que has copiado anteriormente en el campo Key, dejando seleccionada la opción Key type.
-Finalmente haz clic en el botón `Add SSH key`. Si se te solicita la contraseña de tu cuenta, introdúcela.
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/499d1602-c212-4718-999d-a4a5da1bc521)
+A continuación, pegue el contenido de `~/.ssh/id_ed25519.pub` copiado anteriormente en el campo `Key`.
+Por último, haga clic en el botón `Add SSH key`.
+
+Introduzca la contraseña de su cuenta cuando se le solicite.
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/499d1602-c212-4718-999d-a4a5da1bc521)
 
 Ejecute el siguiente comando para comprobar la conexión
 ```
-$ ssh -T git@github.com
+ssh -T git@github.com
 ```
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/25d3b534-44d2-497b-8689-77f1397882b4)
+> Ejemplo:<br>
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/25d3b534-44d2-497b-8689-77f1397882b4)
 
-### Página de referencia.
+#### Página de referencia.
 - [Documentación de GitHub:Conectar a GitHub con SSH](https://docs.github.com/es/authentication/connecting-to-github-with-ssh)
 - [Cómo generar una clave SSH y agregarla a GitHub](https://www.neoguias.com/generar-clave-ssh-agregar-github/)
