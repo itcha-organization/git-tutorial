@@ -1,15 +1,13 @@
 # Configuración inicial
 
 Si ya ha completado la configuración, puede practicar los comandos en siguiente pagina.<br>
-![https://learngitbranching.js.org/?locale=es_AR](https://learngitbranching.js.org/?locale=es_AR){target="_blank"}
-
-<a href="https://learngitbranching.js.org/?locale=es_AR">リンクテキスト</a>
+https://learngitbranching.js.org/?locale=es_AR
 ___
 
 ## Instalación y configuración inicial de Git en Windows
 
 Siga los pasos del siguiente artículo para instalarlo.<br>
-![https://www.neoguias.com/instalar-git-windows/](https://www.neoguias.com/instalar-git-windows/)
+https://www.neoguias.com/instalar-git-windows/
 
 Una vez instalado, inicia `Menú Inicio` > `Todos los programas` > `Git` > `Git Bash`.
 
@@ -21,43 +19,53 @@ git config --global user.name "<Nombre de usuario>"
 ```
 git config --global user.email "<Dirección de correo electrónico de la escuela>"
 ```
-> Ejemplo:<br>
-> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/139957ee-cf22-44c2-885c-1cc08785f529)
+Ejemplo:<br>
+![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/139957ee-cf22-44c2-885c-1cc08785f529)
 
 > [!NOTE]
 >  La configuración de git se registra en un archivo `.gitconfig` que se crea en el directorio home del usuario. Puede editar el archivo directamente.
 
 ## Creación de una cuenta en GitHub con la correo electrónico de la escuela
 
-Cree una cuenta GitHub con la correo electrónico de la escuela de acuerdo con ![la documentación oficial: Creación de una cuenta en GitHub](https://docs.github.com/es/get-started/start-your-journey/creating-an-account-on-github#signing-up-for-a-new-personal-account).
+Cree una cuenta GitHub con la correo electrónico de la escuela de acuerdo con [la documentación oficial: Creación de una cuenta en GitHub](https://docs.github.com/es/get-started/start-your-journey/creating-an-account-on-github#signing-up-for-a-new-personal-account).
 
 > [!CAUTION]
 >  Si ya tiene una cuenta personal, siga [la documentación oficial: Agregar una dirección de correo electrónico a tu cuenta de GitHub](https://docs.github.com/es/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account) para añadir el correo electrónico de la escuela a su cuenta.
 
 
 ## Cómo generar una clave SSH y agregarla a GitHub
+- Registrar una clave SSH tiene ventajas como la simplificación de la autenticación y la mejora de la seguridad.
+- Una vez configurada, podrás acceder de forma segura a GitHub sin necesidad de contraseña cada vez que ejecutes un comando.
 
 ### Cómo generar una nueva clave SSH
 
 Ejecute el siguiente comando, reemplazando el parámetro de segundo opcion por tu dirección de correo.<br>
-Tras ejecutar el comando, aparecen varias preguntas. No escriba nada y pulse Intro.
+Tras ejecutar el comando, aparecen varias preguntas. **No escriba nada y pulse Intro.**
 ```
-$ ssh-keygen -t ed25519 -C "Dirección de correo electrónico de ITCHA"
+ssh-keygen -t ed25519 -C "Dirección de correo electrónico de la escuela"
 ```
-
+Ejemplo:<br>
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e343c7e6-1b6d-4410-b1f5-906d8617fb50)
 
+> [!NOTE]
+>  Al ejecutar `ssh-keygen` se generará un archivo de clave pública `id_ed25519.pub` en la carpeta `~/.ssh/`.<br>
+>  Copiar el contenido del archivo `id_ed25519.pub` y registrarlo en GitHub para habilitar la autenticación SSH.
 
 ## Cómo agregar una clave SSH a tu cuenta de GitHub
+En GitBash, ejecute el siguiente comando para copiar la clave pública que es el contenido del achivo `id_ed25519.pub`.<br>
+Este comando copiará el contenido del achivo `id_ed25519.pub`, que podrá pegarse con control + v.
+```
+clip < ~/.ssh/id_ed25519.pub
+```
 
-Primero, accede a tu cuenta de GitHub mediante tu navegador y accede a la configuración de tu cuenta haciendo clic en la foto de perfil de la parte superior derecha del menú y luego en Configuración (Settings).
+Siguiente, acceda a su cuenta de GitHub mediante su navegador y acceda a la configuración de su cuenta haciendo clic en la foto de perfil de la parte superior derecha del menú y luego en ⚙`Settings`.
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6c618047-5948-49c7-bfb2-482feba52c99)
 
-Haz clic en la opción `SSH and GPC keys` que verás en la sección `Access` del menú de la izquierda.<br>
+Haz clic en la opción 🔑`SSH and GPC keys` que verás en la sección `Access` del menú de la izquierda.<br>
 Haz clic en `New SSH Key`.
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/b381e960-bd38-4bbf-822c-4bb75093f2a1)
 
-Ahora vuelve a GitBash.Ejecute el siguiente comando para copiar la clave que es el contenido del achivo `id_ed25519.pub`.<br>
+En GitBash, ejecute el siguiente comando para copiar la clave que es el contenido del achivo `id_ed25519.pub`.<br>
 Este comando copiará el contenido de `id_ed25519.pub`, que podrá pegarse con control + v.
 ```
 $ clip < ~/.ssh/id_ed25519.pub
