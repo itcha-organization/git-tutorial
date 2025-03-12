@@ -1,7 +1,10 @@
 # Configuración inicial
 
 Si ya ha completado la configuración, puede practicar los comandos en siguiente pagina.<br>
-![https://learngitbranching.js.org/?locale=es_AR](https://learngitbranching.js.org/?locale=es_AR)
+![https://learngitbranching.js.org/?locale=es_AR
+](https://learngitbranching.js.org/?locale=es_AR)
+
+<a href="https://learngitbranching.js.org/?locale=es_AR" target="_blank" rel="noopener noreferrer">リンクテキスト</a>
 ___
 
 ## Instalación y configuración inicial de Git en Windows
