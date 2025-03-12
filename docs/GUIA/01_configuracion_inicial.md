@@ -51,7 +51,7 @@ ssh-keygen -t ed25519 -C "Dirección de correo electrónico de la escuela"
 >  Al ejecutar `ssh-keygen` se generará un archivo de clave pública `id_ed25519.pub` en la carpeta `~/.ssh/`.<br>
 >  Copiar el contenido del archivo `id_ed25519.pub` y registrarlo en GitHub para habilitar la autenticación SSH.
 
-## Cómo agregar una clave SSH a tu cuenta de GitHub
+### Cómo agregar una clave SSH a tu cuenta de GitHub
 En GitBash, ejecute el siguiente comando para copiar la clave pública que es el contenido del achivo `id_ed25519.pub`.<br>
 Este comando copiará el contenido del achivo `id_ed25519.pub`, que podrá pegarse con control + v.
 ```
@@ -82,5 +82,6 @@ ssh -T git@github.com
 > ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/25d3b534-44d2-497b-8689-77f1397882b4)
 
 #### Página de referencia.
-- [Documentación de GitHub:Conectar a GitHub con SSH](https://docs.github.com/es/authentication/connecting-to-github-with-ssh)
+- [Documentación de GitHub: Configuración de Git](https://docs.github.com/es/get-started/git-basics/set-up-git)
+- [Documentación de GitHub: Conectar a GitHub con SSH](https://docs.github.com/es/authentication/connecting-to-github-with-ssh)
 - [Cómo generar una clave SSH y agregarla a GitHub](https://www.neoguias.com/generar-clave-ssh-agregar-github/)
