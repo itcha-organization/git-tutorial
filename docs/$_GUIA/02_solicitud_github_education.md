@@ -34,38 +34,36 @@ Descargue el código de recuperación y haga clic en el botón de abajo para con
 >  Conserve el código de recuperación para no perderlo, ya que es esencial para recuperar su cuenta.
 
 Haga clic en `Done` para completar la configuración.
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6a29f7d9-9db6-4f9b-883c-41066618f1a7)
-
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6a29f7d9-9db6-4f9b-883c-41066618f1a7)
 
 ### Mediante mensajes SMS
-TODO
+
 
 ## Solicitar a GitHub Education
 
-- Si es usted estudiante, presente su solicitud de acuerdo con [la documentación oficial: Envío de solicitud a GitHub Education como estudiante](https://docs.github.com/es/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students/apply-to-github-education-as-a-student#solicitar-acceso-al-github-education).
+**Si es usted estudiante,** solicite de acuerdo con [la documentación oficial: Envío de solicitud a GitHub Education como estudiante](https://docs.github.com/es/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students/apply-to-github-education-as-a-student#solicitar-acceso-al-github-education).
 
-- Si es usted profesor, presente su solicitud de acuerdo con [la documentación oficial: Envío de solicitud a GitHub Education como profesor](https://docs.github.com/es/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-teachers/apply-to-github-education-as-a-teacher#solicitar-una-plaza-para-el-github-education).
+**Si es usted profesor,** solicite de acuerdo con [la documentación oficial: Envío de solicitud a GitHub Education como profesor](https://docs.github.com/es/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-teachers/apply-to-github-education-as-a-teacher#solicitar-una-plaza-para-el-github-education).
 
 <details>
 
-<summary>Ejemplo para los estudiante</summary>
+<summary>Haga clic aquí para ver un ejemplo de la operación</summary>
 
+## Ejemplo para los estudiante
 ### Elija correctamente su rol
 Seleccione la opción `Student` y continue deslizando hacia abajo.
 
-<img width="929" alt="image" src="https://github.com/SPEKTOR-1/GitHubEducation/assets/144578498/5c246b2a-ec48-4499-9a81-b9e383b3ca30">
+![image](https://github.com/user-attachments/assets/3e748d88-c3a9-442e-8419-8690034659ea)
 
 ### Seleccione su institución educativa
 
 Si su cuenta de GitHub está vinculada a su correo institucional, es probable que GitHub haya identificado su institución educativa. Para confirmarlo, haga click en `Select this school`. <br>
 
-Si no es así, busque su institución manualmente. Puede escribir `Chalatenango` y seleccionar `Technological Institute of Chalatenango`.
+Si no es así, busque su institución manualmente. Por ejemplo, puede escribir `Chalatenango` y seleccionar `Technological Institute of Chalatenango`.
 
 Luego, haga click en `Continue`.
 
-<img width="562" alt="image" src="https://github.com/SPEKTOR-1/GitHubEducation/assets/144578498/ff797e4c-d7bb-4338-b3b2-f775027744dc">
-
+![image](https://github.com/user-attachments/assets/25a22e41-aa56-4457-9a25-b2aecd2b2c1d)
 
 ### Compruebe su estado académico
 
@@ -75,36 +73,33 @@ La `fecha de vencimiento` del carnet debe ser totalmente visible para poder veri
 
 También puede subir cualquier otro documento con `fecha` que muestre su matrícula actual.
 
-<img width="817" alt="image" src="https://github.com/SPEKTOR-1/GitHubEducation/assets/144578498/dc29955e-c65c-475c-9890-27d4cdc9d54f">
+![image](https://github.com/user-attachments/assets/7ecc1c3e-8660-4f72-83bf-6703e3401974)
 
 <br>Más abajo, puede subir la foto de su carnet o documento, tome en cuenta que los formatos permitidos son `JPG` y `PNG`, con resolución mínima de `1024` x `768` y un tamaño entre `100 KB` y `1 MB`. <br>
 
 Cuando tenga lista su foto, haga click en `upload a photo`.
 
-<img width="595" alt="image" src="https://github.com/SPEKTOR-1/GitHubEducation/assets/144578498/e0ec375f-a801-4d2a-b5e6-602aac788080">
+![image](https://github.com/user-attachments/assets/6d7fd940-f9e0-431a-97eb-2b5dae495a94)
 
 <br>Finalmente, después que suba su foto, haga click en `Process my application`.
 
-<img width="826" alt="image" src="https://github.com/SPEKTOR-1/GitHubEducation/assets/144578498/5866d6b9-964c-43e5-af60-478a97046e90">
+![image](https://github.com/user-attachments/assets/e758d571-cc19-468a-b1bd-9a8ec6d88218)
 
 <br>Ahora debe estar atento a su correo electrónico. Debería recibir una respuesta de GitHub en menos de `14 días`.
 
-<img width="807" alt="image" src="https://github.com/SPEKTOR-1/GitHubEducation/assets/144578498/aee3c263-f8b7-48d2-893e-c0cf275448b2">
+![image](https://github.com/user-attachments/assets/bb6299e8-d241-4bbe-b6a8-691e6549047d)
 
 <br>Recibirá un correo electrónico parecido a este.
 
-<img width="631" alt="image" src="https://github.com/SPEKTOR-1/GitHubEducation/assets/144578498/4b1db44e-7673-4fcd-972c-b4b7e547c06d">
+![image](https://github.com/user-attachments/assets/38ee694d-8132-4f34-91a9-a8b2c46fdfe6)
 
 <br>De esta manera puede comprobar que ya tiene los beneficios de GitHub Education.
 
-<img width="227" alt="image" src="https://github.com/SPEKTOR-1/GitHubEducation/assets/144578498/2e6bf522-6107-468c-8ebd-eebd8e78e844">
-
-<img width="248" alt="image" src="https://github.com/SPEKTOR-1/GitHubEducation/assets/144578498/14100f15-4602-4a3c-a872-c978b72eba90">
+![image](https://github.com/user-attachments/assets/165035b1-c91c-4d80-a273-a4b93e892ca8)
 
 <br>Su plan actual debería ser `GitHub Pro`.
 
-<img width="380" alt="image" src="https://github.com/SPEKTOR-1/GitHubEducation/assets/144578498/38ebea66-40af-4292-824e-ab2988504e02">
-
+![image](https://github.com/user-attachments/assets/c6eefc80-6722-4e52-bb52-c6fed0e93651)
 
 </details>
 
