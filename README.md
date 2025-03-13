@@ -1,8 +1,8 @@
 # ¡Inscríbase en [GitHub Education](https://docs.github.com/es/education)!
 ![image](https://github.com/user-attachments/assets/a83c0f5d-c30f-439c-88ea-79969796ef56)
 ## Al inscribirse en GitHub Education, los estudiantes y profesores de centros educativos pueden beneficiarse de una serie de ventajas.
-- Acceso gratuito al plan profesional de GitHub de 4 $/mes.
-- Acceso gratuito al plan profesional [GitHub Copilot](https://www.youtube.com/watch?v=jsHAyBmFZlo&t=266s) de 10 $/mes.
+- Acceso gratuito al plan profesional de GitHub(, que normalmente cuesta 4 $/mes).
+- Acceso gratuito al plan profesional [GitHub Copilot](https://www.youtube.com/watch?v=jsHAyBmFZlo&t=266s)(, que normalmente cuesta 10 $/mes).
 
 [GitHub Copilot](https://www.youtube.com/watch?v=jsHAyBmFZlo&t=266s) es un asistente de programación basado en inteligencia artificial que ayuda a los programadores a escribir código en tiempo real. 
 <br>Es una herramienta muy útil para mejorar la productividad.
