@@ -31,7 +31,7 @@ La configuración de GitHub se habrá completado cuando aparezca la siguiente pa
 ## Instale la extensión en VS Code.
 
 En la parte izquierda de la pantalla, haga clic en el icono cuadrado para mostrar la pantalla de extensión.<br>
-Busque `Copilot` e instale `Copilot Copilot`.
+Busque `Copilot` e instale `GitHub Copilot`.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/d0f03cd6-3323-4493-b397-f3728c455223)
 
