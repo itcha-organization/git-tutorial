@@ -48,10 +48,5 @@ Se le redirigirá a su navegador, haga clic en el botón verde.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/afc1f4b4-3566-4821-af05-b9f820c94f12)
 
-## referencia
-
-
+### referencia
 https://docs.github.com/es/copilot/quickstart
-
-自分用
-https://zenn.dev/safubuki/articles/turtle-20240223-gitcopilot
