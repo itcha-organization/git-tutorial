@@ -1,9 +1,9 @@
 # Envío de solicitud a GitHub Education
 
 ## Configurar la autenticación de dos factores
+A partir de marzo de 2023, GitHub exigió que todos los usuarios que contribuyan con código en GitHub.com habiliten una o varias formas de autenticación en dos fases (2FA).
 
 ### Mediante una aplicación de autenticación 
-
 Abra el siguiente enlace e inicia sesión en github.
 
 https://github.com/settings/security
@@ -35,9 +35,6 @@ Descargue el código de recuperación y haga clic en el botón de abajo para con
 
 Haga clic en `Done` para completar la configuración.
 > ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6a29f7d9-9db6-4f9b-883c-41066618f1a7)
-
-### Mediante mensajes SMS
-
 
 ## Solicitar a GitHub Education
 
