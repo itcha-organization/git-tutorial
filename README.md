@@ -35,7 +35,7 @@ Todas las ofertas: https://education.github.com/pack
 ![image](https://github.com/user-attachments/assets/187da7a8-93e9-4473-9103-4aac5d1ee521)
 
 
-### Puede solicitar ser un [GitHub Campus Experts](https://docs.github.com/es/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-at-your-educational-institution/about-github-campus-experts).
+### Puede solicitar ser un [GitHub Campus Experts](https://githubcampus.expert/).
 Los GitHub Campus Experts son líderes estudiantiles que se esfuerzan por construir espacios diversos e inclusivos para aprender habilidades, compartir sus experiencias y construir proyectos juntos.
 
 Si solicitan y son aceptados como GitHub Campus Experts, pueden desarrollar habilidades de liderazgo, habla pública, escritura técnica y desarrollo de software a través de un programa de formación.
