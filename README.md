@@ -1,4 +1,4 @@
-# ¿Conoce [GitHub Educación](https://docs.github.com/es/education)?
+# ¡Inscríbase en [GitHub Education](https://docs.github.com/es/education)!
 ![image](https://github.com/user-attachments/assets/a83c0f5d-c30f-439c-88ea-79969796ef56)
 ## Al inscribirse en GitHub Education, los estudiantes y profesores de centros educativos pueden beneficiarse de una serie de ventajas.
 - Acceso gratuito al plan profesional de GitHub de 4 $/mes.
