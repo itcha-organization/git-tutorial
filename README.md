@@ -23,11 +23,12 @@ La certificación puede incluirse en tu CV y en tu perfil de Facebook y LinkedIn
 El GitHub Student Developer Pack es un conjunto de beneficios diseñado para estudiantes que que ofrece más de 50 servicios profesionales.
 
 Por ejemplo, 
-Herramientas de JetBrains: Acceso gratuito a IDEs como IntelliJ IDEA, WebStorm, entre otros.
-Créditos para servicios en la nube(Microsoft Azure, DigitalOcean): Créditos para desplegar instancias virtuales y otros servicios en la nube.
-Cursos y capacitaciones: Seis meses de acceso gratuito a más de 70 cursos prácticos sobre temas como desarrollo web, Python, Java y aprendizaje automático.
-Heroku: Créditos de $13 al mes durante 24 meses.
-Notion: Acceso gratuito a todo en el plan Notion Education con respuestas AI adicionales. 
+
+- **Herramientas de JetBrains**: Acceso gratuito a IDEs como IntelliJ IDEA, WebStorm, entre otros.
+- **Créditos para servicios en la nube(Microsoft Azure, DigitalOcean)**: Créditos para desplegar instancias virtuales y otros servicios en la nube.
+- **Cursos y capacitaciones**: Seis meses de acceso gratuito a más de 70 cursos prácticos sobre temas como desarrollo web, Python, Java y aprendizaje automático.
+- **Heroku**: Créditos de $13 al mes durante 24 meses.
+- **Notion**: Acceso gratuito a todo en el plan Notion Education con respuestas AI adicionales. 
 
 Todas las ofertas: https://education.github.com/pack
 
