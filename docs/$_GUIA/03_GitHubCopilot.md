@@ -1,4 +1,5 @@
 # Como empezar GitHub Copilot
+Si ya está registrado en ***GitHub Education***, puede seguir esta guía para empezar de forma **gratuita**.
 
 ## Configure Copilot en el sitio web de Github.
 
