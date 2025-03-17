@@ -16,11 +16,11 @@
 Esta certificación pone a prueba su sistemáticamente las habilidades necesarias para los proyectos del mundo real, como la gestión de repositorios, las operaciones de sucursales y Pull Request (PR).
 
 GitHub es una habilidad que muchas empresas valoran como criterio de contratación.
-La certificación puede incluirse en tu CV y en tu perfil de Facebook y LinkedIn, aportando una prueba objetiva de tus competencias técnicas.
+La certificación puede incluirse en su CV y en su perfil de Facebook y LinkedIn, aportando una prueba objetiva de tus competencias técnicas.
 ![image](https://github.com/user-attachments/assets/ead97c4f-f1a5-40d0-af59-2e158f3aca03)
 
 ### Acceso gratuito a más de 50 servicios para desarrolladores incluidos en el GitHub Student Developer Pack.
-El GitHub Student Developer Pack es un conjunto de beneficios diseñado para estudiantes que que ofrece más de 50 servicios profesionales.
+El GitHub Student Developer Pack es un conjunto de beneficios diseñados para estudiantes que ofrece más de 50 servicios profesionales.
 
 Por ejemplo, 
 
