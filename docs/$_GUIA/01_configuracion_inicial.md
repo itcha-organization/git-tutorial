@@ -25,6 +25,24 @@ git config --global user.email "<Dirección de correo electrónico de la escuela
 > [!NOTE]
 >  La configuración de git se registra en un archivo `.gitconfig` que se crea en el directorio home del usuario. Puede editar el archivo directamente.
 
+
+Ejecute el siguiente comando para establecer el nombre de rama por defecto en `main`.
+> ***Branch*** (rama) es una función de Git que permite dividir el historial de trabajo, lo que  facilita el desarrollo y la corrección de diferentes funcionalidades de manera independiente.
+> <br>En secciones posteriores se tratará este tema con más detalle.
+```
+git config --global init.defaultBranch main
+```
+```
+git config --global --get init.defaultBranch
+```
+
+
+> [!NOTE]
+>  En el pasado, `master` era el nombre predominante para la rama por defecto.
+>  Sin embargo, el nombre `master` se asocia a una relación «maestro/esclavo», por lo que se recomienda utilizar `main` como nombre por defecto.
+
+
+
 ## Creación de una cuenta en GitHub con la correo electrónico de la escuela
 
 Cree una cuenta GitHub con la correo electrónico de la escuela de acuerdo con [la documentación oficial: Creación de una cuenta en GitHub](https://docs.github.com/es/get-started/start-your-journey/creating-an-account-on-github#signing-up-for-a-new-personal-account).

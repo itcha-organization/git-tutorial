@@ -42,11 +42,11 @@ Rastreando estos commits desde el último, puede ver la historia de los cambios 
 >  ***HEAD:***
 > Es un puntero que indica dónde está trabajando actualmente, normalmente el commit más reciente en el extremo.
 
-## ***Working tree*** y ***staging*** (o ***index***)
+## ***Working tree*** y ***staging*** (o **índice**)
 
 En Git, el directorio en el que está trabajando, que está bajo el control de Git, se llama ***working tree***.
 
-Con el comando `git add` enviamos los cambios a ***staging*** (o ***index***), que es un estado intermedio en el que se van almacenando los archivos a enviar en el commit.<br>
+Con el comando `git add` enviamos los cambios a ***staging*** (o **índice**), que es un estado intermedio en el que se van almacenando los archivos a enviar en el commit.<br>
 Finalmente con `git commit` lo enviamos al repositorio local.
 
 Si queremos colaborar con otros, con `git push` subimos los archivos a un repo remoto y mediante `git pull` podríamos traer los cambios realizados por otros en remoto hacia nuestro directorio de trabajo.
