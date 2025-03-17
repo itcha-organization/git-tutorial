@@ -6,7 +6,7 @@ Sin embargo, en esta capacitación utilizaremos GitBash y comandos por las sigui
 
 - Al usar comandos en lugar de herramientas GUI, se puede comprender mejor el funcionamiento interno de Git y el mecanismo de control de versiones.  
 - Es posible utilizar los mismos comandos de Git en cualquier sistema operativo (Windows, Linux, Mac).  
-- Se pueden emplear opciones avanzadas que no están disponibles en las herramientas GUI, como `git log --graph --oneline --all`.
+- Se pueden emplear opciones avanzadas que no están disponibles en las herramientas GUI.
 
 ### Crear un nuevo repositorio: init
 
