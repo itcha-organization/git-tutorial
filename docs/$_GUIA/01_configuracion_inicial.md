@@ -35,7 +35,7 @@ git config --global init.defaultBranch main
 ```
 git config --global --get init.defaultBranch
 ```
-
+> ![image](https://github.com/user-attachments/assets/24982d73-4d6d-41b4-b88a-ec52a2d8fe9d)
 
 > [!NOTE]
 >  En el pasado, `master` era el nombre predominante para la rama por defecto.
