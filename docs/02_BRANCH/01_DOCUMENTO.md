@@ -1,14 +1,15 @@
 # Concepto de branch（rama）
 
-## ¿Qué es Branch?
+## ¿Qué es Branch (rama)?
 
 En el desarrollo de software, varios miembros de un equipo pueden estar añadiendo características o corrigiendo errores en una misma pieza de software al mismo tiempo.<br>
 Para ayudar con estos cambios de código paralelos, Git tiene una función llamada branch (rama).
 
-Los branches se utilizan para bifurcar y registrar el flujo de la historia.<br>
-Los branches no se ven afectadas por otros branches, por lo que se pueden realizar múltiples cambios al mismo tiempo en el mismo repositorio.
+Branch es una función de Git para ramificar la historia de un repositorio para trabajar de forma independiente.
+<br>
+Los branches no se ven afectadas por otros branches, por lo que se pueden realizar múltiples tareas en paralelo, como desarrollar nuevas funciones y corregir errores, mientras se mantiene la historia principal de desarrollo (branch `main`).
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/92c0e870-645b-45fd-8e23-a72aaa5aa3b5)
+> ![image](https://github.com/user-attachments/assets/9a2fbf3d-e0f5-4472-a8db-347ac6cede8d)
 
 Imagine las siguientes situaciones. ¿Sería útil un branch que permitiera trabajar en paralelo?
 
@@ -32,12 +33,13 @@ Normalmente, el base branch se denomina `master` o `main`.
 
 El diagrama siguiente ilustra el trabajo paralelo mediante branch.
 
+> ![image](https://github.com/user-attachments/assets/0c7f6ae6-0d3a-4d3c-bb34-c6e1ded31299)
+
 Los miembros del equipo crean un branch dedicado a su propio trabajo a partir de el branch principal, de modo que su trabajo no se vea afectado por el de otros miembros del equipo.<br>
 A continuación, el miembro del equipo que ha terminado su trabajo incorpora los cambios de su propio branch al branch principal.<br>
 De este modo, el trabajo del miembro del equipo no se ve afectado por el trabajo de otros miembros del equipo y puede incorporarse a su propio trabajo.<br>
 Esto también facilita la investigación y resolución de cualquier problema que pueda haber surgido.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e9298201-eb67-474f-8916-b486b33fa5c1)
 
 ## Integrar branch（merge, rebase）
 
