@@ -34,7 +34,7 @@ $ git log
 
 La historia en este punto se parece a esto.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/9ae26d44-1aee-47fe-89f2-d9bc3cf7eb51)
+![image](https://github.com/user-attachments/assets/6c080e70-8f0c-4f04-bb6b-4b134ab0dacb)
 
 ## Crear un branch: branch
 
@@ -55,12 +55,12 @@ Si ejecuta el comando `branch` sin ningún argumento, podrá ver una lista de br
 ```
 $ git branch
   issue1
-* master
+* main
 ```
 
 La historia en este punto se parece a esto.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/df3abd5a-832f-4dd5-82cd-6bff5d8e289e)
+![image](https://github.com/user-attachments/assets/39c9e346-cfb2-4433-9797-0a37ebe31048)
 
 ## Cambiar el branch actual: checkout
 
@@ -78,20 +78,19 @@ $ git checkout issue1
 Switched to branch 'issue1'
 $ git branch
 * issue1
-  master
+  main
 ```
 
 La historia en este punto se parece a esto.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/8b882d05-93a6-42ab-9ce5-43e0e5a2d517)
+![image](https://github.com/user-attachments/assets/546a529a-0a2f-4dce-9cd1-a5f7bc84ef31)
 
-___
-#### CONSEJOS
-Ejecute el comando `checkout` con la opción `-b` para crear y cambiar de branch a la vez.
-```
-$ git checkout -b <branch>
-```
-___
+> [!NOTE]
+> Ejecute el comando `checkout` con la opción `-b` para crear y cambiar de branch a la vez.
+> ```
+> $ git checkout -b <branch>
+> ```
+
 Si ejecutas commit mientras el branch actual es `issue1`, el historial se registrará en `issue1`.<br>
 Añade una descripción del comando `checkout` a `myfile.txt` y luego ejecuta commit.
 ```
@@ -109,25 +108,25 @@ $ git log
 
 La historia en este punto se parece a esto.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/96da7a3b-c2af-49cb-a30b-6ee122e332dc)
+![image](https://github.com/user-attachments/assets/f8f72d55-1408-4bf5-9231-e8438b469b10)
 
 ## Integrar Branches y Funcionalidades: merge
 
-Fusiona los cambios realizados en el branch `issue1` con el branch `master`. Los branches se fusionan utilizando el comando `merge`.
+Fusiona los cambios realizados en el branch `issue1` con el branch `main`. Los branches se fusionan utilizando el comando `merge`.
 ```
 $ git merge <branch>
 ```
 
 Este comando fusiona el branch del parámetro en el branch apuntado por _HEAD_.<br>
-Para meter `issue1` en `master`, primero ve a `master`.
+Para meter `issue1` en `main`, primero ve a `main`.
 
 ```
-$ git checkout master
-Switched to branch 'master'
+$ git checkout main
+Switched to branch 'main'
 ```
 
 Antes de ejecutar `merge`, abra `myfile.txt` una vez para comprobar el contenido.
-El archivo se editó en `issue1`, por lo que el contenido de `myfile.txt` en `master` no se ha modificado.
+El archivo se editó en `issue1`, por lo que el contenido de `myfile.txt` en `main` no se ha modificado.
 ```
 $ cat myfile.txt
 Comandos Git para manejar branch
@@ -143,10 +142,10 @@ Ejecte `merge`.
 $ git merge issue1
 ```
 
-El commit apuntado por `master` se ha movido a la misma posición que `issue1`.
+El commit apuntado por `main` se ha movido a la misma posición que `issue1`.
 Esta `merge` es un `fast-forward (avance rápido) merge`.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/f262c0c9-089c-4dcd-9f98-a47fa7f472ff)
+![image](https://github.com/user-attachments/assets/b74fd88b-7e7a-4e3d-a859-115f6c24c5ba)
 
 Abra `myfile.txt` para ver el contenido.<br>
 Los cambios se reflejan en el archivo.
@@ -164,7 +163,7 @@ $ git log
 
 ## Eliminar branch: branch -d
 
-El contenido de `issue1` se ha fusionado con éxito en `master` y debería eliminarse.
+El contenido de `issue1` se ha fusionado con éxito en `main` y debería eliminarse.
 
 Para eliminar un branch, ejecute el comando `branch` con la opción `-d`.
 ```
@@ -181,12 +180,12 @@ Deleted branch issue1 (was b2b23c4).
 Ahora `issue1` ha sido eliminado. Utilice el comando `branch` para ver si el branch ha sido eliminada.
 ```
 $ git branch
-* master
+* main
 ```
 
 La historia en este punto se parece a esto.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/c5b6fc59-ba23-4ee7-9bdb-a9128661706e)
+![image](https://github.com/user-attachments/assets/cea9b415-7d5b-405c-82ee-362b8aa8d19e)
 
 ## Trabajar en paralelo usando branches
 
@@ -202,9 +201,9 @@ Switched to branch 'issue2'
 $ git branch
 * issue2
   issue3
-  master
+  main
 ```
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/9bc95e2c-359e-4833-a747-944fe55b7d4d)
+![image](https://github.com/user-attachments/assets/5ccad91b-d695-48e3-b125-a85cdb61614a)
 
 Añade una descripción del comando `branch` a `myfile.txt` en `issue2` y ejecuta commit.
 
@@ -221,7 +220,7 @@ $ git status
 $ git commit -m "Se ha añadido la descripción de Branch"
 $ git log
 ```
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/55b30951-61be-4df9-9d1d-4191e4b45d7f)
+![image](https://github.com/user-attachments/assets/336e1fa1-78cb-462a-b689-917b52f6415c)
 
 Luego pasa al `issue3`.
 
@@ -247,18 +246,18 @@ $ git status
 $ git commit -m "Se ha añadido la descripción de Merge"
 $ git log
 ```
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/794fee99-66d8-44ad-8075-9d476f6c8b5c)
+![image](https://github.com/user-attachments/assets/2ad91927-fe15-46bc-8c9b-5d686c6183f6)
 
 El trabajo para añadir la descripción de `branch` y la descripción de `merge` podría realizarse por separado.
 
 ## Resolución de conflictos en el merge
 
-Fusiona los cambios realizados en `issue2` y los cambios realizados en `issue3` en el `master`.
+Fusiona los cambios realizados en `issue2` y los cambios realizados en `issue3` en el `main`.
 
-Primero, ve a `master` y luego importa `issue2`.
+Primero, ve a `main` y luego importa `issue2`.
 ```
-$ git checkout master
-Switched to branch 'master'
+$ git checkout main
+Switched to branch 'main'
 $ git merge issue2
 Updating b2b23c4..8f7aa27
 Fast-forward
@@ -268,7 +267,7 @@ Fast-forward
 
 Esta `merge` es un `fast-forward (avance rápido) merge`.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/c8c04bc3-16de-4214-8141-3aa910b76580)
+![image](https://github.com/user-attachments/assets/108136c2-0d5a-461a-973b-87797fd5ec63)
 
 A continuación, importa la `issue3`.
 
@@ -309,16 +308,16 @@ $ nano myfile.txt
 $ git status
 $ git add myfile.txt
 $ git commit -m "Fusionar branch issue3"
-# On branch master
+# On branch main
 nothing to commit (working directory clean)
 $ git log
 ```
 
 La historia es la siguiente.<br>
-Esta _merge_ soluciona un conflicto, por lo que se ha creado un nuevo _merge commit_ para registrar el cambio. La cabecera de `master` se ha movido allí.<br>
+Esta _merge_ soluciona un conflicto, por lo que se ha creado un nuevo _merge commit_ para registrar el cambio. La cabecera de `main` se ha movido allí.<br>
 Un _merge_ de este tipo se denomina _non fast-forward merge_.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e1e25920-bd2b-4929-a6cc-c16bde0570d1)
+![image](https://github.com/user-attachments/assets/f56ebcac-85b3-4472-8242-4d2ec4a1e883)
 
 Ejemplo:
 
