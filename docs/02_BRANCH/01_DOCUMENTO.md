@@ -63,6 +63,21 @@ Una fusión en la que no se crea un ***merge commit*** se denomina ***fast-forwa
 
 ![image](https://github.com/user-attachments/assets/ef270ef4-96e6-41c4-bdeb-ccb456aca668)
 
+## conflicto
+
+Cuando se ejecuta merge, las partes editadas del archivo se evalúan línea por línea y se fusionan automáticamente.
+
+![image](https://github.com/user-attachments/assets/d93b6ad0-386d-477c-a745-6fe0bc25e8ee)
+
+¿Qué ocurre si se realizan ediciones diferentes en la misma línea en cada branch, como se indica a continuación?
+
+![image](https://github.com/user-attachments/assets/696a30b3-466d-40ee-afc2-2f0d161b25ab)
+
+Si se modifica la misma línea en diferentes ramas, la fusión automática fallará.Esto se llama ***conflicto***.
+<br>Para resolver el conflicto, debe modificar manualmente el archivo y crear un nuevo commit.
+
+![image](https://github.com/user-attachments/assets/316ab0ec-35ca-4f7f-a361-95cfddb52ce6)
+
 <details>
 
 <summary>Ejemplo práctico de operación con `Topic Branch` y `Base Branch`
