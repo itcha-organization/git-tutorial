@@ -36,6 +36,10 @@ La historia en este punto se parece a esto.
 
 ![image](https://github.com/user-attachments/assets/6c080e70-8f0c-4f04-bb6b-4b134ab0dacb)
 
+> [!NOTE]
+>  ***HEAD:***
+> Es un puntero que indica dónde está trabajando actualmente, normalmente el commit más reciente en el extremo.
+
 ## Crear un branch: branch
 
 Aquí, creamos un branch llamada `issue1`.
