@@ -17,19 +17,13 @@ Imagine las siguientes situaciones. ¿Sería útil un branch que permitiera trab
 * Al solucionar un error urgente intrusivamente
 * Cuando quiera experimentar con un cambio temporal en un fragmento de código
 
-En Git, puede crear branch a voluntad. Sin embargo, para utilizar branch de forma eficaz, es importante establecer de antemano reglas para su funcionamiento.
+En Git, es habitual utilizar dos tipos de Branch, `Base Branch` y `Topic Branch`, para conseguir un trabajo paralelo.
 
-Las dos formas principales de operar con branch son la `Bese Branch` (Rama Base) y la `Topic Branch` (Rama de Tema).
+* `Base Branch` (Branch principal)<br>
+  Este branch se utiliza para mantener un estado estable que no contenga errores. Normalmente, trata la branch `main` como branch principal.
 
-* `Topic Branch` (Rama de Tema)
-
-Un topic branch es un branch que se crea para trabajar en un tema, como añadir una característica o corregir un error. Si está trabajando en varias temas al mismo tiempo, cree varias topic branches como necesite.
-
-* `Base Branch` (Rama Base)
-
-Este branch se utiliza para mantener un estado estable que no contenga errores. Cuando se realiza algún cambio, se crea un topic branch, se trabaja en el y se integra en el base branch.
-
-Normalmente, el base branch se denomina `master` o `main`.
+* `Topic Branch` (Branch de Tema)<br>
+  Un topic branch es un branch que se crea para trabajar en un tema, como desarrollar nuevas funciones y corregir errores. Cuando se realiza algún cambio, se crea un topic branch, se trabaja en el y se integra en el base branch.
 
 El diagrama siguiente ilustra el trabajo paralelo mediante branch.
 
@@ -37,49 +31,44 @@ El diagrama siguiente ilustra el trabajo paralelo mediante branch.
 
 Los miembros del equipo crean un branch dedicado a su propio trabajo a partir de el branch principal, de modo que su trabajo no se vea afectado por el de otros miembros del equipo.<br>
 A continuación, el miembro del equipo que ha terminado su trabajo incorpora los cambios de su propio branch al branch principal.<br>
-De este modo, el trabajo del miembro del equipo no se ve afectado por el trabajo de otros miembros del equipo y puede incorporarse a su propio trabajo.<br>
-Esto también facilita la investigación y resolución de cualquier problema que pueda haber surgido.
+De este modo, el trabajo del miembro del equipo no se ve afectado por el trabajo de otros miembros del equipo y puede incorporarse a su propio trabajo.
 
+## Integrar branch（merge）
 
-## Integrar branch（merge, rebase）
-
-Los branches de tema en los que se ha trabajado acaban fusionándose en un branch base. Hay dos formas de fusionar branches: utilizando `merge` o utilizando `rebase`. La historia de el branch fusionado difiere mucho según el método que se utilice.
+Los branches de tema en los que se ha trabajado acaban fusionándose en un branch principal utilizando un comando `merge`.
 
 ### merge
 
 `merge` puede utilizarse para fusionar varios flujos de historial.
 
-Por ejemplo, supongamos que tiene un branch llamada `bugfix` que se ramifica a partir de el branch `master`, como se muestra en el siguiente diagrama.
+Por ejemplo, supongamos que tiene un branch llamada `bugfix` que se ramifica a partir de el branch `main`, como se muestra en el siguiente diagrama. 
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/161e54f6-c82c-45ed-ae11-65d38f12c7aa)
+![image](https://github.com/user-attachments/assets/19526091-2026-4ae1-89ef-47b8eb596652)
 
-Fusionar este `bugfix` en `master` es muy fácil si el estado de `master` no ha cambiado desde antes. El historial de `bugfix` contiene todo el historial de `master`, por lo que `master` puede simplemente pasar a incorporar el contenido de `bugfix`. Este tipo de _merge_ se denomina _fast-forward (avance rápido) merge_.
+En este caso, para incorporar correcciones del branch `bugfix` al branch `main`, los cambios en ambos `main` y los cambios en el `bugfix` necesitan ser combinados en uno.
+<br>Por lo tanto, se crea un commit de fusión que incorpora ambos cambios. El puntero del `main` se traslada a ese _commit_.
+<br>Los commits creados por `merge`, como este commit, se llaman ***merge commit***.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/855eba0c-f18c-49cb-ab5f-76c6929ece49)
+![image](https://github.com/user-attachments/assets/c9e4398d-7b94-44ae-a2d7-06afba095e91)
 
-Sin embargo, hay casos en los que la historia del `master` ha avanzado más que cuando se bifurcó el `bugfix`. En este caso, los cambios en ambos `master` y los cambios en el `bugfix` necesitan ser combinados en uno.
+#### Fast-Forward Merge
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/8df4c7d8-656d-4b5a-a4d7-9fbec317e16d)
+Cuando las dos ramas se fusionan, se crea un nuevo ***merge commit***.
+<br>Sin embargo, si no se crea un nuevo commit en el lado `main` después de que `bugfix` se ramifique desde `main`, como se muestra a continuación, no se creará ningún ***merge commit***.
 
-Por lo tanto, se crea un _merge commit_ de fusión que incorpora ambos cambios. La cabecera del `master` se traslada a ese _commit_.
+![image](https://github.com/user-attachments/assets/23d31582-9d93-4a2f-9532-255a957e41d7)
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/f26feea3-2580-40f3-adc3-635b10196c94)
+La ejecución de merge simplemente mueve el puntero de `main` a la posición del `bugfix` para incorporar correcciones del branch `bugfix` al branch `main`.
+Una fusión en la que no se crea un ***merge commit*** se denomina ***fast-forward merge*** (fusión rápida).
 
-### rebase
+![image](https://github.com/user-attachments/assets/ef270ef4-96e6-41c4-bdeb-ccb456aca668)
 
-Como en el ejemplo `merge`, supongamos que hay una rama llamada `bugfix` que parte de `master`, como se muestra en el diagrama de abajo.
+<details>
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/45b061d2-2b94-43c8-9f45-30aad225dace)
+<summary>Ejemplo práctico de operación con `Topic Branch` y `Base Branch`
+</summary>
 
-Si fusionas los branches usando `rebase`, la historia se parecerá al diagrama de abajo.
-
-Cunado fusione `bugfix` en `master` usando `rebase`, la historia de `bugfix` se sustituye después de `master`.
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/2a8d5574-b01c-40ef-a1b9-d70baf6f5a22)
-
-Se recomienda utilizar el comando `merge` si no está familiarizado con Git.
-
-## Ejemplo de operación con `Topic Branch` y `Base Branch`
+## Ejemplo práctico de operación con `Topic Branch` y `Base Branch`
 
 El funcionamiento con `Topic Branch` y `Base Branch` se ilustra con un sencillo ejemplo.
 
@@ -101,3 +90,5 @@ Aquí, hay dos maneras de importar el contenido de `commit X`: usando `merge` o 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/94d99577-54bf-409f-a602-671b7a7a93c5)
 
 Esto le permite continuar desarrollando la función con el contenido de `commit X` incorporado. De este modo, la bifurcación les permite trabajar en diferentes tareas en paralelo.
+
+</details>
