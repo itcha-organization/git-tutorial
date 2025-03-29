@@ -44,3 +44,40 @@ Si solicitan y son aceptados como GitHub Campus Experts, pueden desarrollar habi
 **Vídeos explicativos en Youtube :**
 - Qué es y como poder ingresar al programa de Campus Experts de Github: https://www.youtube.com/watch?v=Z2nvu360NDA
 - Programa GitHub Campus Expert - ¿Qué es? Consejos: https://www.youtube.com/watch?v=ce3iqcq_nUs
+
+
+①複数人でのリポジトリ共有を体験
+・大沼のリモートリポジトリをcloneしてもらう
+　学校登録などの名前にする
+・各自feature/(名前)のブランチを作成してもらう
+　feature/kyo-onuma
+　feature/は典型的アプレフィックス
+　本来は、feature/funcion-login、feature/api-registro-usuariosのようにする
+　ブランチ名にアクセント記号（é, ñ, ó など）をつけることは推奨されません。
+・各自、Perfil_Kyo.mdのようなファイルを作成して、自己紹介と誕生日を書いてコミット
+　mdの説明
+・pushの構文説明、実際にpush
+・GitHub上で、自分の作成したブランチがあることを確認
+・PRを作ってみて、取り込み
+　いろいろ
+　実際のレビューなどは次回
+・mainブランチのコミットとファイルをブラウザ上で確認
+・pullでローカルに取り込む
+・誕生日が自分の次の人にお祝いメッセージを送る
+　・忘れずにトピックブランチを切るfeature/celebracion-(nombre) 
+　・誕生日が自分の次の人はだれか確認して、その人のファイルにお祝いのメッセージを追記
+　・commitしてpush
+・mainに取り込む
+　・GitHub上でマージリクエストを作成
+　・取り込む
+・誕生日が自分の前の人にプレゼントのリクエストをする
+　～省略～
+
+②リモートリポジトリ作成～体験してみる、イラスト見せつつ
+前提：チームリーダーと開発者の1人2役で実践。
+・jefeとしてリポジトリ作成~最初のpush
+・開発者としてclone
+・開発者としてpush～プルリクエスト作成
+・マージ
+・上司としてpull
+　pullは自身の次のタスクの前にする本来ならこの後機能追加などが入るはず
