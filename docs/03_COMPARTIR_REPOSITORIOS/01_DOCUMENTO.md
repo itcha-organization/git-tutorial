@@ -12,13 +12,14 @@ Para compartir el historial de cambios de su propio repositorio local en un repo
 Para ello, Git realiza una operación llamada `Push`.<br>
 Cuando realiza un `Push`, su historial de cambios se sube al repositorio remoto, de forma que el historial de cambios en el repositorio remoto es el mismo que el historial de cambios en el repositorio local.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/93ee162d-34c7-4a56-be7c-2ad54a0a098d)
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/52c9455d-cc61-4aa5-99a5-d91a10e54c24)
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/93ee162d-34c7-4a56-be7c-2ad54a0a098d)
+> ![image](https://github.com/user-attachments/assets/db0fe0b1-c241-41e2-ae0b-f1d405a3a7f6)
 
 ## Clonar repositorios remotos.
 
-Si dispone de un repositorio remoto que contiene el historial de cambios de otra persona, puede duplicarlo en su totalidad y trabajar en él usted mismo.
+Hasta esta sección, comenzamos nuestro trabajo creando un repositorio local vacío con `git init`.
+<br>
+Sin embargo, en el desarrollo en equipo real, es más común que cada miembro cree un repositorio local clonando un repositorio remoto común con `git clone`.
 
 ### Clone
 
@@ -26,12 +27,8 @@ Para duplicar un repositorio remoto, realice la operación `Clone`.
 
 Cuando ejecuta clonar, puede descargar todo el contenido del repositorio remoto y crearlo como repositorio local en otra máquina.
 
-Hay dos formas de crear un repositorio en Git, una usando el comando `git init` y la otra usando este comando `git clone`.
-
-___
-##### Consejo
-El repositorio local clonado es también un duplicado del historial de cambios, por lo que puede consultar el historial y confirmar exactamente como lo hizo en el repositorio original.
-___
+> [!NOTE]
+>  El repositorio local clonado es también un duplicado del historial de cambios, por lo que puede consultar el historial y confirmar exactamente como lo hizo en el repositorio original.
 
 ## Realice un pull contra el repositorio remoto.
 
@@ -44,12 +41,33 @@ Para actualizar el repositorio local desde un repositorio remoto, utilice la ope
 
 Ejecutando `Pull` descargará el último historial de cambios del repositorio remoto e incorporará su contenido a su repositorio local. 
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/ef14dfa3-6d79-40fd-b0e8-aec3add6eada)
+> ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/ef14dfa3-6d79-40fd-b0e8-aec3add6eada)
+> ![image](https://github.com/user-attachments/assets/a0dd172e-9b2e-4c6e-81cc-3d7dd5095661)
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/fa274df1-fec6-4445-aadb-d6ba2d965933)
+## Incorporar los cambios con ***Pull Request*** en el repositorio remoto.
+
+En el repositorio local, se utiliza `git merge` para incorporar los cambios del _branch de tema_ al _branch principal_(`main`).
+<br>
+En el repositorio remoto, se utiliza una función de GitHub llamada ***Pull Request*** para incorporar cambios al _branch principal_.
+
+### ***Pull Request***
+
+`Pull Request` (a menudo denominada `PR`) es una propuesta para fusionar un conjunto de cambios de una rama en otra.
+
+`Pull Request` proporciona una representación visual de las diferencias de contenido entre el branch de origen y el branch de destino.
+<br>
+Por eso, al crear un `Pull Request`, se puede revisar un conjunto de cambios con otros miembros antes de que se incorporen al código base principal. 
+
+`Pull Request` facilita la revisión del código dentro del equipo y contribuye a la detección temprana de errores
+
+> ![image](https://github.com/user-attachments/assets/4fbef338-4130-490f-a404-22d175319a29)
+
+<details>
+
+<summary>Más información: ¿Qué es Fetch?
+</summary>
 
 ## Diferencias entre Pull y Fetch
-
 
 El comando `fetch` para reflejar la última información del repositorio remoto en el repositorio local.<br>
 Comprueba la diferencia entre el comando `pull` y el comando `fetch`.
@@ -90,7 +108,8 @@ Desde este estado, si desea fusionar el contenido del repositorio remoto en el `
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/2d52a6b2-85a9-458b-ba81-f41d1c58fb35)
 
-___
-##### Consejo
-Cuando se realiza una fusión, el historial es el mismo que cuando se realiza un `pull`. En realidad, `pull` es porque está realizando `fetch` y `merge` internamente.
-___
+
+> [!NOTE]
+>  Cuando se realiza una fusión, el historial es el mismo que cuando se realiza un `pull`. En realidad, `pull` es porque está realizando `fetch` y `merge` internamente.
+
+</details>
