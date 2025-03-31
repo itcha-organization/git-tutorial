@@ -1,4 +1,89 @@
-# Tutorial de compartir repositorios
+# Tutorial 1: Comparta su perfil en un repositorio remoto
+
+## Clonar un repositorio remoto de GitHub y crear un repositorio local
+
+Abra el siguiente repositorio remoto de GitHub en otra pestaña.
+<br>
+https://github.com/kkk-commit/proyecto-presentacion-perfil
+
+Utilice el comando `clone` para clonar un repositorio. `<repositorio>` es la URL del repositorio remoto y `<directorio>` es el nombre del directorio a clonar.
+
+> ```
+> $ git clone <repositorio> <directorio>
+> ```
+
+En GitBash, el siguiente comando clona el repositorio remoto `proyecto-presentacion-perfil` y crea un repositorio local.
+```
+git clone git@github.com:kkk-commit/proyecto-presentacion-perfil.git ~/proyecto-presentacion-perfil
+```
+> ![image](https://github.com/user-attachments/assets/6aaa708a-0c95-4900-9efc-db8f4a270566)
+
+Ejecute los siguientes comando para ir al repositorio local clonado y compruebe el historial de _commit_ y el archivo `README.md`.
+```
+cd ~/proyecto-presentacion-perfil
+```
+```
+git log
+```
+```
+cat README.md
+```
+> ![image](https://github.com/user-attachments/assets/bb81042a-894d-45a7-8214-147f1d70290e)
+
+## Crear un archivo de perfil en el repositorio local y ejecutar commit.
+
+Para empezar a trabajar, cree un branch del tema con el nombre `feature/perfil-"su nombre"` y muévase a ese branch.
+
+> ![image](https://github.com/user-attachments/assets/1649cd37-ab9b-4c4a-a30e-c8597144e7b8)
+
+> [!NOTE]
+>  Normalmente, el nombre de un branch es
+> <br>el prefijo `feature/` + un resumen de tareas separada por guiones,
+> <br>por ejemplo `feature/funcion-login`,`feature/ui-modo-oscuro`.
+
+> [!CAUTION]
+>  Se desaconseja el uso de la `ñ` o de `caracteres acentuados(á, é, í, ó, ú)` en los nombres de branch.
+
+Cree un archivo llamado `Perfil_"su nombre".md`, escribe su cumpleaños y guarde el archivo.
+
+> ![image](https://github.com/user-attachments/assets/927179e2-48e6-4db2-ba16-a072da9cce58)
+> ![image](https://github.com/user-attachments/assets/814c58db-29be-4745-9737-198d28193f17)
+
+> [!NOTE]
+>  `.md` es un archivo en formato Markdown, un tipo de lenguaje que puede convertir texto plano escrito en notación simple en HTML y otros formatos.
+
+Cree un commit y guarda los cambios en el repositorio local.
+
+> ![image](https://github.com/user-attachments/assets/3da79e72-217b-45dd-976a-dc6cd5b05dd9)
+
+## Subir el cambio al repositorio remoto con `push`.
+
+Para realizar un push a un repositorio remoto, utilice el comando `push`.<br>
+`<repositorio>` especifica el repositorio remoto al que hacer push y `<refspec>` el branch a el que hacer push.
+
+```
+$ git push <repositorio> <refspec>...
+```
+
+Ejecute el siguiente comando para realizar un push contra el repositorio remoto `origin`.<br>
+Si utilizar `-u` como opción, puede omitir especificar el nombre del branch la próxima vez.<br>
+Sin embargo, al hacer push contra el primer repositorio remoto vacío, no puede omitir el nombre del repositorio remoto o el nombre del branch.
+
+```
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 250 bytes | 62.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:kkk-commit/tutorial-repo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+```
+
+
+## ***Working tree*** y ***staging*** (o **índice**)
+
+# Tutorial 2: Comparta su perfil en un repositorio remoto
 
 ## Cree un repositorio remoto en GitHub
 
