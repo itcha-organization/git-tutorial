@@ -27,6 +27,7 @@ Resumen de branch
 
 <details>
 <summary>Ejemplo de respuesta</summary>
+  
   ![image](https://github.com/user-attachments/assets/b38b8f0c-4da9-428d-b966-d6692e12e3b0)
 
 </details>
