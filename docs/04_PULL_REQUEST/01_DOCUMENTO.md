@@ -18,23 +18,13 @@ Por eso, al crear un `Pull Request`, se puede revisar un conjunto de cambios con
 
 ## Ventajas de los pull requests
 
-### El trabajo de revisión puede asignarse, gestionarse y registrarse
+### Se puede encontrar errores al revisar la lista de cambios
+- Al revisar la lista de archivos modificados, puedes verificar si falta algún archivo o si se ha añadido uno por error.
+- Al revisar los cambios en el código, puedes detectar errores tipográficos o pequeños errores de implementación.
 
-Las pull requests que se han creado pueden verse en una lista, lo que facilita la comprobación de las pull requests no completadas.<br>
-Esto permite a los revisores procesar las pull requests creadas sin omisiones.
-
-Los autores de pull requests y los revisores pueden intercambiar y discutir comentarios sobre los pull requests.<br>
-Si es necesario, puede modificar codigos y ejectar commit y push tantas veces como quieras en el branch de destino.<br>
-Cuando se ejecuta un push, el commit enviado se refleja automáticamente en el pull request.
-
-La calidad del código fusionado final puede ser alta tras las interacciones anteriores.<br>
-Estos intercambios también se registran en el servidor, de modo que los intercambios pasados puedan verse y discutirse de nuevo cuando surjan problemas.
-
-### Puede facilitar las revisiones.
-
-Un pull request puede mostrar claramente las partes modificadas del código.
-El autor del pull request también puede comunicar la intención del código y cualquier información adicional en forma de comentarios. Esto reduce la carga del revisor.
-
+### Registro del historial de cambios e intenciones
+- Usando el título, la descripción y los comentarios, puedes incluir información de contexto sobre "por qué se realizaron estos cambios".
+- En el futuro, si alguien necesita saber la razón de un cambio, podrá consultar la información en el Pull Request.
 
 ## Proceso de desarrollo mediante pull requests.
 
@@ -54,3 +44,21 @@ Repita los pasos 3-7 anteriores tantas veces como sea necesario. Como resultado,
 
 ![image](https://github.com/user-attachments/assets/ed9f61f7-1a61-4897-92ef-d912dd883842)
 
+
+## ⚡IMPORTANTE⚡ Estrategias para reducir los conflictos
+
+### 1. **Crear Pull Requests pequeños y frecuentes**
+- Los cambios grandes tienden a generar más conflictos.
+- Si envías Pull Requests de **pequeña escala (por funcionalidad o por corrección específica)**, las revisiones serán más rápidas y las fusiones más sencillas.
+- Lo ideal es **"un PR debe tener un solo propósito"**.
+
+### 2. **Organizar bien la asignación de tareas**
+- Cuando varias personas editan el mismo archivo frecuentemente, es más fácil que ocurran conflictos.
+- Al momento de asignar las tareas, si se presta atención para reducir la edición de un mismo archivo por varias personas, se pueden evitar conflictos.
+
+### 3. **Mantenerse actualizado con la rama `main`**
+- Si actualizas periódicamente tu rama de trabajo local con `git pull origin main` para **mantener una base actualizada**, los conflictos serán menores y más fáciles de resolver.
+- Es fundamental **incorporar los cambios de `main` antes de hacer un `push`**.
+
+### 4. **Mantener una comunicación fluida con el equipo**
+- Una comunicación constante y clara entre los miembros del equipo ayuda a prevenir conflictos antes de que ocurran.
