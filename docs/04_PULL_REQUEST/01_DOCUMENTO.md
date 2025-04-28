@@ -1,18 +1,20 @@
 # Pull request
 
-## ¿Qué es un pull request?
+En el repositorio local, se utiliza `git merge` para incorporar los cambios del _branch de tema_ al _branch principal_(`main`).
+<br>
+En el repositorio remoto, se utiliza una función de GitHub llamada ***Pull Request*** para incorporar cambios al _branch principal_.
 
-En pocas palabras, un pull request es una función que notifica a otros desarrolladores los cambios en el repositorio local de un desarrollador.<br>
-El pull request ofrece las siguientes funciones.
+## ¿Qué es ***Pull Request*** ?
 
-- Notificar los cambios a los revisores y otras partes interesadas, como funciones adicionales o modificaciones.
-- Indicar claramente dónde se ha modificado el código.
-- Proporcionar un foro de comunicación sobre el código.
+`Pull Request` (a menudo denominada `PR`) es una propuesta para fusionar un conjunto de cambios de una rama en otra.
 
-El uso de pull requests puede ayudar a arraigar una cultura de revisión del código en la organización.<br>
-Las revisiones del código permiten reducir los errores.
+`Pull Request` proporciona una representación visual de las diferencias de contenido entre el branch de origen y el branch de destino.
+<br>
+Por eso, al crear un `Pull Request`, se puede revisar un conjunto de cambios con otros miembros antes de que se incorporen al código base principal. 
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/c534146b-be5f-408e-b3a1-af908de38191)
+`Pull Request` facilita la revisión del código dentro del equipo y contribuye a la detección temprana de errores
+
+![image](https://github.com/user-attachments/assets/783aff74-a220-49d2-936b-ec7462748b21)
 
 ## Ventajas de los pull requests
 
@@ -38,17 +40,17 @@ El autor del pull request también puede comunicar la intención del código y c
 
 El proceso mediante pull requests es el siguiente.
 
-①[ desarrollador ] Realice un clone o pull para obtener el código en el repositorio remoto con el que está trabajando.<br> 
-②[ desarrollador ] Crear un branch de trabajo en el repositorio local.<br>
-③[ desarrollador ] Modificar el código.<br>
-④[ desarrollador ] Cuando el trabajo esté terminado, realice un push.<br>
-⑤[ desarrollador ] Crear un pull request.<br>
-⑥[ revisor ] Compruebe y revise los cambios de la pull request notificada.<br>
-⑦[ revisor ] Determine los resultados de la revisión y proporcione información al desarrollador si es necesario.<br>
-⑧[ revisor ] Si, tras la revisión, no hay problemas, fusiona.<br>
-⑨[ revisor ] Si, como resultado de la revisión, la pull request en sí ya no es necesaria, por ejemplo, la respuesta en sí ya no es necesaria, la pull request se cierra.
+①[ Desarrollador ] Realice un clone o pull para obtener el código en el repositorio remoto con el que está trabajando.<br> 
+②[ Desarrollador ] Crear un branch de trabajo en el repositorio local.<br>
+③[ Desarrollador ] Modificar el código.<br>
+④[ Desarrollador ] Cuando el trabajo esté terminado, realice un push.<br>
+⑤[ Desarrollador ] Crear un pull request.<br>
+⑥[ Encargado de la revisión ] Compruebe y revise los cambios de la pull request notificada.<br>
+⑦[ Encargado de la revisión ] Determine los resultados de la revisión y proporcione información al desarrollador si es necesario.<br>
+⑧[ Encargado de la revisión ] Si, tras la revisión, no hay problemas, fusiona.<br>
+⑨[ Encargado de la revisión ] Si, como resultado de la revisión, la pull request en sí ya no es necesaria, por ejemplo, la respuesta en sí ya no es necesaria, la pull request se cierra.
 
 Repita los pasos 3-7 anteriores tantas veces como sea necesario. Como resultado, se puede mejorar la calidad del código fusionado final.
 
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/e41d1cc1-44af-40e7-952d-b8dc543b6b87)
+![image](https://github.com/user-attachments/assets/ed9f61f7-1a61-4897-92ef-d912dd883842)
 
