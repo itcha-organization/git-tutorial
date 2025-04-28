@@ -161,6 +161,12 @@ Añada **lo que le gustaría recibir como regalo** al perfil de **alguien cuyo c
 - Cree un commit y guarde el cambio.
 - Suba el cambio al repositorio remoto con `push`.
 - Cree un `Pull Request` para integrar los cambios en el branch del tema en el branch `main` en el repositorio remoto.
+
+En el archivo que acabas de editar, haz una nueva línea y añade **lo que quieras como segundo regalo**.
+- Añada **lo que quieras como segundo regalo** al perfil de la persona cuyo cumpleaños es uno **antes** del suyo y guarde el archivo.
+- Cree un commit y guarde el cambio.
+- Suba el cambio al repositorio remoto con `push`.
+- Abra la `Pull Request` que acaba de crear y compruebe que se ha añadido el commit.
 - Fusione el `Pull Request` creado.
 - Refleje los cambios de otros miembros en el repositorio local con `pull`.
 
