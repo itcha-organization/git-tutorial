@@ -50,7 +50,10 @@ Tras ejecutar el comando pull, se produce un conflicto local. Compruébalo con e
 
 ### 3. Vuelva a ejecutar commit y push después de modificar el código.
 
-Ejecute los siguientes comandos para commit y push.
+Cree un commit y complete la resolución del conflicto.
+
+A continuación, suba al mismo branch en el remoto y refleje la adición de commit en el branch remote.
+<br>Abra la pestaña `commit` de la `Pull Request` para ver que se ha actualizado.
 
 </details>
 
