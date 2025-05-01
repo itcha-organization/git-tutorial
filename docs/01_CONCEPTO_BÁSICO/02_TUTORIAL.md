@@ -25,25 +25,27 @@ cd ~/tutorial
 git init
 ```
 > ![image](https://github.com/user-attachments/assets/47131400-00b9-437b-bca5-8c0e4c59b9c7)
+
 ___
-##### Consejo
-El comando `init` crea el directorio `.git`. El directorio `.git` contiene los archivos necesarios para que Git funcione.<br>
-> ![image](https://github.com/user-attachments/assets/c746a558-fc7c-403e-b57c-9ebdf94b475f)
+> [!NOTE]
+>  El comando `init` crea el directorio `.git`. El directorio `.git` contiene los archivos necesarios para que Git funcione.
+> > ![image](https://github.com/user-attachments/assets/c746a558-fc7c-403e-b57c-9ebdf94b475f)
 ___
 
 ### Guardar los Cambios en el Repositorio: status, add, commit, log, diff
-
-Cree un fichero de texto llamado `sample.txt` en el directorio `tutorial`. 
+Ejecute el siguiente código para abrir VS Code en el directorio actual.
 ```
-nano sample.txt
+code .
 ```
+> ![image](https://github.com/user-attachments/assets/48e17333-b6d1-45e5-8874-b1a9e9b5c8e9)
 
-Se abrirá un editor, pegue el siguiente texto y guárdelo.
-Para guardar, teclee las siguientes teclas en tres pasos: `Ctrl + X`, `Y`, `Intro`
+Cree un archivo de texto llamado `sample.txt` en el directorio `tutorial`. 
+<br>Abra el archivo y pegue el siguiente texto y guárdelo.
 ```
 Comandos Git básicos
+<contenido>
 ```
-> ![image](https://github.com/user-attachments/assets/9847cf90-a418-4ae7-9101-dada31863fc0)
+> ![image](https://github.com/user-attachments/assets/86c12396-61af-4c57-8392-d2701b6fbb9f)
 
 Utiliza el comando `status` para comprobar el árbol de trabajo y el estado de los staging (índice)s de los directorios bajo control Git.<br>
 Ejecuta el comando `status` para comprobar el estado del directorio `tutorial`.
@@ -52,8 +54,8 @@ git status
 ```
 > ![image](https://github.com/user-attachments/assets/d482e4e0-4244-4d4c-ac77-a21fd28da8f7)
 
-Utilice el comando `add` para registrar ficheros en el staging (índice). <br>
-El `<archivo>` especifica el archivo que se registrará en el staging (índice). Se pueden especificar varios ficheros, separados por espacios.
+Utilice el comando `add` para registrar archivos en el staging (índice). <br>
+El `<archivo>` especifica el archivo que se registrará en el staging (índice). Se pueden especificar varios archivos, separados por espacios.
 ```
 $ git add <archivo>..
 ```
@@ -96,27 +98,27 @@ A continuación, editamos `sample.txt` y hacemos commit de nuevo.
 
 Añade `sample.txt` al siguiente texto.
 ```
-start a working area (see also: git help tutorial)
-   init      Create an empty Git repository or reinitialize an existing one
+iniciar un área de trabajo (ver también: tutorial de ayuda de git)
+   init Crear un repositorio Git vacío o reinicializar uno existente
 
-work on the current change (see also: git help everyday)
-   add       Add file contents to the index
+trabajar en el cambio actual (ver también: git help everyday)
+   add Añadir el contenido de un archivo al índice
 
-examine the history and state (see also: git help revisions)
-   log       Show commit logs
-   status    Show the working tree status
+examinar el historial y el estado (ver también: git help revisions)
+   log Mostrar los logs de commit
+   status Mostrar el estado del árbol de trabajo
 
-grow, mark and tweak your common history
-   commit    Record changes to the repository
+aumentar, marcar y modificar el historial común
+   commit Registrar los cambios en el repositorio
 ```
-> ![image](https://github.com/user-attachments/assets/40591c83-49bf-460d-a8b6-90b2997659f6)
+> ![image](https://github.com/user-attachments/assets/24d9b9c9-a2a4-41b9-bca3-1f9f7c4d325f)
 
 El comando `diff` también puede utilizarse para revisar los cambios.<br>
 Las filas añadidas se indican con texto verde y las suprimidas con texto rojo.
 ```
 git diff
 ```
-> ![image](https://github.com/user-attachments/assets/65000ccc-7c91-4f4e-9c22-d0a4050bc02c)
+> ![image](https://github.com/user-attachments/assets/2120db71-c122-412e-a032-fa7229cf8e8d)
 
 Ejecute el siguiente comando para añadir `sample.txt` al staging (índice) y compruébelo.<br>
 ```
@@ -146,3 +148,21 @@ git status
 git log
 ```
 > ![image](https://github.com/user-attachments/assets/a94925d5-4318-41af-935b-65a3737e207f)
+
+### Ver contenido de commits anteriores: show
+
+Cada commit tiene un `hash` que la identifica de forma única.
+![image](https://github.com/user-attachments/assets/eb177490-7c71-4af5-af94-3152b0f1e28b)
+
+El comando `show` permite ver lo que ha cambiado en un commit. La sintaxis es la siguiente, con el hash como parámetro.
+```
+$ git show <hash>
+```
+> Ejemplo:
+> <br>
+> ![image](https://github.com/user-attachments/assets/68722d6c-b575-40fa-a0a0-d2d0cc97a0b6)
+
+Con Git, también se pueden realizar operaciones avanzadas como revertir un archivo a un estado de commit específico o restablecer un commit.
+<br>Si le interesa, puedes investigar y experimentar con la siguiente documentación oficial.
+
+Documentación oficial: https://git-scm.com/docs
