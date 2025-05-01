@@ -1,5 +1,7 @@
 # EJERCICIO
 
+
+
 ## Pregunta 1
 Cree un directorio `~/ejercicio1` y colócala bajo control Git (cree un repositorio local en `~/ejercicio1`).
 
@@ -15,12 +17,13 @@ En el directorio `~/ejercicio1`, cree un archivo llamado `git_help.txt` y introd
 A continuación, cree un commit y guarde la modificación.
 ```
 Lista de comandos git
+
 ```
 
 <details>
 <summary>Ejemplo de respuesta</summary>
 
-![image](https://github.com/user-attachments/assets/36bf00df-f9cf-4a50-9d6b-b9bc71c0b045)
+![image](https://github.com/user-attachments/assets/fe61c123-3c6b-4b8b-8a32-38187f091bb1)
 
 </details>
 
