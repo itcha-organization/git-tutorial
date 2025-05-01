@@ -17,25 +17,22 @@ Imagine las siguientes situaciones. ¿Sería útil un branch que permitiera trab
 * Al solucionar un error urgente intrusivamente
 * Cuando quiera experimentar con un cambio temporal en un fragmento de código
 
-En Git, es habitual utilizar dos tipos de Branch, `Base Branch` y `Topic Branch`, para conseguir un trabajo paralelo.
-
-* `Base Branch` (Branch principal)<br>
-  Este branch se utiliza para mantener un estado estable que no contenga errores. Normalmente, trata la branch `main` como branch principal.
-
-* `Topic Branch` (Branch de Tema)<br>
-  Un topic branch es un branch que se crea para trabajar en un tema, como desarrollar nuevas funciones y corregir errores. Cuando se realiza algún cambio, se crea un topic branch, se trabaja en el y se integra en el base branch.
-
-El diagrama siguiente ilustra el trabajo paralelo mediante branch.
+## Flujo ideal de trabajo con ***Branch***
 
 > ![image](https://github.com/user-attachments/assets/0c7f6ae6-0d3a-4d3c-bb34-c6e1ded31299)
 
-Los miembros del equipo crean un branch dedicado a su propio trabajo a partir de el branch principal, de modo que su trabajo no se vea afectado por el de otros miembros del equipo.<br>
-A continuación, el miembro del equipo que ha terminado su trabajo incorpora los cambios de su propio branch al branch principal.<br>
+Branch `main` es un branch especial llamada `Base Branch` (Branch principal). Este branch se utiliza para mantener un estado estable que no contenga errores.
+<br>
+**No es deseable editar código y crear commit en el branch `main`, excepto para el primer commit.**
+
+Antes de empezar a editar código, los miembros del equipo debería crear un branch dedicado a su propio trabajo a partir de el branch `main`, para trabajar sin afectar otros.<br>
+A continuación, el miembro del equipo que ha terminado su trabajo incorpora los cambios de su propio branch al branch `main`.<br>
+
 De este modo, el trabajo del miembro del equipo no se ve afectado por el trabajo de otros miembros del equipo y puede incorporarse a su propio trabajo.
 
 ## Integrar branch（merge）
 
-Los branches de tema en los que se ha trabajado acaban fusionándose en un branch principal utilizando un comando `merge`.
+Los branches de tema en los que se ha trabajado acaban fusionándose en el branch `main` utilizando un comando `merge`.
 
 ### merge
 
