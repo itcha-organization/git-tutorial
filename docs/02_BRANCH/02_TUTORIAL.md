@@ -1,6 +1,16 @@
 # Tutorial de Branch
 
-## Crear un nuevo repositorio y un commit initial: init, add, commit
+En este tutorial, realizará cada una de las tres tareas siguientes en un branch de trabajo
+- Tarea1: Añadir la línea de resumen del comando `checkout` a un archivo.
+- Tarea2: Añadir la línea de resumen del comando `branch` a un archivo.
+- Tarea3: Añadir la línea de resumen del comando `merge` a un archivo.
+
+Para cada tarea, repetirás el siguiente flujo.
+- Crear un branch.
+- Editar el código según las instrucciones de la tarea y hacer un commit.
+- Fusionar en el branch `main`
+
+## REPASO: Crear un nuevo repositorio y un commit initial: init, add, commit
 
 Primero, crea un nuevo directorio y crea un repositorio vacío en él. Aquí, hemos creado un directorio llamado `tutorial_branch`.
 ```
@@ -58,7 +68,7 @@ git log
 
 </details>
 
-La historia en este punto se parece a esto.
+El historial de commit en este punto se parece a esto.
 
 ![image](https://github.com/user-attachments/assets/6c080e70-8f0c-4f04-bb6b-4b134ab0dacb)
 
@@ -91,7 +101,7 @@ git branch
 
 </details>
 
-La historia en este punto se parece a esto.
+El historial de commit en este punto se parece a esto.
 
 ![image](https://github.com/user-attachments/assets/39c9e346-cfb2-4433-9797-0a37ebe31048)
 
@@ -120,7 +130,7 @@ git branch
 
 </details>
 
-La historia en este punto se parece a esto.
+El historial de commit en este punto se parece a esto.
 
 ![image](https://github.com/user-attachments/assets/546a529a-0a2f-4dce-9cd1-a5f7bc84ef31)
 
@@ -152,7 +162,7 @@ git commit -m "Se ha añadido la descripción de la Checkout"
 git log
 ```
 
-La historia en este punto se parece a esto.
+El historial de commit en este punto se parece a esto.
 
 ![image](https://github.com/user-attachments/assets/f8f72d55-1408-4bf5-9231-e8438b469b10)
 
@@ -245,7 +255,7 @@ git branch
 
 </details>
 
-La historia en este punto se parece a esto.
+El historial de commit en este punto se parece a esto.
 
 ![image](https://github.com/user-attachments/assets/cea9b415-7d5b-405c-82ee-362b8aa8d19e)
 
@@ -397,7 +407,7 @@ Abra `myfile.txt` y mire las filas en conflicto.
 
 En caso de conflicto, debe corregirse manualmente al código correcto.<br>
 Esta vez, tanto la descripción de `Branch` como la de `Merge` deben mantenerse, así que modifíquelas como sigue.<br>
-Para el desarrollo real, es mejor consultar con el equipo cómo corregir el problema correctamente.
+**Para el desarrollo real, es mejor consultar con el equipo cómo corregir el problema correctamente.**
 
 ```
 Comandos Git para manejar branch
@@ -434,3 +444,7 @@ Esta _merge_ soluciona un conflicto, por lo que se ha creado un nuevo _merge com
 Un _merge_ de este tipo se denomina _non fast-forward merge_.
 
 ![image](https://github.com/user-attachments/assets/f56ebcac-85b3-4472-8242-4d2ec4a1e883)
+
+> [!NOTE]
+>  ***HEAD:***
+> Es un puntero que indica dónde está trabajando actualmente, normalmente el commit más reciente en el extremo.
