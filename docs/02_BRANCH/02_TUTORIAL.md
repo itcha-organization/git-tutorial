@@ -3,34 +3,60 @@
 ## Crear un nuevo repositorio y un commit initial: init, add, commit
 
 Primero, crea un nuevo directorio y crea un repositorio vacío en él. Aquí, hemos creado un directorio llamado `tutorial_branch`.
-Seguiremos utilizando este directorio en tutoriales posteriores.
 ```
-$ mkdir ~/tutorial_branch
-$ cd ~/tutorial_branch
-$ git init
-Initialized empty Git repository
-in /Users/yourname/Desktop/tutorial/.git/
+mkdir ~/tutorial_branch
 ```
+```
+cd ~/tutorial_branch
+```
+```
+git init
+```
+<details>
 
-Cree un achivo de texto llamado `myfile.txt` en el directorio tutorial_branch.
+<summary>Ejemplo de ejecución de comandos
+</summary>
 
-```
-$ nano myfile.txt
-```
+> ![image](https://github.com/user-attachments/assets/52ea72f1-cf20-4195-9f87-2237d6cef2f3)
 
-En el contenido del archivo, introduzca el siguiente texto.
+</details>
+
+Ejecute el siguiente commando para abrir VS Code en el directorio actual.
+```
+code .
+```
+> ![image](https://github.com/user-attachments/assets/0a4eef33-048d-4717-93da-8724a543e5f1)
+
+Cree un achivo de texto llamado `myfile.txt` en el directorio `tutorial_branch`.
+<br>
+Abra el archivo y pegue el siguiente texto y guárdelo.
 
 ```
 Comandos Git para manejar branch
 ```
+> ![image](https://github.com/user-attachments/assets/bf72a990-358f-4235-a56e-cb0baad3058c)
 
 Haga un commit initial.
 ```
-$ git add myfile.txt
-$ git status
-$ git commit -m "first commit"
-$ git log
+git add myfile.txt
 ```
+```
+git status
+```
+```
+git commit -m "first commit"
+```
+```
+git log
+```
+<details>
+
+<summary>Ejemplo de ejecución de comandos
+</summary>
+
+> ![image](https://github.com/user-attachments/assets/8bcd6704-dff4-498b-8155-850ac359b1d9)
+
+</details>
 
 La historia en este punto se parece a esto.
 
@@ -41,26 +67,29 @@ La historia en este punto se parece a esto.
 > Es un puntero que indica dónde está trabajando actualmente, normalmente el commit más reciente en el extremo.
 
 ## Crear un branch: branch
+Aquí, creamos un branch llamada `tarea1`.
 
-Aquí, creamos un branch llamada `issue1`.
+Los branches pueden crearse con el comando `branch`. Es habitual utilizar el resúmen de la tarea como nombres de branch.
+> ```
+> $ git branch <nombre de branch>
+> ```
 
-Los branches pueden crearse con el comando `branch`.
+Vamos a crear un branch llamada `tarea1`. 
 ```
-$ git branch <branchname>
+git branch tarea1
 ```
+Ejecute el comando `branch` sin parámetros para ver una lista de branch. El branch con el prefijo * es el branch actual.
+```
+git branch
+```
+<details>
 
-Vamos a crear un branch llamada `issue1`. 
-```
-$ git branch issue1
+<summary>Ejemplo de ejecución de comandos
+</summary>
 
-```
+> ![image](https://github.com/user-attachments/assets/cc404541-bd07-400b-8c88-3bc472c05ec6)
 
-Si ejecuta el comando `branch` sin ningún argumento, podrá ver una lista de branch. El branch con el prefijo * es el branch actual.
-```
-$ git branch
-  issue1
-* main
-```
+</details>
 
 La historia en este punto se parece a esto.
 
@@ -68,46 +97,59 @@ La historia en este punto se parece a esto.
 
 ## Cambiar el branch actual: checkout
 
-Para añadir _commits_ a su branch `issue1` recién creada, necesita cambiar el branch actual a `issue1`.
+Para añadir _commits_ a su branch `tarea1` recién creada, necesita cambiar el branch actual a `tarea1`.
 
 El cambio de branch se realiza con el comando `checkout`.
+> ```
+> $ git checkout <nombre de branch>
+> ```
+Cambie a el branch `tarea1`.<br>
+A continuación, utilice el comando `git branch` para confirmar que el branch actual ha pasado al `tarea1`.
 ```
-$ git checkout <branch>
+git checkout tarea1
 ```
+```
+git branch
+```
+<details>
 
-Cambie a el branch `issue1`.<br>
-A continuación, utilice el comando `git branch` para confirmar que el branch actual ha pasado al `issue1`.
-```
-$ git checkout issue1
-Switched to branch 'issue1'
-$ git branch
-* issue1
-  main
-```
+<summary>Ejemplo de ejecución de comandos
+</summary>
+
+> ![image](https://github.com/user-attachments/assets/ee6494d8-9699-4816-9c72-a9ed0a94149f)
+
+</details>
 
 La historia en este punto se parece a esto.
 
 ![image](https://github.com/user-attachments/assets/546a529a-0a2f-4dce-9cd1-a5f7bc84ef31)
 
 > [!NOTE]
-> Ejecute el comando `checkout` con la opción `-b` para crear y cambiar de branch a la vez.
+> El comando `checkout` con la opción `-b` **crea branch nuevo y cambia de branch a la vez**. En realidad, este comando se utiliza más.
 > ```
-> $ git checkout -b <branch>
+> $ git checkout -b <nombre de branch>
 > ```
 
-Si ejecutas commit mientras el branch actual es `issue1`, el historial se registrará en `issue1`.<br>
-Añade una descripción del comando `checkout` a `myfile.txt` y luego ejecuta commit.
+Si ejecutas commit mientras el branch actual es `tarea1`, el commit se registrará en `tarea1`.
+
+Añada la siguiente descripción del comando checkout al archivo `myfile.txt` y guárdelo.
 ```
-Comandos Git para manejar branch
 Checkout: Cambia o Crea Branch
 ```
+> ![image](https://github.com/user-attachments/assets/7b29c449-9071-4e49-8847-25110e79084f)
+
+En Git bash, haga un commit
 ```
-$ nano myfile.txt
-$ git diff
-$ git add myfile.txt
-$ git status
-$ git commit -m "Se ha añadido la descripción de la Checkout"
-$ git log
+git add myfile.txt
+```
+```
+git status
+```
+```
+git commit -m "Se ha añadido la descripción de la Checkout"
+```
+```
+git log
 ```
 
 La historia en este punto se parece a esto.
@@ -116,186 +158,245 @@ La historia en este punto se parece a esto.
 
 ## Integrar Branches y Funcionalidades: merge
 
-Fusiona los cambios realizados en el branch `issue1` con el branch `main`. Los branches se fusionan utilizando el comando `merge`.
+Fusiona los cambios realizados en el branch `tarea1` en el branch `main`.
+
+Para realizar la fusión entre ramas usamos el comando `merge`.
+<br>
+Tenemos que hacerlo estando situados en el branch que queremos usar como base, e indicando el nombre del branch que queremos fusionar.
+> ```
+> $ git merge <nombre de branch que queremos fusionar>
+> ```
+
+En este caso, para fusionar `tarea1` en `main`, primero ve a `main`.
 ```
-$ git merge <branch>
+git checkout main
 ```
 
-Este comando fusiona el branch del parámetro en el branch apuntado por _HEAD_.<br>
-Para meter `issue1` en `main`, primero ve a `main`.
+Antes de ejecutar `merge`, compruebe el historial de cambios del repositorio usando la comando `git log`.
+<br>
+En `main`, el historial contiene solo initial commit.
+```
+git log
+```
+<details>
 
-```
-$ git checkout main
-Switched to branch 'main'
-```
+<summary>Ejemplo de ejecución de comandos
+</summary>
 
-Antes de ejecutar `merge`, abra `myfile.txt` una vez para comprobar el contenido.
-El archivo se editó en `issue1`, por lo que el contenido de `myfile.txt` en `main` no se ha modificado.
-```
-$ cat myfile.txt
-Comandos Git para manejar branch
-```
+> ![image](https://github.com/user-attachments/assets/115cb39a-d311-4682-beb6-9177e3180577)
 
-Antes de ejecutar `merge`, compruebe el historial de cambios del repositorio usando la comando `git log`.El historial contiene solo initial commit.
-```
-$ git log
-```
+</details>
 
-Ejecte `merge`.
-```
-$ git merge issue1
-```
+Antes de ejecutar `merge`, abra `myfile.txt` en VS Code.
+El archivo se editó en `tarea1`, por lo que el contenido de `myfile.txt` en `main` no se ha modificado.
+<br>
+Branch le permite **cambiar entre diferentes versiones de código al instante**.
+> ![image](https://github.com/user-attachments/assets/1ddea53e-a04b-431c-bf9b-9edce85e421e)
 
-El commit apuntado por `main` se ha movido a la misma posición que `issue1`.
-Esta `merge` es un `fast-forward (avance rápido) merge`.
-
-![image](https://github.com/user-attachments/assets/b74fd88b-7e7a-4e3d-a859-115f6c24c5ba)
-
-Abra `myfile.txt` para ver el contenido.<br>
-Los cambios se reflejan en el archivo.
+Ejecte `merge` para fusionar el branch `tarea1` en el branch `main`.
 ```
-$ cat myfile.txt
-Comandos Git para manejar branch
-Checkout: Cambia o Crea Branch
+git merge tarea1
 ```
 
 Compruebe el historial de cambios del repositorio usando la comando `git log`.<br>
 Se ha añadido commit de "Se ha añadido la descripción de la Checkout".
 ```
-$ git log
+git log
 ```
+<details>
+
+<summary>Ejemplo de ejecución de comandos
+</summary>
+
+> ![image](https://github.com/user-attachments/assets/983027ec-66d7-4687-84fe-344bdbf39245)
+
+</details>
+
+Abra `myfile.txt` para ver el contenido.
+La segunda línea añadida en el branch `tarea1` ha sido incorporada al archivo en el branch `main`.
+> ![image](https://github.com/user-attachments/assets/c08c0fb5-4a5a-4a8b-9368-683f132adb29)
+
+En este ejemplo commit apuntado por `main` se ha movido a la misma posición que `tarea1` despues de merge.
+Esta `merge` es un `fast-forward (avance rápido) merge`.
+
+![image](https://github.com/user-attachments/assets/b74fd88b-7e7a-4e3d-a859-115f6c24c5ba)
 
 ## Eliminar branch: branch -d
+El contenido de `tarea1` se ha fusionado con éxito en `main` y debería eliminarse. Para eliminar un branch, ejecute el comando `branch` con la opción `-d`.
+> ```
+> $ git branch -d <nombre de branch>
+> ```
 
-El contenido de `issue1` se ha fusionado con éxito en `main` y debería eliminarse.
-
-Para eliminar un branch, ejecute el comando `branch` con la opción `-d`.
+Para eliminar `tarea1`, ejecte el siguiente comando.
 ```
-$ git branch -d <branchname>
-```
-
-Para eliminar `issue1`, emita el siguiente comando.
-
-```
-$ git branch -d issue1
-Deleted branch issue1 (was b2b23c4).
+git branch -d tarea1
 ```
 
-Ahora `issue1` ha sido eliminado. Utilice el comando `branch` para ver si el branch ha sido eliminada.
+Ahora `tarea1` ha sido eliminado. Utilice el comando `branch` para ver si el branch ha sido eliminada.
 ```
-$ git branch
-* main
+git branch
 ```
+<details>
+
+<summary>Ejemplo de ejecución de comandos
+</summary>
+
+> ![image](https://github.com/user-attachments/assets/758ab5fe-7a2c-45ea-aa54-74e88fd057f8)
+
+</details>
 
 La historia en este punto se parece a esto.
 
 ![image](https://github.com/user-attachments/assets/cea9b415-7d5b-405c-82ee-362b8aa8d19e)
 
 ## Trabajar en paralelo usando branches
-
 A continuación, cree dos branches y trabaje en paralelo.
 
-Primero, crea `issue2` y `issue3` y muévele a `issue2`.
+Primero, crea `tarea2` y `tarea3` y muévele a `tarea2`.
+```
+git branch tarea2
+```
+```
+git branch tarea3
+```
+```
+git checkout tarea2
+```
+<details>
 
-```
-$ git branch issue2
-$ git branch issue3
-$ git checkout issue2
-Switched to branch 'issue2'
-$ git branch
-* issue2
-  issue3
-  main
-```
+<summary>Ejemplo de ejecución de comandos
+</summary>
+
+> ![image](https://github.com/user-attachments/assets/35f4ba3d-7e9b-4046-82f4-a8d599f25750)
+
+</details>
+
 ![image](https://github.com/user-attachments/assets/5ccad91b-d695-48e3-b125-a85cdb61614a)
 
-Añade una descripción del comando `branch` a `myfile.txt` en `issue2` y ejecuta commit.
-
+Añada la siguiente descripción del comando branch al archivo `myfile.txt` y guárdelo.
 ```
-Comandos Git para manejar branch
-Checkout: Cambia o Crea Branch
 Branch: Crear, eliminar branch o ver una lista de branch
 ```
+> ![image](https://github.com/user-attachments/assets/f773fc5e-dc74-450f-b23a-cbd234b0db2f)
+
+Haga commit.
+
 ```
-$ nano myfile.txt
-$ git diff
-$ git add myfile.txt
-$ git status
-$ git commit -m "Se ha añadido la descripción de Branch"
-$ git log
+git add myfile.txt
 ```
+```
+git status
+```
+```
+git commit -m "Se ha añadido la descripción de Branch"
+```
+```
+git log
+```
+<details>
+
+<summary>Ejemplo de ejecución de comandos
+</summary>
+
+> ![image](https://github.com/user-attachments/assets/1ab26405-7448-4f73-85f9-c5a322f06b21)
+
+</details>
+
 ![image](https://github.com/user-attachments/assets/336e1fa1-78cb-462a-b689-917b52f6415c)
 
-Luego pasa al `issue3`.
-
+Luego pasa al `tarea3`.
 ```
-$ git checkout issue3
-Switched to branch 'issue3'
+git checkout tarea3
 ```
 
-Abra `myfile.txt`. La adición de la descripción del comando `branch` se hizo en `issue2`, por lo que el `myfile.txt` en `issue3` sólo tiene la descripción del comando `checkout`.
+Abra `myfile.txt`. La descripción del comando `branch` se añadido en `tarea2`, por lo que el `myfile.txt` en `tarea3` sólo tiene la descripción del comando `checkout`.
 
-Ahora vamos a añadir una descripción del comando `merge` y ejecutar commit.
-
+Añada la siguiente descripción del comando `merge` al archivo `myfile.txt` y guárdelo.
 ```
-Comandos Git para manejar branch
-Checkout: Cambia o Crea Branch
 Merge: Integrar branch
 ```
+> ![image](https://github.com/user-attachments/assets/7db589f3-b939-4540-87a7-41fde98a7c86)
+
 ```
-$ nano myfile.txt
-$ git diff
-$ git add myfile.txt
-$ git status
-$ git commit -m "Se ha añadido la descripción de Merge"
-$ git log
+git add myfile.txt
 ```
+```
+git status
+```
+```
+git commit -m "Se ha añadido la descripción de Merge"
+```
+```
+git log
+```
+<details>
+
+<summary>Ejemplo de ejecución de comandos
+</summary>
+
+> ![image](https://github.com/user-attachments/assets/894d6ff1-8d12-4260-89de-e79668addafa)
+
+</details>
+
 ![image](https://github.com/user-attachments/assets/2ad91927-fe15-46bc-8c9b-5d686c6183f6)
 
 El trabajo para añadir la descripción de `branch` y la descripción de `merge` podría realizarse por separado.
 
 ## Resolución de conflictos en el merge
 
-Fusiona los cambios realizados en `issue2` y los cambios realizados en `issue3` en el `main`.
+Los cambios realizados en `tarea2` y en `tarea3` deben fusionarse en `main`.
 
-Primero, ve a `main` y luego importa `issue2`.
+Primero, fusione `tarea2` en `main`.
+Porque `main` es la base de la fusión, pase a `main` y luego fusione `tarea2` en `main`.
+<br>
+Luego con el commando `log`, compruebe que el commit realizado en `tarea2` se ha añadido al historial de commit en `main`.
 ```
-$ git checkout main
-Switched to branch 'main'
-$ git merge issue2
-Updating b2b23c4..8f7aa27
-Fast-forward
- myfile.txt |    2 ++
- 1 files changed, 2 insertions(+), 0 deletions(-)
+git checkout main
 ```
+```
+git merge tarea2
+```
+```
+git log
+```
+<details>
+
+<summary>Ejemplo de ejecución de comandos
+</summary>
+
+> ![image](https://github.com/user-attachments/assets/b36fc9f6-28af-4077-8f4b-e8017eaaec6a)
+
+</details>
 
 Esta `merge` es un `fast-forward (avance rápido) merge`.
 
 ![image](https://github.com/user-attachments/assets/108136c2-0d5a-461a-973b-87797fd5ec63)
 
-A continuación, importa la `issue3`.
+A continuación, fusione `tarea3` en `main` y compruebe que el commit realizado en `tarea3` se ha añadido al historial de commit en `main`.
+```
+git merge tarea3
+```
+```
+git log
+```
+<details>
 
-```
-$ git merge issue3
-Auto-merging myfile.txt
-CONFLICT (content): Merge conflict in myfile.txt
-Automatic merge failed; fix conflicts and then commit the result.
-```
+<summary>Ejemplo de ejecución de comandos
+</summary>
 
-El `merge` automática ha fallado. Parece que se ha producido un conflicto porque se ha cambiado el contenido de la misma línea. El contenido de `myfile.txt` en este momento tendría este aspecto.
+> ![image](https://github.com/user-attachments/assets/99585dad-a802-4cf0-a145-cbcf673991f5)
 
-```
-Comandos Git para manejar branch
-Checkout: Cambia o Crea Branch
-<<<<<<< HEAD
-Branch: Crear, eliminar branch o ver una lista de branch
-=======
-Merge: Integrar branch
->>>>>>> issue3
-```
+</details>
+
+Como resultado de `log`, no se ha capturado ningún commit, el `merge` automática ha fallado.
+<br>
+El conflicto se ha producido porque la tercera línea de `myfile.txt` se ha modificado en ambas branches `tarea2` y `tarea3`.
+
+Abra `myfile.txt` y mire las filas en conflicto.
+> ![image](https://github.com/user-attachments/assets/83be745f-b6f8-4728-b8d4-7f084b48cf44)
 
 En caso de conflicto, debe corregirse manualmente al código correcto.<br>
-Esta vez, tanto la descripción de Branch como la de Merge deben mantenerse, así que modifíquelas como sigue.<br>
+Esta vez, tanto la descripción de `Branch` como la de `Merge` deben mantenerse, así que modifíquelas como sigue.<br>
 Para el desarrollo real, es mejor consultar con el equipo cómo corregir el problema correctamente.
 
 ```
@@ -308,31 +409,28 @@ Merge: Integrar branch
 Ahora que el conflicto se ha corregido, ejecute `commit` de nuevo.
 
 ```
-$ nano myfile.txt
-$ git status
-$ git add myfile.txt
-$ git commit -m "Fusionar branch issue3"
-# On branch main
-nothing to commit (working directory clean)
-$ git log
+git status
 ```
+```
+git add myfile.txt
+```
+```
+git commit -m "He solucionado el conflicto entre las ramas tarea3 y main"
+```
+```
+git log
+```
+<details>
+
+<summary>Ejemplo de ejecución de comandos
+</summary>
+
+> ![image](https://github.com/user-attachments/assets/1856b2c6-eaa7-4623-8712-aeb2f742c781)
+
+</details>
 
 La historia es la siguiente.<br>
 Esta _merge_ soluciona un conflicto, por lo que se ha creado un nuevo _merge commit_ para registrar el cambio. La cabecera de `main` se ha movido allí.<br>
 Un _merge_ de este tipo se denomina _non fast-forward merge_.
 
 ![image](https://github.com/user-attachments/assets/f56ebcac-85b3-4472-8242-4d2ec4a1e883)
-
-Ejemplo:
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/5564ac5f-18db-42b4-91a7-78bd108ae75a)
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/2f4547f5-a5d4-4e4d-abad-0b42ef1475db)
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/ac5f20a5-4132-4fe6-be7d-8f6618aa1753)
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/2b638f26-24ec-49e2-bd7c-c55dec4d7bf5)
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/894669d7-985b-42af-b979-5f9c268814d0)
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/6db1b549-8f89-414e-937c-1e8d38af5035)
