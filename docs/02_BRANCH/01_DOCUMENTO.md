@@ -19,7 +19,7 @@ Imagine las siguientes situaciones. ¿Sería útil un branch que permitiera trab
 
 ## Flujo ideal de trabajo con ***Branch***
 
-> ![image](https://github.com/user-attachments/assets/0c7f6ae6-0d3a-4d3c-bb34-c6e1ded31299)
+![image](https://github.com/user-attachments/assets/abce21ca-15ec-4741-b33c-fd2c89bf12d7)
 
 Branch `main` es un branch especial llamada `Base Branch` (Branch principal). Este branch se utiliza para mantener un estado estable que no contenga errores.
 <br>
@@ -29,6 +29,10 @@ Antes de empezar a editar código, los miembros del equipo debería crear un bra
 A continuación, el miembro del equipo que ha terminado su trabajo incorpora los cambios de su propio branch al branch `main`.<br>
 
 De este modo, el trabajo del miembro del equipo no se ve afectado por el trabajo de otros miembros del equipo y puede incorporarse a su propio trabajo.
+
+
+¿Alguna vez ha tenido problemas para averiguar cuál es el último código justo antes de la presentación de un módulo?
+Puede evitar esos problemas teniendo siempre el último código estable en el branch `main`.
 
 ## Integrar branch（merge）
 
