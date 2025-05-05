@@ -355,6 +355,15 @@ El trabajo para añadir la descripción de `branch` y la descripción de `merge`
 ## Resolución de conflictos en el merge
 
 Los cambios realizados en `tarea2` y en `tarea3` deben fusionarse en `main`.
+<br>
+Sin embargo, **se produce un conflicto** porque la tercera línea del archivo `myfile.txt` se edita en ambos `tarea2` y `tarea3`.
+
+> [!NOTE]
+>  ***Pasos para resolver conflictos:***
+> 1. Mostrar archivos con conflicto con el commando `git status`
+> 2. Abrir el archivo y corregir manualmente los conflictos
+> 3. Agregar el archivo resuelto al staging con el commando `git add`
+> 4. Completar el proceso con el commando `git commit`
 
 Primero, fusione `tarea2` en `main`.
 Porque `main` es la base de la fusión, pase a `main` y luego fusione `tarea2` en `main`.
@@ -402,6 +411,12 @@ Como resultado de `log`, no se ha capturado ningún commit, el `merge` automáti
 <br>
 El conflicto se ha producido porque la tercera línea de `myfile.txt` se ha modificado en ambas branches `tarea2` y `tarea3`.
 
+Utilice el comando `status` para comprobar si hay conflictos en `myfile.txt`.
+
+```
+git status
+```
+
 Abra `myfile.txt` y mire las filas en conflicto.
 > ![image](https://github.com/user-attachments/assets/83be745f-b6f8-4728-b8d4-7f084b48cf44)
 
@@ -444,7 +459,3 @@ Esta _merge_ soluciona un conflicto, por lo que se ha creado un nuevo _merge com
 Un _merge_ de este tipo se denomina _non fast-forward merge_.
 
 ![image](https://github.com/user-attachments/assets/f56ebcac-85b3-4472-8242-4d2ec4a1e883)
-
-> [!NOTE]
->  ***HEAD:***
-> Es un puntero que indica dónde está trabajando actualmente, normalmente el commit más reciente en el extremo.
