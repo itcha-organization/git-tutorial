@@ -4,7 +4,7 @@
 
 Abra el siguiente repositorio remoto de GitHub en otra pestaña.
 <br>
-https://github.com/kkk-commit/proyecto-presentacion-perfil
+https://github.com/itcha-organization/proyecto-presentacion-perfil
 
 Utilice el comando `clone` para clonar un repositorio. `<repositorio>` es la URL del repositorio remoto y `<directorio>` es el nombre del directorio a clonar.
 
