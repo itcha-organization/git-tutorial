@@ -10,6 +10,14 @@ Para cada tarea, repetirás el siguiente flujo.
 - Editar el código según las instrucciones de la tarea y hacer un commit.
 - Fusionar en el branch `main`
 
+## Preparación previa
+Añada una extension `git graph` en VS Code.
+<br>
+Esta extensión muestra el historial de commit en tiempo real.
+
+> ![image](https://github.com/user-attachments/assets/94d68fb6-d5aa-4b62-9cba-c3fd39aebfe4)
+> ![image](https://github.com/user-attachments/assets/29f5fcf0-04fa-4423-9172-2cc8ff12820c)
+
 ## REPASO: Crear un nuevo repositorio y un commit initial: init, add, commit
 
 Primero, crea un nuevo directorio y crea un repositorio vacío en él. Aquí, hemos creado un directorio llamado `tutorial_branch`.
