@@ -5,7 +5,7 @@
 1. Clonar un repositorio remoto de GitHub y crear un repositorio local
 
 - Abra el siguiente repositorio remoto de GitHub en otra pestaña.
-  https://github.com/kkk-commit/conflict-practice
+  https://github.com/itcha-organization/conflict-practice
 
 - En GitBash, utilice el comando `clone` para clonar un repositorio. `<repositorio>` es la URL del repositorio remoto y `<directorio>` es el nombre del directorio a clonar.
 
@@ -15,47 +15,11 @@
 
 2. Crear una nueva rama a partir de main.
 
-3. Editar el archivo team.txt agregando su propia información.
+3. Editar el archivo `miembros.txt` agregando su propia información.
 
 4. Crear un Pull Request.
 
 5. Resolver cualquier conflicto que surja antes de hacer merge.
-
-<details>
-
-<summary>Pasos para resolver conflicto y actualizar `Pull Request`
-</summary>
-
-## Pasos para resolver conflicto y actualizar `Pull Request`
-
-Si surgen conflictos, edite y fusione el código manualmente.
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/86873e5a-325f-4156-a16c-b702f965379e)
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/22abde12-a64c-48b0-b679-988d12fe6706)
-
-### 1. Ejecutar un pull hacia el branch master.
-
-En primer lugar, en el branch en el que está trabajando, ejecuta un pull hacia el branch destino de la `pull request`.<br>
-De este modo, los últimos cambios en el branch de destino de la `pull request` se incorporan al branch de trabajo.
-
-```
-$ git checkout ★nombre de branch de trabajo★
-$ git pull origin master
-```
-
-### 2. Resolver los conflictos en el repositorio local.
-
-Tras ejecutar el comando pull, se produce un conflicto local. Compruébalo con el comandos `git status`.
-
-### 3. Vuelva a ejecutar commit y push después de modificar el código.
-
-Cree un commit y complete la resolución del conflicto.
-
-A continuación, suba al mismo branch en el remoto y refleje la adición de commit en el branch remote.
-<br>Abra la pestaña `commit` de la `Pull Request` para ver que se ha actualizado.
-
-</details>
 
 # PARTE 2
 
@@ -63,7 +27,7 @@ A continuación, suba al mismo branch en el remoto y refleje la adición de comm
 
 2. Crear una nueva rama a partir de main.
 
-3. Editar los archivos `birthdays.txt` y `hobbies.txt` agregando su propia información.
+3. Editar los archivos `fechas_de_nacimiento.txt` y `pasatiempos.txt` agregando su propia información.
 
 4. Crear un Pull Request.
 
