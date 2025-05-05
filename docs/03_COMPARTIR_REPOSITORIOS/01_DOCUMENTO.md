@@ -62,7 +62,7 @@ Con este flujo, puede disfrutar de las siguientes ventajas.
 - Los procesos de trabajo se normalizan entre los miembros del equipo, lo que permite una cooperación más fluida.
 - Branch `main` del repositorio remoto puede mantenerse actualizada y estable siempre.
 
-![image](https://github.com/user-attachments/assets/89e3f427-ec4c-4003-844f-c09b54d60b70)
+![image](https://github.com/user-attachments/assets/989dbfa5-c13f-47c5-a8cf-ac49447468b0)
 > **Pasos de GitHub Flow:**
 > 1. En el repositorio local, actualizar `main` con `pull`. Si no hay repositorio local, clonar el repositorio remoto con `clone`.
 > 2. En el repositorio local, crar un branch de trabajo a partir de `main`.
