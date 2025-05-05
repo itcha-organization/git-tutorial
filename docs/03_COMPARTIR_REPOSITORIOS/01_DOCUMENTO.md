@@ -48,19 +48,31 @@ Ejecutando `Pull` descargará el último historial de cambios del repositorio re
 
 En el repositorio local, se utiliza `git merge` para incorporar los cambios del _branch de tema_ al _branch principal_(`main`).
 <br>
-En el repositorio remoto, se utiliza una función de GitHub llamada ***Pull Request*** para incorporar cambios al _branch principal_.
+En el repositorio remoto, se utiliza una función de GitHub llamada ***Pull Request*** para fusionar cambios al _branch principal_.
 
-### ***Pull Request***
+***Pull Request*** es una función de la interfaz gráfica de GitHub que le permite seleccionar el branch base y el branch que desea fusionar y realizar la fusión.
 
-`Pull Request` (a menudo denominada `PR`) es una propuesta para fusionar un conjunto de cambios de una rama en otra.
+![image](https://github.com/user-attachments/assets/f7554e21-f3ee-4ee6-9c1d-239841b23b9e)
 
-`Pull Request` proporciona una representación visual de las diferencias de contenido entre el branch de origen y el branch de destino.
-<br>
-Por eso, al crear un `Pull Request`, se puede revisar un conjunto de cambios con otros miembros antes de que se incorporen al código base principal. 
+## ***GitHub Flow***: Flujo para un desarrollo en equipo eficiente utilizando GitHub
 
-`Pull Request` facilita la revisión del código dentro del equipo y contribuye a la detección temprana de errores
+***GitHub Flow*** es una estrategia de trabajo con Git muy simple y popular, especialmente en proyectos que usan GitHub.
 
-> ![image](https://github.com/user-attachments/assets/4fbef338-4130-490f-a404-22d175319a29)
+Con este flujo, puede disfrutar de las siguientes ventajas.
+- Los procesos de trabajo se normalizan entre los miembros del equipo, lo que permite una cooperación más fluida.
+- Branch `main` del repositorio remoto puede mantenerse actualizada y estable siempre.
+
+![image](https://github.com/user-attachments/assets/89e3f427-ec4c-4003-844f-c09b54d60b70)
+> **Pasos de GitHub Flow:**
+> 1. En el repositorio local, actualizar `main` con `pull`. Si no hay repositorio local, clonar el repositorio remoto con `clone`.
+> 2. En el repositorio local, crar un branch de trabajo a partir de `main`.
+> 3. Codificar en el branch de trabajo.
+> 4. Hacer un commit.
+> 5. Subir el branch de trabajo al repositorio remoto con `push`.
+> 6. Crear un pull request para fusionar el branch de trabajo en `main` en GitHub.
+> 7. Fusionar el pull request en GitHub.
+> 8. Eliminar el branch de trabajo fusionado en GitHub.
+> 9. Eliminar el branch de trabajo fusionado en el repositorio local.
 
 <details>
 
