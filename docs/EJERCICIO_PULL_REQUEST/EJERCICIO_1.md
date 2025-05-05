@@ -32,14 +32,13 @@ cat README.md
 
 ## Crear un archivo de perfil en el repositorio local y ejecutar commit.
 
-Para empezar a trabajar, cree un branch del tema con el nombre `feature/perfil-"su nombre"` y muévase a ese branch.
+Para empezar a trabajar, cree un branch del tema con el nombre `perfil-"su nombre"` y muévase a ese branch.
 
 > ![image](https://github.com/user-attachments/assets/1649cd37-ab9b-4c4a-a30e-c8597144e7b8)
 
 > [!NOTE]
->  Normalmente, el nombre de un branch es
-> <br>el prefijo `feature/` + un resumen de tareas separada por guiones,
-> <br>por ejemplo `feature/funcion-login`,`feature/ui-modo-oscuro`.
+>  Normalmente, el nombre de un branch es un resumen de la tarea separado por guiones,
+> <br>por ejemplo `funcion-login`,`ui-modo-oscuro`.
 
 > [!CAUTION]
 >  Se desaconseja el uso de la `ñ` o de `caracteres acentuados(á, é, í, ó, ú)` en los nombres de branch.
@@ -143,7 +142,7 @@ ls -l
 
 ## Editar archivos creados por otros miembros
 Añada un mensaje de felicitación al **perfil de alguien cuyo cumpleaños sea uno después del suyo**.
-- Para empezar, cree un branch del tema con el nombre `feature/celebracion-"nombre de su compañero"` y muévase a ese branch
+- Para empezar, cree un branch del tema con el nombre `celebracion-"nombre de su compañero"` y muévase a ese branch
   ![image](https://github.com/user-attachments/assets/06e5d65c-c75a-4515-b815-c10f2bce0670)
 - Añada un mensaje de felicitación al perfil de la persona cuyo cumpleaños es uno después del suyo y guarde el archivo.
 - Cree un commit y guarde el cambio.
@@ -156,7 +155,7 @@ Añada un mensaje de felicitación al **perfil de alguien cuyo cumpleaños sea u
 
 ## Repaso: Editar archivos creados por otros miembros
 Añada **lo que le gustaría recibir como regalo** al perfil de **alguien cuyo cumpleaños es uno antes que el suyo**.
-- Para empezar, cree un branch del tema con el nombre `feature/peticion-regalo-"su compañro"` y muévase a ese branch
+- Para empezar, cree un branch del tema con el nombre `peticion-regalo-"su compañro"` y muévase a ese branch
 - Añada lo que le gustaría recibir como regalo al perfil de la persona cuyo cumpleaños es uno **antes** del suyo y guarde el archivo.
 - Cree un commit y guarde el cambio.
 - Suba el cambio al repositorio remoto con `push`.
