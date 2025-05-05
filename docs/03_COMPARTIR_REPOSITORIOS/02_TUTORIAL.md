@@ -32,11 +32,6 @@ La situación actual se ilustra en el siguiente diagrama.
 ### Repaso: Cree un repositorio local y realize el primer commit.
 
 Siga los siguientes comandos, cree un repositorio local llamado `tutorial-repo` y un archivo llamado `README.md` y haga el commit initial. <br>
-Para el contenido de `README.md`, introduzca lo siguiente.
-```
-# tutorial-repo
-```
-
 ```
 mkdir ~/tutorial-repo
 ```
@@ -134,7 +129,7 @@ Utilice el comando `clone` para clonar un repositorio. `<repositorio>` es la URL
 > $ git clone <repositorio> <directorio>
 > ```
 
-El siguiente comando replice el repositorio remoto en el directorio actual con el nombre de directorio `tutorial-repo-miembro`.  Sustituya la `★su propia url★` por la URL suya y ejecute.
+El siguiente comando crea el directorio `~/tutorial-repo-miembro` y clona allí el repositorio remoto especificado por la URL. Sustituya la `★su propia url★` por la URL suya y ejecute.
 ```
 git clone ★su propia url★ ~/tutorial-repo-miembro
 ```
@@ -183,21 +178,15 @@ git log
 ```
 > ![image](https://github.com/user-attachments/assets/06a678c9-098a-4eaa-ac69-ffcabdfb4f9c)
 
-A continuación, sube el branch `resumen-comandos` al repositorio remoto con el comando `push`
+A continuación, sube el branch `resumen-comandos` al repositorio remoto con el comando `push`.
 ```
 git push -u origin resumen-comandos
 ```
 > ![image](https://github.com/user-attachments/assets/074f9cac-69bc-4d60-9813-33d8632f2869)
 
 Abre la página del repositorio `tutorial-repo` en Github.<br>
-Compruebe que se ha cargado el branch `resumen-comandos`.
+Compruebe que se ha subido el branch `resumen-comandos`.
 > ![image](https://github.com/user-attachments/assets/faf1856b-fd45-4cf7-be0e-ea2e3e6b6b12)
-
-Comprueba que el commit realizado en `resumen-commandos` ha sido importado a `main`.
-<br>
-Además, se crea un commit cuando se fusiona una Pull Request, por lo que hay tres commits en total.
-> ![image](https://github.com/user-attachments/assets/7547a102-dfc7-4b03-9259-736bdd8807fd)
-
 
 ## Miembro: Fusiona un branch de trabajo en `main` en GitHub utilizando **Pull Request**.
 Cree una Pull Request para fusionar `resumen-comandos` en `main` según las siguientes imagenes.
@@ -205,55 +194,47 @@ Cree una Pull Request para fusionar `resumen-comandos` en `main` según las sigu
 > ![image](https://github.com/user-attachments/assets/2e731ea5-6b36-4190-a90a-19a8a69bafc6)
 
 A continuación, fusione los Pull Request que haya creado.
+> ![image](https://github.com/user-attachments/assets/5db151f2-7ba3-4fde-b3eb-0e6ace4a7a39)
 > ![image](https://github.com/user-attachments/assets/f4b5974a-c401-4a9e-a2f8-4b0ddbb5f652)
-> ![image](https://github.com/user-attachments/assets/ad785196-67d7-4a3e-9cd6-474ac299aa7a)
+
 
 Abra la pestaña `Code` y compruebe que se ha importado el archivo `comandos.txt`.
-> ![image](https://github.com/user-attachments/assets/82006e2c-a5be-455d-afdc-7385f5eb70e1)
+> ![image](https://github.com/user-attachments/assets/ad785196-67d7-4a3e-9cd6-474ac299aa7a)
 
+Comprueba que el commit realizado en `resumen-commandos` ha sido importado a `main`.
+<br>
+Además, se crea un commit cuando se fusiona una Pull Request, por lo que hay tres commits en total.
+> ![image](https://github.com/user-attachments/assets/7547a102-dfc7-4b03-9259-736bdd8807fd)
 
-![Uploading image.png…]()
+## Líder: Ejecute un pull para obtener los cambios en el repositorio remoto.
 
-## Ejecute un pull para obtener los cambios en el repositorio remoto.
-
-Obtener los últimos cambios del repositorio remoto en el repositorio local `tutorial-repo`.
-
-Tomemos el contenido empujado desde `tutorial-repo-miembro` al repositorio remoto e importémoslo a `tutorial-repo`.
-
-Utilice el comando `pull` para realizar un pull. Si omite el nombre del repositorio, el pull se realiza contra el repositorio registrado con el nombre `origin`.
+Sólo existe el commit initial en el repositorio local del líder `tutorial-repo`.　Obtenga los commits que subió al repositorio remoto como miembro.
 
 Como con `push`, `<repositorio>` especifica el repositorio remoto y `<refspec>` el branch.
-
-```
-$ git pull <repositorio> <refspec>...
-```
+<br>
+Si omite el nombre del repositorio, el pull se realiza contra el repositorio registrado con el nombre `origin`.
+> ```
+> $ git pull <repositorio> <refspec>...
+> ```
 
 En primer lugar, ejecute el siguiente comando para ir al repositorio `tutorial-repo`.<br>
 Compruebe el historial de commits y el contenido de los archivos en `tutorial-repo`.
-
 ```
-$ cd ~/tutorial-repo
-$ git log
-$ cat sample.txt
+cd ~/tutorial-repo
+```
+```
+git log
 ```
 
 A continuación, realice un pull.
-
 ```
-$ git pull origin master
+git pull origin main
 ```
+> ![image](https://github.com/user-attachments/assets/1cad84b3-dd79-4b73-a5ed-aa0294adaf04)
 
 Compruebe el historial de commits y el contenido de los archivos otra vez.<br>
 Se ha añadido el commit en el historial. Además, se ha añadido el contenido del archivo.
-
 ```
-$ git log
-$ cat sample.txt
+git log
 ```
-
-Ejemplo:
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/a582913a-92cd-410c-bdcb-c68efd2b4ded)
-
-La situación actual se ilustra en el siguiente diagrama.
-
-![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/33733745-7be0-4b6b-8dc9-396c2c33ec0d)
+> ![image](https://github.com/user-attachments/assets/4ac6846f-cd69-40c1-b2a0-47f407208fb0)
