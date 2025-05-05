@@ -237,4 +237,4 @@ Se ha añadido el commit en el historial. Además, se ha añadido el contenido d
 ```
 git log
 ```
-> ![image](https://github.com/user-attachments/assets/4ac6846f-cd69-40c1-b2a0-47f407208fb0)
+> ![image](https://github.com/user-attachments/assets/232eea1e-6ae4-4023-8306-8b4e24f486b6)
