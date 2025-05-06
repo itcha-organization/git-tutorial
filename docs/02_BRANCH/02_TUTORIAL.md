@@ -111,7 +111,7 @@ git branch
 
 El historial de commit en este punto se parece a esto.
 
-![image](https://github.com/user-attachments/assets/39c9e346-cfb2-4433-9797-0a37ebe31048)
+![image](https://github.com/user-attachments/assets/60841160-7ae9-4436-a32e-e2c089726dad)
 
 ## Cambiar el branch actual: checkout
 
@@ -140,7 +140,7 @@ git branch
 
 El historial de commit en este punto se parece a esto.
 
-![image](https://github.com/user-attachments/assets/546a529a-0a2f-4dce-9cd1-a5f7bc84ef31)
+![image](https://github.com/user-attachments/assets/8fb4de25-aa8e-4534-b283-450d4cb8a985)
 
 > [!NOTE]
 > El comando `checkout` con la opción `-b` **crea branch nuevo y cambia de branch a la vez**. En realidad, este comando se utiliza más.
@@ -169,10 +169,9 @@ git commit -m "Se ha añadido la descripción de la Checkout"
 ```
 git log
 ```
-
 El historial de commit en este punto se parece a esto.
 
-![image](https://github.com/user-attachments/assets/f8f72d55-1408-4bf5-9231-e8438b469b10)
+![image](https://github.com/user-attachments/assets/cbf5fcd6-4ade-423b-8595-9428a97fa0e7)
 
 ## Integrar Branches y Funcionalidades: merge
 
@@ -237,7 +236,7 @@ La segunda línea añadida en el branch `tarea1` ha sido incorporada al archivo 
 En este ejemplo commit apuntado por `main` se ha movido a la misma posición que `tarea1` despues de merge.
 Esta `merge` es un `fast-forward (avance rápido) merge`.
 
-![image](https://github.com/user-attachments/assets/b74fd88b-7e7a-4e3d-a859-115f6c24c5ba)
+![image](https://github.com/user-attachments/assets/367c6036-8989-40fd-96fa-7064773763d3)
 
 ## Eliminar branch: branch -d
 El contenido de `tarea1` se ha fusionado con éxito en `main` y debería eliminarse. Para eliminar un branch, ejecute el comando `branch` con la opción `-d`.
@@ -265,7 +264,7 @@ git branch
 
 El historial de commit en este punto se parece a esto.
 
-![image](https://github.com/user-attachments/assets/cea9b415-7d5b-405c-82ee-362b8aa8d19e)
+![image](https://github.com/user-attachments/assets/20e1e26b-caf2-4f89-b142-16269c0e76ec)
 
 ## Trabajar en paralelo usando branches
 A continuación, cree dos branches y trabaje en paralelo.
@@ -289,7 +288,7 @@ git checkout tarea2
 
 </details>
 
-![image](https://github.com/user-attachments/assets/5ccad91b-d695-48e3-b125-a85cdb61614a)
+![image](https://github.com/user-attachments/assets/a807efb3-2ed1-4079-9579-a36b890941bc)
 
 Añada la siguiente descripción del comando branch al archivo `myfile.txt` y guárdelo.
 ```
@@ -320,7 +319,7 @@ git log
 
 </details>
 
-![image](https://github.com/user-attachments/assets/336e1fa1-78cb-462a-b689-917b52f6415c)
+![image](https://github.com/user-attachments/assets/2f792e0a-9650-436b-a027-29ff7357fa5f)
 
 Luego pasa al `tarea3`.
 ```
@@ -356,7 +355,7 @@ git log
 
 </details>
 
-![image](https://github.com/user-attachments/assets/2ad91927-fe15-46bc-8c9b-5d686c6183f6)
+![image](https://github.com/user-attachments/assets/75d1ba21-bc0b-4bc8-b3f1-51487e179876)
 
 El trabajo para añadir la descripción de `branch` y la descripción de `merge` podría realizarse por separado.
 
@@ -397,7 +396,7 @@ git log
 
 Esta `merge` es un `fast-forward (avance rápido) merge`.
 
-![image](https://github.com/user-attachments/assets/108136c2-0d5a-461a-973b-87797fd5ec63)
+![image](https://github.com/user-attachments/assets/2b2c2e75-10b6-4db4-90cd-2c08614b129d)
 
 A continuación, fusione `tarea3` en `main` y compruebe que el commit realizado en `tarea3` se ha añadido al historial de commit en `main`.
 ```
@@ -466,4 +465,4 @@ La historia es la siguiente.<br>
 Esta _merge_ soluciona un conflicto, por lo que se ha creado un nuevo _merge commit_ para registrar el cambio. La cabecera de `main` se ha movido allí.<br>
 Un _merge_ de este tipo se denomina _non fast-forward merge_.
 
-![image](https://github.com/user-attachments/assets/f56ebcac-85b3-4472-8242-4d2ec4a1e883)
+![image](https://github.com/user-attachments/assets/a4d3b4f6-ddbb-4dff-aba1-18f91cecbdb3)
