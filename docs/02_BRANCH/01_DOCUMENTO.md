@@ -78,6 +78,12 @@ Si se modifica la misma línea en diferentes ramas, la fusión automática falla
 <br>Para resolver el conflicto, debe modificar manualmente el archivo y crear un nuevo commit.
 
 ![image](https://github.com/user-attachments/assets/316ab0ec-35ca-4f7f-a361-95cfddb52ce6)
+> [!NOTE]
+>  ***Pasos para resolver conflictos:***
+> 1. Mostrar archivos con conflicto con el commando `git status`
+> 2. Abrir el archivo y corregir manualmente los conflictos
+> 3. Agregar el archivo resuelto al staging con el commando `git add`
+> 4. Completar el proceso con el commando `git commit`
 
 <details>
 
