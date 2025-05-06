@@ -23,8 +23,7 @@ Se añade un nuevo repositorio, como se muestra en el siguiente diagrama.
 
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/667d04d7-7d00-444d-8dad-7396f8637abe)
 
-La situación actual se ilustra en el siguiente diagrama.
-
+La situación actual se ilustra en el siguiente diagrama.<br>
 ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/afc592c6-b1c0-4bf0-87c4-9c530ca8e884)
 
 ## Líder: Realiza un push contra el repositorio remoto.
@@ -61,8 +60,10 @@ git log
 ```
 > ![image](https://github.com/user-attachments/assets/4f712bd1-2a3f-49b0-a28c-6fffdffa9c6a)
 
-### Registrar un repositorio remoto y realizar un push.
+La situación actual se ilustra en el siguiente diagrama.<br>
+![image](https://github.com/user-attachments/assets/b1d8121f-e4f0-4484-b646-e1ed12c9932b)
 
+### Registrar un repositorio remoto y realizar un push.
 Ejecute push para enviar el historial del repositorio local al repositorio remoto.
 
 Se puede nombrar y registrar la dirección del repositorio remoto.<br>
@@ -120,8 +121,10 @@ Compruebe que el repositorio se ha actualizado y que se ha añadido archivo.
 
 ![image](https://github.com/user-attachments/assets/bfa5d4d4-8f87-430f-bb46-e333b81b6b7a)
 
-## Miembro: Clonar repositorios remotos.
+La situación actual se ilustra en el siguiente diagrama.<br>
+![image](https://github.com/user-attachments/assets/6598a268-1eff-492a-b942-d37035065a9a)
 
+## Miembro: Clonar repositorios remotos.
 A continuación, clone el repositorio remoto como si fueras otro usuario y crea un repositorio local `tutorial-repo-miembro`.
 
 Utilice el comando `clone` para clonar un repositorio. `<repositorio>` es la URL del repositorio remoto y `<directorio>` es el nombre del directorio a clonar.
@@ -142,6 +145,8 @@ cd ~/tutorial-repo-miembro
 ```
 code .
 ```
+La situación actual se ilustra en el siguiente diagrama.<br>
+![image](https://github.com/user-attachments/assets/05a08225-eb8f-4959-9b3d-cff94312d7bd)
 
 ## Miembro: Realice un push desde el repositorio clonado.
 Como miembro, añade un archivo resumen de los comandos que hemos aprendido.
