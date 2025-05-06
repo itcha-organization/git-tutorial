@@ -26,24 +26,6 @@ Por eso, al crear un `Pull Request`, se puede revisar un conjunto de cambios con
 - Usando el título, la descripción y los comentarios, puedes incluir información de contexto sobre "por qué se realizaron estos cambios".
 - En el futuro, si alguien necesita saber la razón de un cambio, podrá consultar la información en el Pull Request.
 
-## ⚡IMPORTANTE⚡ Estrategias para reducir los conflictos
-
-### 1. **Crear Pull Requests pequeños y frecuentes**
-- Los cambios grandes tienden a generar más conflictos.
-- Si envías Pull Requests de **pequeña escala (por funcionalidad o por corrección específica)**, las revisiones serán más rápidas y las fusiones más sencillas.
-- Lo ideal es **"un PR debe tener un solo propósito"**.
-
-### 2. **Organizar bien la asignación de tareas**
-- Cuando varias personas editan el mismo archivo frecuentemente, es más fácil que ocurran conflictos.
-- Al momento de asignar las tareas, si se presta atención para reducir la edición de un mismo archivo por varias personas, se pueden evitar conflictos.
-
-### 3. **Mantenerse actualizado con la rama `main`**
-- Si actualizas periódicamente tu rama de trabajo local con `git pull origin main` para **mantener una base actualizada**, los conflictos serán menores y más fáciles de resolver.
-- Es fundamental **incorporar los cambios de `main` antes de hacer un `push`**.
-
-### 4. **Mantener una comunicación fluida con el equipo**
-- Una comunicación constante y clara entre los miembros del equipo ayuda a prevenir conflictos antes de que ocurran.
-
 ## Pasos para resolver conflicto y actualizar `Pull Request`
 Si el branch de trabajo a fusionar está en conflicto con el branch `main`, se puede crear una Pull Request, pero no se puede fusionar tal cual.
 > ![image](https://github.com/itcha-organization/git-tutorial/assets/83223664/86873e5a-325f-4156-a16c-b702f965379e)
@@ -73,6 +55,23 @@ Abra la pestaña `commit` de la `Pull Request` para ver que se ha actualizado.
 
 ![image](https://github.com/user-attachments/assets/fdd9c19d-ee9c-4baf-be7a-2dd87f7aa2a6)
 
+## ⚡IMPORTANTE⚡ Estrategias para reducir los conflictos
+
+### 1. **Crear Pull Requests pequeños y frecuentes**
+- Los cambios grandes tienden a generar más conflictos.
+- Si envías Pull Requests de **pequeña escala (por funcionalidad o por corrección específica)**, las revisiones serán más rápidas y las fusiones más sencillas.
+- Lo ideal es **"un PR debe tener un solo propósito"**.
+
+### 2. **Organizar bien la asignación de tareas**
+- Cuando varias personas editan el mismo archivo frecuentemente, es más fácil que ocurran conflictos.
+- Al momento de asignar las tareas, si se presta atención para reducir la edición de un mismo archivo por varias personas, se pueden evitar conflictos.
+
+### 3. **Mantenerse actualizado con la rama `main`**
+- Si actualizas periódicamente tu rama de trabajo local con `git pull origin main` para **mantener una base actualizada**, los conflictos serán menores y más fáciles de resolver.
+- Es fundamental **incorporar los cambios de `main` antes de hacer un `push`**.
+
+### 4. **Mantener una comunicación fluida con el equipo**
+- Una comunicación constante y clara entre los miembros del equipo ayuda a prevenir conflictos antes de que ocurran.
 
 <details>
 
