@@ -6,12 +6,12 @@
 Fortalecer el uso de Git y GitHub para el trabajo colaborativo en equipo con un proyecto Laravel, incluyendo: creación del repositorio, clonación, trabajo en ramas, resolución de conflictos
 
 ## Parte 1: Creación del proyecto y configuración inicial (Responsable: Lider)
--	Crear un nuevo proyecto Laravel: orders-app
+-	Crear un nuevo proyecto Laravel: `orders-app`:
   ```
   composer create-project laravel/laravel orders-app
   ```
 -	Ingresar al proyecto:
--	Habilitar archivo de rutas `api.php`]
+-	Habilitar archivo de rutas `api.php`:
   ```
   php artisan install:api
   ```
@@ -34,11 +34,7 @@ Fortalecer el uso de Git y GitHub para el trabajo colaborativo en equipo con un 
   ```
   cp .env.example .env
   ```
-- Generar clave
-  ```
-  php artisan key:generate
-  ```
-- Configurar el `.env`
+- Configurar el `.env` (En desarrollos reales., hay que crear una base de datos e introducir la información de conexión en `.env`.)
 - Ejecutar migraciones
   ```
   php artisan migrate
